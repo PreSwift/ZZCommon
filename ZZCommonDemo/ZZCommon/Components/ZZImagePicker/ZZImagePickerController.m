@@ -1,0 +1,217 @@
+//
+//  ZZImagePickerViewController.m
+//  teacher
+//
+//  Created by westMac on 2021/9/6.
+//
+
+#import "ZZImagePickerController.h"
+#import "QDMultipleImagePickerPreviewViewController.h"
+#import "QDSingleImagePickerPreviewViewController.h"
+
+@interface ZZImagePickerController () <QMUIAlbumViewControllerDelegate, QMUIImagePickerViewControllerDelegate, QDMultipleImagePickerPreviewViewControllerDelegate, QDSingleImagePickerPreviewViewControllerDelegate>
+
+@property(nonatomic, assign) int cacheCount;
+
+@end
+
+@implementation ZZImagePickerController
+
+- (void)dealloc
+{
+    NSLog(@"%@", self.class);
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.albumViewControllerDelegate = self;
+        _selectedImageAssetArray = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+- (void)initSubviews {
+    [super initSubviews];
+    self.view.backgroundColor = UIColor.whiteColor;
+}
+
+- (void)showImagePicker {
+    // 创建一个 QMUIAlbumViewController 实例用于呈现相簿列表
+    self.view.tag = _imagePickingTag;
+    if (self.view.tag == ModifiedImagePickingTag) {
+        self.albumTableViewCellHeight = 70;
+    }
+    QDNavigationController *navigationController = [[QDNavigationController alloc] initWithRootViewController:self];
+    // 获取最近发送图片时使用过的相簿，如果有则直接进入该相簿
+    [self pickLastAlbumGroupDirectlyIfCan];
+    [[QMUIHelper visibleViewController] presentViewController:navigationController animated:YES completion:NULL];
+}
+
+#pragma mark - <QMUIAlbumViewControllerDelegate>
+
+- (QMUIImagePickerViewController *)imagePickerViewControllerForAlbumViewController:(QMUIAlbumViewController *)albumViewController {
+    QMUIImagePickerViewController *imagePickerViewController = [[QMUIImagePickerViewController alloc] init];
+    imagePickerViewController.supportedOrientationMask = self.supportedOrientationMask;
+    imagePickerViewController.imagePickerViewControllerDelegate = self;
+    imagePickerViewController.maximumSelectImageCount = _maxCount;
+    [imagePickerViewController refreshWithAssetsGroup:nil];
+    [imagePickerViewController.selectedImageAssetArray addObjectsFromArray:self.selectedImageAssetArray];
+    imagePickerViewController.view.tag = albumViewController.view.tag;
+    [imagePickerViewController.sendButton setTitle:@"确定" forState:UIControlStateNormal];
+    if (albumViewController.view.tag == SingleImagePickingTag) {
+        imagePickerViewController.allowsMultipleSelection = NO;
+    }
+    if (albumViewController.view.tag == ModifiedImagePickingTag) {
+        imagePickerViewController.minimumImageWidth = 65;
+    }
+    return imagePickerViewController;
+}
+
+#pragma mark - <QMUIImagePickerViewControllerDelegate>
+
+- (void)imagePickerViewController:(QMUIImagePickerViewController *)imagePickerViewController didFinishPickingImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
+    // 储存最近选择了图片的相册，方便下次直接进入该相册
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    
+    [self sendImageWithImagesAssetArray:imagesAssetArray];
+}
+
+- (QMUIImagePickerPreviewViewController *)imagePickerPreviewViewControllerForImagePickerViewController:(QMUIImagePickerViewController *)imagePickerViewController {
+    if (imagePickerViewController.view.tag == MultipleImagePickingTag) {
+        QDMultipleImagePickerPreviewViewController *imagePickerPreviewViewController = [[QDMultipleImagePickerPreviewViewController alloc] init];
+        imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
+        imagePickerPreviewViewController.delegate = self;
+        imagePickerPreviewViewController.maximumSelectImageCount = MaxSelectedImageCount;
+        imagePickerPreviewViewController.assetsGroup = imagePickerViewController.assetsGroup;
+        imagePickerPreviewViewController.view.tag = imagePickerViewController.view.tag;
+        return imagePickerPreviewViewController;
+    } else if (imagePickerViewController.view.tag == SingleImagePickingTag) {
+        QDSingleImagePickerPreviewViewController *imagePickerPreviewViewController = [[QDSingleImagePickerPreviewViewController alloc] init];
+        imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
+        imagePickerPreviewViewController.delegate = self;
+        imagePickerPreviewViewController.assetsGroup = imagePickerViewController.assetsGroup;
+        imagePickerPreviewViewController.view.tag = imagePickerViewController.view.tag;
+        return imagePickerPreviewViewController;
+    } else if (imagePickerViewController.view.tag == ModifiedImagePickingTag) {
+        QMUIImagePickerPreviewViewController *imagePickerPreviewViewController = [[QMUIImagePickerPreviewViewController alloc] init];
+        imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
+        imagePickerPreviewViewController.delegate = self;
+        imagePickerPreviewViewController.view.tag = imagePickerViewController.view.tag;
+        imagePickerPreviewViewController.toolBarBackgroundColor = UIColorMake(66, 66, 66);
+        return imagePickerPreviewViewController;
+    } else {
+        QMUIImagePickerPreviewViewController *imagePickerPreviewViewController = [[QMUIImagePickerPreviewViewController alloc] init];
+        imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
+        imagePickerPreviewViewController.delegate = self;
+        imagePickerPreviewViewController.view.tag = imagePickerViewController.view.tag;
+        return imagePickerPreviewViewController;
+    }
+}
+
+#pragma mark - <QMUIImagePickerPreviewViewControllerDelegate>
+
+- (void)imagePickerPreviewViewController:(QMUIImagePickerPreviewViewController *)imagePickerPreviewViewController didCheckImageAtIndex:(NSInteger)index {
+    [self updateImageCountLabelForPreviewView:imagePickerPreviewViewController];
+}
+
+- (void)imagePickerPreviewViewController:(QMUIImagePickerPreviewViewController *)imagePickerPreviewViewController didUncheckImageAtIndex:(NSInteger)index {
+    [self updateImageCountLabelForPreviewView:imagePickerPreviewViewController];
+}
+
+// 更新选中的图片数量
+- (void)updateImageCountLabelForPreviewView:(QMUIImagePickerPreviewViewController *)imagePickerPreviewViewController {
+    if (imagePickerPreviewViewController.view.tag == MultipleImagePickingTag) {
+        QDMultipleImagePickerPreviewViewController *customImagePickerPreviewViewController = (QDMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController;
+        customImagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
+        NSUInteger selectedCount = [imagePickerPreviewViewController.selectedImageAssetArray count];
+        if (selectedCount > 0) {
+            customImagePickerPreviewViewController.imageCountLabel.text = [[NSString alloc] initWithFormat:@"%@", @(selectedCount)];
+            customImagePickerPreviewViewController.imageCountLabel.hidden = NO;
+            [QMUIImagePickerHelper springAnimationOfImageSelectedCountChangeWithCountLabel:customImagePickerPreviewViewController.imageCountLabel];
+        } else {
+            customImagePickerPreviewViewController.imageCountLabel.hidden = YES;
+        }
+    }
+}
+
+#pragma mark - <QDMultipleImagePickerPreviewViewControllerDelegate>
+
+- (void)imagePickerPreviewViewController:(QDMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
+    // 储存最近选择了图片的相册，方便下次直接进入该相册
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    [self sendImageWithImagesAssetArray:imagesAssetArray];
+}
+
+#pragma mark - <QDSingleImagePickerPreviewViewControllerDelegate>
+
+- (void)imagePickerPreviewViewController:(QDSingleImagePickerPreviewViewController *)imagePickerPreviewViewController didSelectImageWithImagesAsset:(QMUIAsset *)imageAsset {
+    // 储存最近选择了图片的相册，方便下次直接进入该相册
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    [self sendImageWithImagesAssetArray:[NSMutableArray arrayWithObject:imageAsset]];
+    
+}
+
+#pragma mark - 业务方法
+
+- (void)startLoading {
+    [QDUITips showLoading:@"加载中..." inView:self.view];
+}
+
+- (void)stopLoading {
+    [QDUITips hideAllToastInView:self.view animated:YES];
+}
+
+- (void)showTipLabelWithText:(NSString *)text {
+    [self stopLoading];
+    [QDUITips showWithText:text inView:self.view hideAfterDelay:1.0];
+}
+
+- (void)hideTipLabel {
+    [QDUITips hideAllToastInView:self.view animated:YES];
+}
+
+
+- (void)sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
+    if ([QMUIImagePickerHelper imageAssetsDownloaded:imagesAssetArray]) {
+        // 所有资源从 iCloud 下载成功，模拟发送图片到服务器
+        if (self.delegate) {
+            [self.delegate imagePikcer:self didselected:imagesAssetArray];
+        }
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        __weak __typeof(self)weakSelf = self;
+        for (QMUIAsset *asset in imagesAssetArray) {
+            [QMUIImagePickerHelper requestImageAssetIfNeeded:asset completion:^(QMUIAssetDownloadStatus downloadStatus, NSError *error) {
+                if (downloadStatus == QMUIAssetDownloadStatusDownloading) {
+                    [weakSelf startLoading];
+                } else if (downloadStatus == QMUIAssetDownloadStatusSucceed) {
+                    if (weakSelf.cacheCount <= 5) {
+                        [weakSelf sendImageWithImagesAssetArray:imagesAssetArray];
+                        weakSelf.cacheCount += 1;
+                    }
+                } else {
+                    [weakSelf showTipLabelWithText:@"iCloud 下载错误，请重新选图"];
+                }
+            }];
+        }
+    }
+}
+
++ (UIImage *)getImageFromAsset:(NSData *)imageData isGIF:(BOOL)isGIF isHEIC:(BOOL)isHEIC {
+    UIImage *targetImage = nil;
+    if (isGIF) {
+        targetImage = [UIImage qmui_animatedImageWithData:imageData];
+    } else {
+        targetImage = [UIImage imageWithData:imageData];
+        if (isHEIC) {
+            // iOS 11 中新增 HEIF/HEVC 格式的资源，直接发送新格式的照片到不支持新格式的设备，照片可能会无法识别，可以先转换为通用的 JPEG 格式再进行使用。
+            // 详细请浏览：https://github.com/Tencent/QMUI_iOS/issues/224
+            targetImage = [UIImage imageWithData:UIImageJPEGRepresentation(targetImage, 0.5)];
+        }
+    }
+    return targetImage;
+}
+
+@end
