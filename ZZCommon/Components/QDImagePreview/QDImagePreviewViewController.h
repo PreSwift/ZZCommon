@@ -1,7 +1,6 @@
 //
 //  QDImagePreviewViewController.h
-//  jzjx
-//
+
 //  Created by westMac on 2021/12/28.
 //
 

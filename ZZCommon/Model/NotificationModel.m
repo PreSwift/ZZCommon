@@ -1,6 +1,6 @@
 //
 //  NotificationModel.m
-//  SmartManage
+//  ZZCommon
 //
 //  Created by mac on 2023/3/10.
 //

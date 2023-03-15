@@ -1,16 +1,15 @@
 //
 //  CommonWebViewController.h
-//  jzjx
-//
+
 //  Created by westMac on 2021/8/4.
 //
 
-#import "QDCommonViewController.h"
+#import "ZZCommonViewController.h"
 #import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CommonWebViewController : QDCommonViewController
+@interface CommonWebViewController : ZZCommonViewController
 
 
 - (instancetype)initWithUrl: (NSString *)url;

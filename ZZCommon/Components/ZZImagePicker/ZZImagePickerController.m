@@ -6,10 +6,10 @@
 //
 
 #import "ZZImagePickerController.h"
-#import "QDMultipleImagePickerPreviewViewController.h"
-#import "QDSingleImagePickerPreviewViewController.h"
+#import "ZZMultipleImagePickerPreviewViewController.h"
+#import "ZZSingleImagePickerPreviewViewController.h"
 
-@interface ZZImagePickerController () <QMUIAlbumViewControllerDelegate, QMUIImagePickerViewControllerDelegate, QDMultipleImagePickerPreviewViewControllerDelegate, QDSingleImagePickerPreviewViewControllerDelegate>
+@interface ZZImagePickerController () <QMUIAlbumViewControllerDelegate, QMUIImagePickerViewControllerDelegate, ZZMultipleImagePickerPreviewViewControllerDelegate, ZZSingleImagePickerPreviewViewControllerDelegate>
 
 @property(nonatomic, assign) int cacheCount;
 
@@ -43,7 +43,7 @@
     if (self.view.tag == ModifiedImagePickingTag) {
         self.albumTableViewCellHeight = 70;
     }
-    QDNavigationController *navigationController = [[QDNavigationController alloc] initWithRootViewController:self];
+    ZZNavigationController *navigationController = [[ZZNavigationController alloc] initWithRootViewController:self];
     // 获取最近发送图片时使用过的相簿，如果有则直接进入该相簿
     [self pickLastAlbumGroupDirectlyIfCan];
     [[QMUIHelper visibleViewController] presentViewController:navigationController animated:YES completion:NULL];
@@ -80,7 +80,7 @@
 
 - (QMUIImagePickerPreviewViewController *)imagePickerPreviewViewControllerForImagePickerViewController:(QMUIImagePickerViewController *)imagePickerViewController {
     if (imagePickerViewController.view.tag == MultipleImagePickingTag) {
-        QDMultipleImagePickerPreviewViewController *imagePickerPreviewViewController = [[QDMultipleImagePickerPreviewViewController alloc] init];
+        ZZMultipleImagePickerPreviewViewController *imagePickerPreviewViewController = [[ZZMultipleImagePickerPreviewViewController alloc] init];
         imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
         imagePickerPreviewViewController.delegate = self;
         imagePickerPreviewViewController.maximumSelectImageCount = MaxSelectedImageCount;
@@ -88,7 +88,7 @@
         imagePickerPreviewViewController.view.tag = imagePickerViewController.view.tag;
         return imagePickerPreviewViewController;
     } else if (imagePickerViewController.view.tag == SingleImagePickingTag) {
-        QDSingleImagePickerPreviewViewController *imagePickerPreviewViewController = [[QDSingleImagePickerPreviewViewController alloc] init];
+        ZZSingleImagePickerPreviewViewController *imagePickerPreviewViewController = [[ZZSingleImagePickerPreviewViewController alloc] init];
         imagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
         imagePickerPreviewViewController.delegate = self;
         imagePickerPreviewViewController.assetsGroup = imagePickerViewController.assetsGroup;
@@ -123,7 +123,7 @@
 // 更新选中的图片数量
 - (void)updateImageCountLabelForPreviewView:(QMUIImagePickerPreviewViewController *)imagePickerPreviewViewController {
     if (imagePickerPreviewViewController.view.tag == MultipleImagePickingTag) {
-        QDMultipleImagePickerPreviewViewController *customImagePickerPreviewViewController = (QDMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController;
+        ZZMultipleImagePickerPreviewViewController *customImagePickerPreviewViewController = (ZZMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController;
         customImagePickerPreviewViewController.supportedOrientationMask = self.supportedOrientationMask;
         NSUInteger selectedCount = [imagePickerPreviewViewController.selectedImageAssetArray count];
         if (selectedCount > 0) {
@@ -136,17 +136,17 @@
     }
 }
 
-#pragma mark - <QDMultipleImagePickerPreviewViewControllerDelegate>
+#pragma mark - <ZZMultipleImagePickerPreviewViewControllerDelegate>
 
-- (void)imagePickerPreviewViewController:(QDMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
+- (void)imagePickerPreviewViewController:(ZZMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
     // 储存最近选择了图片的相册，方便下次直接进入该相册
     [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
     [self sendImageWithImagesAssetArray:imagesAssetArray];
 }
 
-#pragma mark - <QDSingleImagePickerPreviewViewControllerDelegate>
+#pragma mark - <ZZSingleImagePickerPreviewViewControllerDelegate>
 
-- (void)imagePickerPreviewViewController:(QDSingleImagePickerPreviewViewController *)imagePickerPreviewViewController didSelectImageWithImagesAsset:(QMUIAsset *)imageAsset {
+- (void)imagePickerPreviewViewController:(ZZSingleImagePickerPreviewViewController *)imagePickerPreviewViewController didSelectImageWithImagesAsset:(QMUIAsset *)imageAsset {
     // 储存最近选择了图片的相册，方便下次直接进入该相册
     [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
     [self sendImageWithImagesAssetArray:[NSMutableArray arrayWithObject:imageAsset]];

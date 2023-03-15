@@ -1,7 +1,6 @@
 //
 //  AppGrayStyle.m
-//  jzjx
-//
+
 //  Created by mac on 2022/12/2.
 //
 

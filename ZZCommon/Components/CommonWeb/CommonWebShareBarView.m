@@ -1,7 +1,6 @@
 //
 //  CommonWebShareBarView.m
-//  jzjx
-//
+
 //  Created by westMac on 2022/1/7.
 //
 

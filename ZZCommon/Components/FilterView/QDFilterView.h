@@ -1,14 +1,11 @@
 //
 //  QDFilterView.h
-//  jzjx
-//
+
 //  Created by mac on 2022/8/10.
 //
 
 #import <UIKit/UIKit.h>
 #import "QDFilterItemCell.h"
-
-#define allStr @"全部"
 
 NS_ASSUME_NONNULL_BEGIN
 

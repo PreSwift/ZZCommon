@@ -1,7 +1,6 @@
 //
 //  CommonWebViewDelegate.m
-//  jzjx
-//
+
 //  Created by westMac on 2021/8/4.
 //
 

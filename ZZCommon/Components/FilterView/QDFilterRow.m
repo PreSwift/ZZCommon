@@ -1,11 +1,12 @@
 //
 //  QDFilterRow.m
-//  jzjx
-//
+
 //  Created by mac on 2022/8/10.
 //
 
 #import "QDFilterRow.h"
+
+#define allStr @"全部"
 
 @implementation QDFilterRow
 
