@@ -1,7 +1,6 @@
 //
 //  TimeUtil.h
-//  teacher
-//
+
 //  Created by westMac on 2021/8/21.
 //
 

@@ -1,7 +1,6 @@
 //
 //  NSDictionary+Extension.h
-//  student
-//
+
 //  Created by westMac on 2021/12/10.
 //
 

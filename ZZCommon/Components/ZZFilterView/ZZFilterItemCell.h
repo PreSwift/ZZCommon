@@ -1,15 +1,15 @@
 //
-//  QDFilterItemCell.h
+//  ZZFilterItemCell.h
 
 //  Created by mac on 2022/8/10.
 //
 
 #import <UIKit/UIKit.h>
-#import "QDFilterRow.h"
+#import "ZZFilterRow.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDFilterItemCell : UICollectionViewCell
+@interface ZZFilterItemCell : UICollectionViewCell
 
 - (void)updateWithTitle:(NSString *)title isSelected:(BOOL)isSelected;
 

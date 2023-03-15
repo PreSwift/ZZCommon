@@ -1,7 +1,6 @@
 //
 //  MyClassHeaderView.m
-//  teacher
-//
+
 //  Created by westMac on 2021/8/16.
 //
 

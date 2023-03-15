@@ -1,7 +1,6 @@
 //
 //  ColorUtil.m
-//  teacher
-//
+
 //  Created by westMac on 2021/9/15.
 //
 

@@ -1,18 +1,18 @@
 //
-//  QDFilterItemCell.m
+//  ZZFilterItemCell.m
 
 //  Created by mac on 2022/8/10.
 //
 
-#import "QDFilterItemCell.h"
+#import "ZZFilterItemCell.h"
 
-@interface QDFilterItemCell ()
+@interface ZZFilterItemCell ()
 
 @property(nonatomic, strong) QMUIButton *button;
 
 @end
 
-@implementation QDFilterItemCell
+@implementation ZZFilterItemCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

@@ -1,7 +1,6 @@
 //
-//  NumberInputView.h
-//  teacher
-//
+//  ZZNumberInputView.h
+
 //  Created by westMac on 2021/12/7.
 //
 
@@ -9,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NumberInputView : UIView
+@interface ZZNumberInputView : UIView
 
 @property(nonatomic, strong) NSString *text;
 @property(nonatomic, copy) void(^editChangedBlock)(NSString *numberStr);

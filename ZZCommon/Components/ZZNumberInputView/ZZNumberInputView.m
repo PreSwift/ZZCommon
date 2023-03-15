@@ -1,13 +1,12 @@
 //
-//  NumberInputView.m
-//  teacher
-//
+//  ZZNumberInputView.m
+
 //  Created by westMac on 2021/12/7.
 //
 
-#import "NumberInputView.h"
+#import "ZZNumberInputView.h"
 
-@interface NumberInputView ()
+@interface ZZNumberInputView ()
 
 @property(nonatomic, strong) QMUIButton *reduceBtn;
 @property(nonatomic, strong) QMUIButton *addBtn;
@@ -15,7 +14,7 @@
 
 @end
 
-@implementation NumberInputView
+@implementation ZZNumberInputView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

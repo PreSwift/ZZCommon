@@ -1,7 +1,6 @@
 //
 //  NSStringUtil.m
-//  student
-//
+
 //  Created by westMac on 2021/9/2.
 //
 

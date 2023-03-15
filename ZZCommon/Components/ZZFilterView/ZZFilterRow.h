@@ -1,5 +1,5 @@
 //
-//  QDFilterRow.h
+//  ZZFilterRow.h
 
 //  Created by mac on 2022/8/10.
 //
@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDFilterRow : NSObject
+@interface ZZFilterRow : NSObject
 
 @property(nonatomic, strong) NSString *title;
 @property(nonatomic, strong) NSArray<IDNameModel *> *items;

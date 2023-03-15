@@ -1,12 +1,12 @@
 //
-//  QDFilterView.m
+//  ZZFilterView.m
 
 //  Created by mac on 2022/8/10.
 //
 
-#import "QDFilterView.h"
+#import "ZZFilterView.h"
 
-@interface QDFilterView () <UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate>
+@interface ZZFilterView () <UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate>
 
 @property(nonatomic, assign) CGFloat contentViewHeight;
 @property(nonatomic, strong) UIView *contentView;
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation QDFilterView
+@implementation ZZFilterView
 
 - (void)dealloc {
     NSLog(@"%@", self);
@@ -31,7 +31,7 @@
     return self;
 }
 
-- (void)setupFilterRows:(NSArray<QDFilterRow *> *)filterRows {
+- (void)setupFilterRows:(NSArray<ZZFilterRow *> *)filterRows {
     _filterRows = filterRows;
 }
 
@@ -58,7 +58,7 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     _collectionView.dataSource = self;
     _collectionView.delegate = self;
-    [_collectionView registerClass:QDFilterItemCell.class forCellWithReuseIdentifier:@"QDFilterItemCell"];
+    [_collectionView registerClass:ZZFilterItemCell.class forCellWithReuseIdentifier:@"ZZFilterItemCell"];
     [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"FilterTitle"];
     _collectionView.backgroundColor = UIColor.whiteColor;
     _collectionView.contentInset = UIEdgeInsetsMake(0, 0, Spaceing(4), 0);
@@ -152,7 +152,7 @@
         if (weakSelf.hideBlock) {
             weakSelf.hideBlock();
         }
-        for (QDFilterRow *row in weakSelf.filterRows) {
+        for (ZZFilterRow *row in weakSelf.filterRows) {
             row.selectedIndex = row.historySelectedIndex;
         }
     }];
@@ -176,7 +176,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    QDFilterItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"QDFilterItemCell" forIndexPath:indexPath];
+    ZZFilterItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZZFilterItemCell" forIndexPath:indexPath];
     NSArray<IDNameModel *> *items = _filterRows[indexPath.section].items;
     IDNameModel *item = items[indexPath.item];
     [cell updateWithTitle:item.name isSelected:indexPath.item == _filterRows[indexPath.section].selectedIndex];

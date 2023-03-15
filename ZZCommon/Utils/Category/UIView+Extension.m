@@ -1,7 +1,6 @@
 //
 //  UIView+Extension.m
-//  student
-//
+
 //  Created by westMac on 2021/10/15.
 //
 

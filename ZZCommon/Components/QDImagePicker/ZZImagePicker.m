@@ -1,17 +1,16 @@
 //
 //  SingleUploadImage.m
-//  teacher
-//
+
 //  Created by westMac on 2021/8/17.
 //
 
-#import "QDImagePicker.h"
+#import "ZZImagePicker.h"
 
-@interface QDImagePicker() <UIImagePickerControllerDelegate, UINavigationControllerDelegate, ZZImagePickerControllerDelegate>
+@interface ZZImagePicker() <UIImagePickerControllerDelegate, UINavigationControllerDelegate, ZZImagePickerControllerDelegate>
 
 @end
 
-@implementation QDImagePicker
+@implementation ZZImagePicker
 
 - (void)dealloc
 {
@@ -24,13 +23,13 @@
     if (self) {
         self.imagePickingTag = MultipleImagePickingTag;
         self.maxCount = MaxSelectedImageCount;
-        self.sourceType = QDImagePickerSourceTypeBoth;
+        self.sourceType = ZZImagePickerSourceTypeBoth;
     }
     return self;
 }
 
 - (void)showPicker {
-    if (self.sourceType == QDImagePickerSourceTypeBoth) {
+    if (self.sourceType == ZZImagePickerSourceTypeBoth) {
         QMUIAlertController *alertController = [[QMUIAlertController alloc] initWithTitle:nil message:nil preferredStyle:QMUIAlertControllerStyleActionSheet];
         if (alertController) {
             alertController.sheetButtonAttributes = @{NSForegroundColorAttributeName:UIColor.qd_titleTextColor,NSFontAttributeName:UIFont.qd_mainTextFont,NSKernAttributeName:@(0)};
@@ -50,9 +49,9 @@
             [alertController addAction:photoAction];
         }
         [alertController showWithAnimated:YES];
-    } else if (self.sourceType == QDImagePickerSourceTypeCamera) {
+    } else if (self.sourceType == ZZImagePickerSourceTypeCamera) {
         [self authorizationPresentAlbumViewController:YES];
-    } else if (self.sourceType == QDImagePickerSourceTypeAlbum) {
+    } else if (self.sourceType == ZZImagePickerSourceTypeAlbum) {
         [self authorizationPresentAlbumViewController:NO];
     }
 }

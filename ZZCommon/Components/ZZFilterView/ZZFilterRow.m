@@ -1,14 +1,14 @@
 //
-//  QDFilterRow.m
+//  ZZFilterRow.m
 
 //  Created by mac on 2022/8/10.
 //
 
-#import "QDFilterRow.h"
+#import "ZZFilterRow.h"
 
 #define allStr @"全部"
 
-@implementation QDFilterRow
+@implementation ZZFilterRow
 
 - (instancetype)initWithTitle:(NSString *)title items:(NSArray<IDNameModel *> *)items selectedIndex:(NSInteger)selectedIndex columnCount:(NSInteger)columnCount {
     self = [super init];

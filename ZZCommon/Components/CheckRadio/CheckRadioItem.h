@@ -1,7 +1,6 @@
 //
 //  CheckRadioItem.h
-//  teacher
-//
+
 //  Created by mac on 2022/2/8.
 //
 

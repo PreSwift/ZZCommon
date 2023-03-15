@@ -1,7 +1,6 @@
 //
 //  CheckButton.h
-//  teacher
-//
+
 //  Created by mac on 2022/5/7.
 //
 
