@@ -133,6 +133,4 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "QMUIKit", "4.6.0"
 
-  spec.prefix_header_file = 'ZZCommonDemo/ZZCommon/ZZCommonPrefixHeader.pch'
-
 end

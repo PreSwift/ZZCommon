@@ -15,5 +15,4 @@ FOUNDATION_EXPORT const unsigned char ZZCommonVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZZCommon/PublicHeader.h>
 
-
-
+#import <ZZCommon/ZZCommonMacros.h>

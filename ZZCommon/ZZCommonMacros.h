@@ -5,9 +5,6 @@
 //  Created by mac on 2023/3/13.
 //
 
-#ifndef ZZCommonPrefixHeader_pch
-#define ZZCommonPrefixHeader_pch
-
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
@@ -103,8 +100,6 @@ fprintf(stderr,"******\nTIME：%s【FILE：%s--LINE：%d】FUNCTION：%s\n%s\n**
 #endif
 
 
-
-
 /**
  import
  */
@@ -163,6 +158,3 @@ fprintf(stderr,"******\nTIME：%s【FILE：%s--LINE：%d】FUNCTION：%s\n%s\n**
 #import "BRPickerView.h"
 
 #endif
-
-
-#endif /* ZZCommonPrefixHeader_pch */
