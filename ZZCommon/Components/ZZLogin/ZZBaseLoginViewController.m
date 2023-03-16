@@ -52,7 +52,7 @@
     [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     _sureBtn.cornerRadius = QMUIButtonCornerRadiusAdjustsBounds;
     _sureBtn.layer.shadowColor = UIColor.qd_tintColor.CGColor;
-    _sureBtn.layer.shadowRadius = DefaultCornerRadius;
+    _sureBtn.layer.shadowRadius = CornerRadius(2);
     _sureBtn.layer.shadowOpacity = DefaultShadowOpacity;
     _sureBtn.layer.shadowOffset = DefaultShadowOffset;
     [_sureBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];

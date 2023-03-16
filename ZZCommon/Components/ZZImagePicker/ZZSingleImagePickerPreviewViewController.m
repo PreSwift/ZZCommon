@@ -58,12 +58,10 @@
 }
 
 - (void)handleUserAvatarButtonClick:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:^(void) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(imagePickerPreviewViewController:didSelectImageWithImagesAsset:)]) {
-            QMUIAsset *imageAsset = [self.imagesAssetArray objectAtIndex:self.imagePreviewView.currentImageIndex];
-            [self.delegate imagePickerPreviewViewController:self didSelectImageWithImagesAsset:imageAsset];
-        }
-    }];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(imagePickerPreviewViewController:didSelectImageWithImagesAsset:)]) {
+        QMUIAsset *imageAsset = [self.imagesAssetArray objectAtIndex:self.imagePreviewView.currentImageIndex];
+        [self.delegate imagePickerPreviewViewController:self didSelectImageWithImagesAsset:imageAsset];
+    }
 }
 
 - (BOOL)shouldCustomizeNavigationBarTransitionIfHideable {

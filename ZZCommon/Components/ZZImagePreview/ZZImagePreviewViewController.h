@@ -1,5 +1,5 @@
 //
-//  QDImagePreviewViewController.h
+//  ZZImagePreviewViewController.h
 
 //  Created by westMac on 2021/12/28.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDImagePreviewViewController : QMUIImagePreviewViewController
+@interface ZZImagePreviewViewController : QMUIImagePreviewViewController
 
 + (void)showImagePreview:(NSArray *)imageObjs
             currentIndex:(NSUInteger)currentIndex

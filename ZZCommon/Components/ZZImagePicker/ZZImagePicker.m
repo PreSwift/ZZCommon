@@ -107,7 +107,7 @@
     }
     NSString *tmpDir =  NSTemporaryDirectory();
     //设置一个图片的存储路径
-    NSString *imagePath = [tmpDir stringByAppendingString:[NSString stringWithFormat:@"/tempPick_%f.png", [NSDate.new timeIntervalSince1970]]];
+    NSString *imagePath = [tmpDir stringByAppendingString:[NSString stringWithFormat:@"tempPick_%f.png", [NSDate.new timeIntervalSince1970]]];
     //把图片直接保存到指定的路径（同时应该把图片的路径imagePath存起来，下次就可以直接用来取）
     [UIImagePNGRepresentation(image) writeToFile:imagePath atomically:YES];
     

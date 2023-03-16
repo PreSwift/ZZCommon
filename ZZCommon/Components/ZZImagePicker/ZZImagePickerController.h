@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define MaxSelectedImageCount 9
+#define MaxSelectedImageCount INT_MAX
 #define NormalImagePickingTag 1045
 #define ModifiedImagePickingTag 1046
 #define MultipleImagePickingTag 1047

@@ -119,16 +119,14 @@
 }
 
 - (void)handleSendButtonClick:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:^(void) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(imagePickerPreviewViewController:sendImageWithImagesAssetArray:)]) {
-            if (self.selectedImageAssetArray.count == 0) {
-                // 如果没选中任何一张，则点击发送按钮直接发送当前这张大图
-                QMUIAsset *currentAsset = self.imagesAssetArray[self.imagePreviewView.currentImageIndex];
-                [self.selectedImageAssetArray addObject:currentAsset];
-            }
-            [self.delegate imagePickerPreviewViewController:self sendImageWithImagesAssetArray:self.selectedImageAssetArray];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(imagePickerPreviewViewController:sendImageWithImagesAssetArray:)]) {
+        if (self.selectedImageAssetArray.count == 0) {
+            // 如果没选中任何一张，则点击发送按钮直接发送当前这张大图
+            QMUIAsset *currentAsset = self.imagesAssetArray[self.imagePreviewView.currentImageIndex];
+            [self.selectedImageAssetArray addObject:currentAsset];
         }
-    }];
+        [self.delegate imagePickerPreviewViewController:self sendImageWithImagesAssetArray:self.selectedImageAssetArray];
+    }
 }
 
 - (void)handleOriginImageCheckboxButtonClick:(UIButton *)button {

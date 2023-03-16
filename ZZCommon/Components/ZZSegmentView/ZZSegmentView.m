@@ -1,12 +1,12 @@
 //
-//  QDSegmentView.m
+//  ZZSegmentView.m
 
 //  Created by westMac on 2021/8/3.
 //
 
-#import "QDSegmentView.h"
+#import "ZZSegmentView.h"
 
-@interface QDSegmentView ()
+@interface ZZSegmentView ()
 
 @property(nonatomic, strong) NSArray<QMUIButton *> *btns;
 @property(nonatomic, strong) NSArray<NSString *> *titles;
@@ -15,7 +15,7 @@
 
 @end
 
-@implementation QDSegmentView
+@implementation ZZSegmentView
 
 - (void)dealloc
 {

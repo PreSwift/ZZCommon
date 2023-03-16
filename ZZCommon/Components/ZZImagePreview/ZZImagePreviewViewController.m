@@ -1,13 +1,13 @@
 //
-//  QDImagePreviewViewController.m
+//  ZZImagePreviewViewController.m
 
 //  Created by westMac on 2021/12/28.
 //
 
-#import "QDImagePreviewViewController.h"
+#import "ZZImagePreviewViewController.h"
 #import "ZZImagePickerController.h"
 
-@interface QDImagePreviewViewController () <QMUIImagePreviewViewDelegate>
+@interface ZZImagePreviewViewController () <QMUIImagePreviewViewDelegate>
 
 @property(nonatomic, assign) BOOL isShowToolBar;
 @property(nonatomic, strong) UIView *topToolBar;
@@ -28,10 +28,10 @@
 
 @end
 
-@implementation QDImagePreviewViewController
+@implementation ZZImagePreviewViewController
 
 + (void)showImagePreview:(NSArray *)imageObjs currentIndex:(NSUInteger)currentIndex sourceView:(UIView *)sourceView showSaveBotton:(BOOL)showSaveBotton showDeleteButton:(BOOL)showDeleteButton scrollSourceViewBlock:(nullable UIView * _Nonnull (^)(NSUInteger, UIView * _Nonnull))scrollSourceViewBlock deleteBlock:(nullable BOOL (^)(NSUInteger))deleteBlock {
-    QDImagePreviewViewController *imagePreviewViewController = [[QDImagePreviewViewController alloc] init];
+    ZZImagePreviewViewController *imagePreviewViewController = [[ZZImagePreviewViewController alloc] init];
     imagePreviewViewController.images = [NSMutableArray arrayWithArray:imageObjs];
     imagePreviewViewController.sourceView = sourceView;
     imagePreviewViewController.showSaveBtn = showSaveBotton;
@@ -198,13 +198,17 @@
     id obj = _images[index];
     // 模拟异步加载的情况
     if ([obj isKindOfClass:[NSString class]]) {
-        [zoomImageView showLoading];
-        [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:obj] options:0 progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
-            if ([zoomImageView.reusedIdentifier isEqual:@(index)]) {
-                [zoomImageView hideEmptyView];
-                zoomImageView.image = image;
-            }
-        }];
+        if ([((NSString *)obj) containsString:@"http"]) {
+            [zoomImageView showLoading];
+            [[SDWebImageManager sharedManager] loadImageWithURL:[NSURL URLWithString:obj] options:0 progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+                if ([zoomImageView.reusedIdentifier isEqual:@(index)]) {
+                    [zoomImageView hideEmptyView];
+                    zoomImageView.image = image;
+                }
+            }];
+        } else {
+            [zoomImageView setImage:[[UIImage alloc] initWithContentsOfFile:obj]];
+        }
     } else if ([obj isKindOfClass:[QMUIAsset class]]) {
         [zoomImageView showLoading];
         [((QMUIAsset *)obj) requestImageData:^(NSData *imageData, NSDictionary<NSString *,id> *info, BOOL isGIF, BOOL isHEIC) {

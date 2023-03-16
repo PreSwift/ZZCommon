@@ -8,10 +8,10 @@
 #ifndef ZZOtherLib_h
 #define ZZOtherLib_h
 
-#import "BRPickerView/BRPickerView.h"
-#import "JHVerificationCodeView/JHVerificationCodeView.h"
-#import "lottie-ios/PublicHeaders/Lottie.h"
-#import "SDCycleScrollView/SDCycleScrollView.h"
-#import "TTRangeSlider/TTRangeSlider.h"
+#import "BRPickerView.h"
+#import "JHVerificationCodeView.h"
+#import "Lottie.h"
+#import "SDCycleScrollView.h"
+#import "TTRangeSlider.h"
 
 #endif /* ZZOtherLib_h */

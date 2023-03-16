@@ -1,5 +1,5 @@
 //
-//  QDSegmentView.h
+//  ZZSegmentView.h
 
 //  Created by westMac on 2021/8/3.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDSegmentView : UIView
+@interface ZZSegmentView : UIView
 
 - (instancetype)initWithTitles: (NSArray<NSString *> *)titles tapBlock: (void (^)(int))tapBlock;
 

@@ -25,7 +25,6 @@
  圆角规范，通常为8，特例为4的倍数
  */
 #define CornerRadius(_times) SS((4.0 * _times))
-#define DefaultCornerRadius CornerRadius(2)
 
 /**
  阴影区规范
@@ -63,11 +62,6 @@
 #define IsTestServer [BASE_HOST containsString:@"test"]
 #define IsUITest NSProcessInfo.processInfo.environment[@"isUITest"].boolValue
 #define COMMON_PAGE_SIZE 30
-#ifdef DEBUG
-#define SHOW_TEST YES
-#else
-#define SHOW_TEST NO
-#endif
 
 /**
  完美解决Xcode NSLog打印不全的宏

@@ -155,43 +155,46 @@
 #pragma mark - 业务方法
 
 - (void)startLoading {
-    [QDUITips showLoading:@"加载中..." inView:self.view];
+    [QDUITips showLoading:@"下载中..." detailText:@"正在从iCloud同步下载图片，请稍后" inView:[UIApplication sharedApplication].keyWindow];
 }
 
 - (void)stopLoading {
-    [QDUITips hideAllToastInView:self.view animated:YES];
+    [QDUITips hideAllTips];
 }
 
 - (void)showTipLabelWithText:(NSString *)text {
     [self stopLoading];
-    [QDUITips showWithText:text inView:self.view hideAfterDelay:1.0];
-}
-
-- (void)hideTipLabel {
-    [QDUITips hideAllToastInView:self.view animated:YES];
+    [QDUITips showWithText:text inView:[UIApplication sharedApplication].keyWindow hideAfterDelay:1.0];
 }
 
 
 - (void)sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
     if ([QMUIImagePickerHelper imageAssetsDownloaded:imagesAssetArray]) {
-        // 所有资源从 iCloud 下载成功，模拟发送图片到服务器
+        // 所有资源从 iCloud 下载成功
         if (self.delegate) {
             [self.delegate imagePikcer:self didselected:imagesAssetArray];
         }
+        [self stopLoading];
         [self dismissViewControllerAnimated:YES completion:nil];
     } else {
-        __weak __typeof(self)weakSelf = self;
+        self.cacheCount = 0;
+        NSInteger targetCount = imagesAssetArray.count;
+        NSMutableArray<QMUIAsset *> *tempArray = [NSMutableArray arrayWithArray:imagesAssetArray];
         for (QMUIAsset *asset in imagesAssetArray) {
             [QMUIImagePickerHelper requestImageAssetIfNeeded:asset completion:^(QMUIAssetDownloadStatus downloadStatus, NSError *error) {
-                if (downloadStatus == QMUIAssetDownloadStatusDownloading) {
-                    [weakSelf startLoading];
-                } else if (downloadStatus == QMUIAssetDownloadStatusSucceed) {
-                    if (weakSelf.cacheCount <= 5) {
-                        [weakSelf sendImageWithImagesAssetArray:imagesAssetArray];
-                        weakSelf.cacheCount += 1;
-                    }
+                if (downloadStatus == QMUIAssetDownloadStatusCanceled || downloadStatus == QMUIAssetDownloadStatusFailed) {
+                    [self showTipLabelWithText:@"iCloud图片下载错误，请重新选图"];
                 } else {
-                    [weakSelf showTipLabelWithText:@"iCloud 下载错误，请重新选图"];
+                    if (downloadStatus == QMUIAssetDownloadStatusDownloading) {
+                        NSLog(@"下载iCloud图片：%@", asset.identifier);
+                        [self startLoading];
+                    } else if (downloadStatus == QMUIAssetDownloadStatusSucceed) {
+                        self.cacheCount += 1;
+                        NSLog(@"获取图片完成：%@,    %d    %ld", asset.identifier, self.cacheCount, targetCount);
+                        if (self.cacheCount == targetCount) {
+                            [self sendImageWithImagesAssetArray:tempArray];
+                        }
+                    }
                 }
             }];
         }
