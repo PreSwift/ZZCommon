@@ -6,7 +6,6 @@
 
 #import "ZZLoginViewController.h"
 #import "ZZTabBarViewController.h"
-#import "AppDelegate.h"
 #import "ProtocolAndPrivacyView.h"
 #import "ZZPasswordLoginViewController.h"
 

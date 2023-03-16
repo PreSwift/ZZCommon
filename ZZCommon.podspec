@@ -142,4 +142,6 @@ Pod::Spec.new do |spec|
   spec.dependency "DateTools"
   spec.dependency "ReactiveObjC"
 
+  spec.prefix_header_file = 'ZZCommon/ZZCommonMacros.h'
+
 end

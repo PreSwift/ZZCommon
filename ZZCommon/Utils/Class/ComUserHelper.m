@@ -6,7 +6,6 @@
 
 #import "ComUserHelper.h"
 #import "ZZTabBarViewController.h"
-#import "AppDelegate.h"
 
 @implementation ComUserHelper
 
