@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ZZCommonDemo/ZZCommon/**/*.{h,m}"
+  spec.source_files  = "ZZCommon/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -116,7 +116,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "Foundation", "UIKit", "QMUIKit"
+  spec.frameworks = "Foundation", "UIKit"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
