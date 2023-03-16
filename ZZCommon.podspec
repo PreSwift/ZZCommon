@@ -132,5 +132,14 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "QMUIKit", "4.6.0"
+  spec.dependency "PureLayout"
+  spec.dependency "Masonry"
+  spec.dependency "MJRefresh"
+  spec.dependency "SDWebImage"
+  spec.dependency "MJExtension"
+  spec.dependency "YTKNetwork"
+  spec.dependency "IQKeyboardManager"
+  spec.dependency "DateTools"
+  spec.dependency "ReactiveObjC"
 
 end
