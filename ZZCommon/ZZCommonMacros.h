@@ -17,12 +17,12 @@
 #define CodeAttributes(_fontSize) @{NSFontAttributeName: CodeFontMake(_fontSize), NSForegroundColorAttributeName: ZZThemeManager.currentTheme.themeTintColor}\
 
 /**
- 间距规范，统一为8的倍数
+ 间距规范，统一为4的倍数
  */
 #define Spaceing(_times) SS((4.0 * _times))
 
 /**
- 圆角规范，通常为8，特例为4的倍数
+ 圆角规范，统一为4的倍数
  */
 #define CornerRadius(_times) SS((4.0 * _times))
 
@@ -44,22 +44,8 @@
  */
 #define SS(x) [QDRptSize pt2rpt:@x]
 
-/**
- 服务器指向配置
- */
-#define CDN_HOST @"https://static.wtjy.com/"
-#define BASE_WEB_HOST @"https://phone.wtjy.com/"
-#ifdef DEBUG
-//#define BASE_HOST @"https://erp.wtjy.com/"
-#define BASE_HOST @"http://192.168.20.241:9999/"
-#else
-//#define BASE_HOST @"https://erp.wtjy.com/"
-#define BASE_HOST @"http://192.168.20.241:9999/"
-#endif
-
 #define CREAT_URL(x) [[NSString alloc] initWithFormat:@"%@%@", BASE_HOST, x]
 #define CREAT_WEB_URL(x) [[NSString alloc] initWithFormat:@"%@%@", BASE_WEB_HOST, x]
-#define IsTestServer [BASE_HOST containsString:@"test"]
 #define IsUITest NSProcessInfo.processInfo.environment[@"isUITest"].boolValue
 #define COMMON_PAGE_SIZE 30
 
@@ -137,3 +123,4 @@ fprintf(stderr,"******\nTIME：%s【FILE：%s--LINE：%d】FUNCTION：%s\n%s\n**
 #import "ZZTheme.h"
 
 #endif
+

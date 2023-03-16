@@ -6,6 +6,10 @@
 
 #import "ZZApiHeader.h"
 
+extern NSString * _Nullable BASE_HOST;
+extern NSString * _Nullable BASE_WEB_HOST;
+extern NSString * _Nullable CDN_HOST;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NSObject * _Nullable(^ComApiObjectBlock)(id jsonObj);
@@ -55,6 +59,10 @@ typedef NSObject * _Nullable(^ComApiObjectBlock)(id jsonObj);
  */
 + (nullable ResponseModel *)failureResponseModel:(YTKRequest *)failureRequest;
 
+/**
+ 设置Host
+ */
++ (void)configForBaseHost:(NSString *)baseHost baseWebHost:(nullable NSString *)baseWebHost cdnHost:(nullable NSString *)cdnHost;
 
 @end
 

@@ -7,7 +7,10 @@
 #import "ZZApiHelper.h"
 #import "ZZBaseLoginViewController.h"
 
-NSString *uuidStr;
+NSString * _Nullable BASE_HOST;
+NSString * _Nullable BASE_WEB_HOST;
+NSString * _Nullable CDN_HOST;
+NSString * _Nullable uuidStr;
 
 typedef void(^ComApiSuccessBlock)(__kindof YTKBaseRequest *request, __kindof NSObject * _Nullable obj);
 typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseModel * _Nullable responseModel);
@@ -328,6 +331,12 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
         });
     }
     return (statusCode >= 200 && statusCode <= 299);
+}
+
++ (void)configForBaseHost:(NSString *)baseHost baseWebHost:(NSString *)baseWebHost cdnHost:(NSString *)cdnHost {
+    BASE_HOST = baseHost;
+    BASE_WEB_HOST = baseWebHost;
+    CDN_HOST = cdnHost;
 }
 
 @end

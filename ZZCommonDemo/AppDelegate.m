@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <ZZCommon/ZZCommon.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 配置HOST
+    [ZZApiHelper configForBaseHost:@"https://erp.wtjy.com/" baseWebHost:nil cdnHost:nil];
+    
     return YES;
 }
 

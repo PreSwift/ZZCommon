@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		042D000029C197C100907326 /* HtmlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7F29C197BD00907326 /* HtmlUtil.m */; };
 		042D000129C197C100907326 /* NSStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8029C197BD00907326 /* NSStringUtil.m */; };
-		042D000229C197C100907326 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8129C197BD00907326 /* UIView+Extension.h */; };
-		042D000329C197C100907326 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8229C197BD00907326 /* GTMBase64.h */; };
+		042D000229C197C100907326 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8129C197BD00907326 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D000329C197C100907326 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8229C197BD00907326 /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D000429C197C100907326 /* QDUITips.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8329C197BD00907326 /* QDUITips.m */; };
 		042D000529C197C100907326 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8429C197BD00907326 /* UIImage+Extension.m */; };
 		042D000629C197C100907326 /* UILabel+Aglinment.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8529C197BD00907326 /* UILabel+Aglinment.m */; };
 		042D000729C197C100907326 /* QDRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8629C197BD00907326 /* QDRefreshFooter.m */; };
-		042D000829C197C100907326 /* QDRptSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8729C197BD00907326 /* QDRptSize.h */; };
+		042D000829C197C100907326 /* QDRptSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8729C197BD00907326 /* QDRptSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D000929C197C100907326 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8829C197BD00907326 /* QDUIHelper.m */; };
 		042D000A29C197C100907326 /* QDRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8929C197BD00907326 /* QDRefreshHeader.m */; };
 		042D000B29C197C100907326 /* MIUAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8A29C197BD00907326 /* MIUAES.m */; };
@@ -23,175 +23,175 @@
 		042D000D29C197C100907326 /* UIScrollView+RequestPageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8C29C197BD00907326 /* UIScrollView+RequestPageExtension.m */; };
 		042D000E29C197C100907326 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8D29C197BD00907326 /* UIImageEffects.m */; };
 		042D000F29C197C100907326 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8E29C197BD00907326 /* NSDictionary+Extension.m */; };
-		042D001029C197C100907326 /* UUIDStringThen.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8F29C197BD00907326 /* UUIDStringThen.h */; };
+		042D001029C197C100907326 /* UUIDStringThen.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8F29C197BD00907326 /* UUIDStringThen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001129C197C100907326 /* ComUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9029C197BD00907326 /* ComUserHelper.m */; };
-		042D001229C197C100907326 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9129C197BD00907326 /* TimeUtil.h */; };
-		042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */; };
-		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; };
-		042D001529C197C100907326 /* HtmlUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9429C197BD00907326 /* HtmlUtil.h */; };
+		042D001229C197C100907326 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9129C197BD00907326 /* TimeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001529C197C100907326 /* HtmlUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9429C197BD00907326 /* HtmlUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001629C197C100907326 /* QDNavigateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9529C197BD00907326 /* QDNavigateHelper.m */; };
-		042D001729C197C100907326 /* NSBundle+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9629C197BD00907326 /* NSBundle+Extension.h */; };
-		042D001829C197C100907326 /* UIView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9729C197BD00907326 /* UIView+EmptyView.h */; };
+		042D001729C197C100907326 /* NSBundle+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9629C197BD00907326 /* NSBundle+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001829C197C100907326 /* UIView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9729C197BD00907326 /* UIView+EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001929C197C100907326 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9829C197BD00907326 /* ColorUtil.m */; };
 		042D001A29C197C100907326 /* QDDialogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9929C197BD00907326 /* QDDialogHelper.m */; };
-		042D001B29C197C100907326 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9A29C197BD00907326 /* GTMDefines.h */; };
-		042D001C29C197C100907326 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9B29C197BD00907326 /* UIImage+Extension.h */; };
-		042D001D29C197C100907326 /* QDUITips.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9C29C197BD00907326 /* QDUITips.h */; };
+		042D001B29C197C100907326 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9A29C197BD00907326 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001C29C197C100907326 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9B29C197BD00907326 /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001D29C197C100907326 /* QDUITips.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9C29C197BD00907326 /* QDUITips.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001E29C197C100907326 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9D29C197BD00907326 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		042D001F29C197C100907326 /* NSStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9E29C197BD00907326 /* NSStringUtil.h */; };
+		042D001F29C197C100907326 /* NSStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9E29C197BD00907326 /* NSStringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002029C197C100907326 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9F29C197BD00907326 /* UIView+Extension.m */; };
-		042D002129C197C100907326 /* MIUAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA029C197BD00907326 /* MIUAES.h */; };
-		042D002229C197C100907326 /* QDRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA129C197BD00907326 /* QDRefreshHeader.h */; };
-		042D002329C197C100907326 /* QDUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA229C197BD00907326 /* QDUIHelper.h */; };
+		042D002129C197C100907326 /* MIUAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA029C197BD00907326 /* MIUAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002229C197C100907326 /* QDRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA129C197BD00907326 /* QDRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002329C197C100907326 /* QDUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA229C197BD00907326 /* QDUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002429C197C100907326 /* QDRptSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEA329C197BD00907326 /* QDRptSize.m */; };
-		042D002529C197C100907326 /* QDRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA429C197BD00907326 /* QDRefreshFooter.h */; };
-		042D002629C197C100907326 /* UILabel+Aglinment.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA529C197BD00907326 /* UILabel+Aglinment.h */; };
+		042D002529C197C100907326 /* QDRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA429C197BD00907326 /* QDRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002629C197C100907326 /* UILabel+Aglinment.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA529C197BD00907326 /* UILabel+Aglinment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002729C197C100907326 /* ZZEnumBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEA729C197BE00907326 /* ZZEnumBase.m */; };
-		042D002829C197C100907326 /* ZZEnumBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA829C197BE00907326 /* ZZEnumBase.h */; };
-		042D002929C197C100907326 /* ZZApiHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAA29C197BE00907326 /* ZZApiHeader.h */; };
+		042D002829C197C100907326 /* ZZEnumBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA829C197BE00907326 /* ZZEnumBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002929C197C100907326 /* ZZApiHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAA29C197BE00907326 /* ZZApiHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002A29C197C100907326 /* ZZApiHelper+FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAB29C197BE00907326 /* ZZApiHelper+FileUpload.m */; };
-		042D002B29C197C100907326 /* ZZApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAC29C197BE00907326 /* ZZApiHelper.h */; };
-		042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAD29C197BE00907326 /* ZZApiHelper+User.h */; };
+		042D002B29C197C100907326 /* ZZApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAC29C197BE00907326 /* ZZApiHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAD29C197BE00907326 /* ZZApiHelper+User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002D29C197C100907326 /* ZZApiHelper+Batch.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAE29C197BE00907326 /* ZZApiHelper+Batch.m */; };
 		042D002E29C197C100907326 /* ZZApiHelper+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAF29C197BE00907326 /* ZZApiHelper+Default.m */; };
-		042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB029C197BE00907326 /* ZZApiHelper+FileUpload.h */; };
+		042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB029C197BE00907326 /* ZZApiHelper+FileUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003029C197C100907326 /* ZZApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB129C197BE00907326 /* ZZApiHelper.m */; };
-		042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB229C197BE00907326 /* ZZApiHelper+Batch.h */; };
+		042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB229C197BE00907326 /* ZZApiHelper+Batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003229C197C100907326 /* ZZApiHelper+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB329C197BE00907326 /* ZZApiHelper+User.m */; };
-		042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB429C197BE00907326 /* ZZApiHelper+Default.h */; };
+		042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB429C197BE00907326 /* ZZApiHelper+Default.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003429C197C100907326 /* ZZCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB529C197BE00907326 /* ZZCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003529C197C100907326 /* PageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB729C197BF00907326 /* PageModel.m */; };
 		042D003629C197C100907326 /* FileUploadResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB829C197BF00907326 /* FileUploadResponseModel.m */; };
 		042D003729C197C100907326 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB929C197BF00907326 /* LoginModel.m */; };
-		042D003829C197C100907326 /* AppVersionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBA29C197BF00907326 /* AppVersionModel.h */; };
-		042D003929C197C100907326 /* IDNameModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBB29C197BF00907326 /* IDNameModel.h */; };
-		042D003A29C197C100907326 /* ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBC29C197BF00907326 /* ResponseModel.h */; };
-		042D003B29C197C100907326 /* NotificationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBD29C197BF00907326 /* NotificationModel.h */; };
-		042D003C29C197C100907326 /* PageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBE29C197BF00907326 /* PageModel.h */; };
-		042D003D29C197C100907326 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBF29C197BF00907326 /* LoginModel.h */; };
-		042D003E29C197C100907326 /* FileUploadResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC029C197BF00907326 /* FileUploadResponseModel.h */; };
+		042D003829C197C100907326 /* AppVersionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBA29C197BF00907326 /* AppVersionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003929C197C100907326 /* IDNameModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBB29C197BF00907326 /* IDNameModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003A29C197C100907326 /* ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBC29C197BF00907326 /* ResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003B29C197C100907326 /* NotificationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBD29C197BF00907326 /* NotificationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003C29C197C100907326 /* PageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBE29C197BF00907326 /* PageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003D29C197C100907326 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBF29C197BF00907326 /* LoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003E29C197C100907326 /* FileUploadResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC029C197BF00907326 /* FileUploadResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003F29C197C100907326 /* IDNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC129C197BF00907326 /* IDNameModel.m */; };
 		042D004029C197C100907326 /* AppVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC229C197BF00907326 /* AppVersionModel.m */; };
 		042D004129C197C100907326 /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC329C197BF00907326 /* NotificationModel.m */; };
 		042D004229C197C100907326 /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC429C197BF00907326 /* ResponseModel.m */; };
-		042D004329C197C100907326 /* AppGrayStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC729C197BF00907326 /* AppGrayStyle.h */; };
+		042D004329C197C100907326 /* AppGrayStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC729C197BF00907326 /* AppGrayStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004429C197C100907326 /* AppGrayStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC829C197BF00907326 /* AppGrayStyle.m */; };
-		042D004529C197C100907326 /* ZZNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFECA29C197BF00907326 /* ZZNumberInputView.h */; };
+		042D004529C197C100907326 /* ZZNumberInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFECA29C197BF00907326 /* ZZNumberInputView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004629C197C100907326 /* ZZNumberInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFECB29C197BF00907326 /* ZZNumberInputView.m */; };
 		042D004729C197C100907326 /* CheckImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFECD29C197BF00907326 /* CheckImageButton.m */; };
-		042D004829C197C100907326 /* CheckImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFECE29C197BF00907326 /* CheckImageButton.h */; };
+		042D004829C197C100907326 /* CheckImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFECE29C197BF00907326 /* CheckImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004929C197C100907326 /* ZZFormItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFED029C197BF00907326 /* ZZFormItemModel.m */; };
 		042D004A29C197C100907326 /* ZZFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFED129C197BF00907326 /* ZZFormView.m */; };
-		042D004B29C197C100907326 /* ZZFormRowTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED229C197BF00907326 /* ZZFormRowTableViewCell.h */; };
+		042D004B29C197C100907326 /* ZZFormRowTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED229C197BF00907326 /* ZZFormRowTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004C29C197C100907326 /* ZZFormRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFED329C197BF00907326 /* ZZFormRowView.m */; };
 		042D004D29C197C100907326 /* ZZFormRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFED429C197BF00907326 /* ZZFormRowModel.m */; };
-		042D004E29C197C100907326 /* ZZFormItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED529C197BF00907326 /* ZZFormItemModel.h */; };
+		042D004E29C197C100907326 /* ZZFormItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED529C197BF00907326 /* ZZFormItemModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004F29C197C100907326 /* ZZFormRowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFED629C197BF00907326 /* ZZFormRowTableViewCell.m */; };
-		042D005029C197C100907326 /* ZZFormView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED729C197BF00907326 /* ZZFormView.h */; };
-		042D005129C197C100907326 /* ZZFormRowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED829C197BF00907326 /* ZZFormRowModel.h */; };
-		042D005229C197C100907326 /* ZZFormRowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED929C197BF00907326 /* ZZFormRowView.h */; };
+		042D005029C197C100907326 /* ZZFormView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED729C197BF00907326 /* ZZFormView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D005129C197C100907326 /* ZZFormRowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED829C197BF00907326 /* ZZFormRowModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D005229C197C100907326 /* ZZFormRowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFED929C197BF00907326 /* ZZFormRowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D005329C197C100907326 /* GridImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEDB29C197BF00907326 /* GridImageView.m */; };
-		042D005429C197C100907326 /* GridImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEDC29C197BF00907326 /* GridImageView.h */; };
+		042D005429C197C100907326 /* GridImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEDC29C197BF00907326 /* GridImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D005529C197C100907326 /* ZZFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEDE29C197BF00907326 /* ZZFilterView.m */; };
-		042D005629C197C100907326 /* ZZFilterItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEDF29C197BF00907326 /* ZZFilterItemCell.h */; };
-		042D005729C197C100907326 /* ZZFilterRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE029C197BF00907326 /* ZZFilterRow.h */; };
+		042D005629C197C100907326 /* ZZFilterItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEDF29C197BF00907326 /* ZZFilterItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D005729C197C100907326 /* ZZFilterRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE029C197BF00907326 /* ZZFilterRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D005829C197C100907326 /* ZZFilterItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEE129C197BF00907326 /* ZZFilterItemCell.m */; };
-		042D005929C197C100907326 /* ZZFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE229C197BF00907326 /* ZZFilterView.h */; };
+		042D005929C197C100907326 /* ZZFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE229C197BF00907326 /* ZZFilterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D005A29C197C100907326 /* ZZFilterRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEE329C197BF00907326 /* ZZFilterRow.m */; };
 		042D005D29C197C100907326 /* CheckRadioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEE829C197BF00907326 /* CheckRadioModel.m */; };
-		042D005E29C197C100907326 /* CheckRadioView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE929C197BF00907326 /* CheckRadioView.h */; };
-		042D005F29C197C100907326 /* CheckRadioItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEA29C197BF00907326 /* CheckRadioItem.h */; };
-		042D006029C197C100907326 /* CheckRadioModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEB29C197BF00907326 /* CheckRadioModel.h */; };
+		042D005E29C197C100907326 /* CheckRadioView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEE929C197BF00907326 /* CheckRadioView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D005F29C197C100907326 /* CheckRadioItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEA29C197BF00907326 /* CheckRadioItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D006029C197C100907326 /* CheckRadioModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEB29C197BF00907326 /* CheckRadioModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006129C197C100907326 /* CheckRadioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEEC29C197BF00907326 /* CheckRadioView.m */; };
 		042D006229C197C100907326 /* CheckRadioItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEED29C197BF00907326 /* CheckRadioItem.m */; };
-		042D006329C197C100907326 /* SegmentHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEF29C197BF00907326 /* SegmentHeaderView.h */; };
+		042D006329C197C100907326 /* SegmentHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEEF29C197BF00907326 /* SegmentHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006429C197C100907326 /* SegmentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEF029C197BF00907326 /* SegmentHeaderView.m */; };
-		042D006529C197C100907326 /* SimpleTextInputViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF229C197BF00907326 /* SimpleTextInputViewController.h */; };
+		042D006529C197C100907326 /* SimpleTextInputViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF229C197BF00907326 /* SimpleTextInputViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006629C197C100907326 /* SimpleTextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEF329C197BF00907326 /* SimpleTextInputViewController.m */; };
-		042D006729C197C100907326 /* SortButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF529C197BF00907326 /* SortButton.h */; };
+		042D006729C197C100907326 /* SortButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF529C197BF00907326 /* SortButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006829C197C100907326 /* SortButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEF629C197BF00907326 /* SortButton.m */; };
-		042D006929C197C100907326 /* CheckButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF829C197BF00907326 /* CheckButton.h */; };
+		042D006929C197C100907326 /* CheckButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEF829C197BF00907326 /* CheckButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006A29C197C100907326 /* CheckButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEF929C197BF00907326 /* CheckButton.m */; };
 		042D006B29C197C100907326 /* ZZWelcomePageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEFB29C197BF00907326 /* ZZWelcomePageItem.m */; };
-		042D006C29C197C100907326 /* ZZWelcomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEFC29C197BF00907326 /* ZZWelcomeViewController.h */; };
-		042D006D29C197C100907326 /* ZZWelcomePageItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEFD29C197BF00907326 /* ZZWelcomePageItem.h */; };
+		042D006C29C197C100907326 /* ZZWelcomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEFC29C197BF00907326 /* ZZWelcomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D006D29C197C100907326 /* ZZWelcomePageItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEFD29C197BF00907326 /* ZZWelcomePageItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D006E29C197C100907326 /* ZZWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEFE29C197BF00907326 /* ZZWelcomeViewController.m */; };
-		042D006F29C197C100907326 /* PopupMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0029C197BF00907326 /* PopupMenuButton.h */; };
-		042D007029C197C100907326 /* DownPopupMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0129C197BF00907326 /* DownPopupMenuButton.h */; };
+		042D006F29C197C100907326 /* PopupMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0029C197BF00907326 /* PopupMenuButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D007029C197C100907326 /* DownPopupMenuButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0129C197BF00907326 /* DownPopupMenuButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D007129C197C100907326 /* PopupMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF0229C197BF00907326 /* PopupMenuButton.m */; };
 		042D007229C197C100907326 /* DownPopupMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF0329C197BF00907326 /* DownPopupMenuButton.m */; };
 		042D007529C197C100907326 /* ZZMultipleImagePickerPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF0829C197BF00907326 /* ZZMultipleImagePickerPreviewViewController.m */; };
 		042D007629C197C100907326 /* ZZSingleImagePickerPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF0929C197BF00907326 /* ZZSingleImagePickerPreviewViewController.m */; };
 		042D007729C197C100907326 /* ZZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF0A29C197BF00907326 /* ZZImagePickerController.m */; };
-		042D007829C197C100907326 /* ZZMultipleImagePickerPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0B29C197BF00907326 /* ZZMultipleImagePickerPreviewViewController.h */; };
-		042D007929C197C100907326 /* ZZImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0C29C197BF00907326 /* ZZImagePickerController.h */; };
-		042D007A29C197C100907326 /* ZZSingleImagePickerPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0D29C197BF00907326 /* ZZSingleImagePickerPreviewViewController.h */; };
-		042D007B29C197C100907326 /* JHVerificationCodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0F29C197BF00907326 /* JHVerificationCodeView.h */; };
+		042D007829C197C100907326 /* ZZMultipleImagePickerPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0B29C197BF00907326 /* ZZMultipleImagePickerPreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D007929C197C100907326 /* ZZImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0C29C197BF00907326 /* ZZImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D007A29C197C100907326 /* ZZSingleImagePickerPreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0D29C197BF00907326 /* ZZSingleImagePickerPreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D007B29C197C100907326 /* JHVerificationCodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF0F29C197BF00907326 /* JHVerificationCodeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D007C29C197C100907326 /* JHVerificationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1029C197BF00907326 /* JHVerificationCodeView.m */; };
 		042D007D29C197C100907326 /* ZZSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1229C197BF00907326 /* ZZSegmentView.m */; };
-		042D007E29C197C100907326 /* ZZSegmentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1329C197BF00907326 /* ZZSegmentView.h */; };
-		042D007F29C197C100907326 /* CountdownViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1529C197BF00907326 /* CountdownViewController.h */; };
+		042D007E29C197C100907326 /* ZZSegmentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1329C197BF00907326 /* ZZSegmentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D007F29C197C100907326 /* CountdownViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1529C197BF00907326 /* CountdownViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D008029C197C100907326 /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1629C197BF00907326 /* CountdownViewController.m */; };
 		042D008129C197C100907326 /* CommonWebShareBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1829C197BF00907326 /* CommonWebShareBarView.m */; };
 		042D008229C197C100907326 /* CommonWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1929C197BF00907326 /* CommonWebViewDelegate.m */; };
 		042D008329C197C100907326 /* CommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF1A29C197BF00907326 /* CommonWebViewController.m */; };
-		042D008429C197C100907326 /* CommonWebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1B29C197BF00907326 /* CommonWebViewDelegate.h */; };
-		042D008529C197C100907326 /* CommonWebShareBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1C29C197BF00907326 /* CommonWebShareBarView.h */; };
-		042D008629C197C100907326 /* CommonWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1D29C197BF00907326 /* CommonWebViewController.h */; };
+		042D008429C197C100907326 /* CommonWebViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1B29C197BF00907326 /* CommonWebViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D008529C197C100907326 /* CommonWebShareBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1C29C197BF00907326 /* CommonWebShareBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D008629C197C100907326 /* CommonWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF1D29C197BF00907326 /* CommonWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D008F29C197C100907326 /* ListRowTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF2929C197BF00907326 /* ListRowTitleTableViewCell.m */; };
-		042D009029C197C100907326 /* ListRowTitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2A29C197BF00907326 /* ListRowTitleTableViewCell.h */; };
-		042D009129C197C100907326 /* CountdownTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2C29C197BF00907326 /* CountdownTimer.h */; };
-		042D009229C197C100907326 /* ValicodeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2D29C197BF00907326 /* ValicodeUtil.h */; };
+		042D009029C197C100907326 /* ListRowTitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2A29C197BF00907326 /* ListRowTitleTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D009129C197C100907326 /* CountdownTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2C29C197BF00907326 /* CountdownTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D009229C197C100907326 /* ValicodeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2D29C197BF00907326 /* ValicodeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009329C197C100907326 /* ZZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF2E29C197BF00907326 /* ZZLoginViewController.m */; };
-		042D009429C197C100907326 /* ZZBaseLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2F29C197BF00907326 /* ZZBaseLoginViewController.h */; };
-		042D009529C197C100907326 /* ZZLoginBaseVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3029C197BF00907326 /* ZZLoginBaseVC.h */; };
-		042D009629C197C100907326 /* ProtocolAndPrivacyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */; };
-		042D009729C197C100907326 /* ZZPasswordLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3229C197BF00907326 /* ZZPasswordLoginViewController.h */; };
+		042D009429C197C100907326 /* ZZBaseLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2F29C197BF00907326 /* ZZBaseLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D009529C197C100907326 /* ZZLoginBaseVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3029C197BF00907326 /* ZZLoginBaseVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D009629C197C100907326 /* ProtocolAndPrivacyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D009729C197C100907326 /* ZZPasswordLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3229C197BF00907326 /* ZZPasswordLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009829C197C100907326 /* ValicodeTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3329C197BF00907326 /* ValicodeTipView.m */; };
 		042D009929C197C100907326 /* ValicodeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3429C197BF00907326 /* ValicodeUtil.m */; };
 		042D009A29C197C100907326 /* CountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3529C197BF00907326 /* CountdownTimer.m */; };
-		042D009B29C197C100907326 /* ZZLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3629C197BF00907326 /* ZZLoginViewController.h */; };
+		042D009B29C197C100907326 /* ZZLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3629C197BF00907326 /* ZZLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009C29C197C100907326 /* ZZLoginBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3729C197BF00907326 /* ZZLoginBaseVC.m */; };
 		042D009D29C197C100907326 /* ZZBaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3829C197BF00907326 /* ZZBaseLoginViewController.m */; };
-		042D009E29C197C100907326 /* ValicodeTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3929C197BF00907326 /* ValicodeTipView.h */; };
+		042D009E29C197C100907326 /* ValicodeTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3929C197BF00907326 /* ValicodeTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009F29C197C100907326 /* ZZPasswordLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3A29C197BF00907326 /* ZZPasswordLoginViewController.m */; };
 		042D00A029C197C100907326 /* ProtocolAndPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3B29C197BF00907326 /* ProtocolAndPrivacyView.m */; };
-		042D00A129C197C100907326 /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3D29C197BF00907326 /* TTRangeSliderDelegate.h */; };
+		042D00A129C197C100907326 /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3D29C197BF00907326 /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00A229C197C100907326 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3E29C197BF00907326 /* TTRangeSlider.m */; };
-		042D00A329C197C100907326 /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3F29C197BF00907326 /* TTRangeSlider.h */; };
+		042D00A329C197C100907326 /* TTRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3F29C197BF00907326 /* TTRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00A429C197C100907326 /* ZZCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4029C197BF00907326 /* ZZCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D00A529C197C100907326 /* ZZTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4229C197C000907326 /* ZZTabBarViewController.h */; };
-		042D00A629C197C100907326 /* QMUICommonViewController+FixBackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4329C197C000907326 /* QMUICommonViewController+FixBackGesture.h */; };
+		042D00A529C197C100907326 /* ZZTabBarViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4229C197C000907326 /* ZZTabBarViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D00A629C197C100907326 /* QMUICommonViewController+FixBackGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4329C197C000907326 /* QMUICommonViewController+FixBackGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00A729C197C100907326 /* ZZCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4429C197C000907326 /* ZZCommonViewController.m */; };
-		042D00A829C197C100907326 /* ZZNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4529C197C000907326 /* ZZNavigationController.h */; };
-		042D00A929C197C100907326 /* ZZCommonTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4629C197C000907326 /* ZZCommonTableViewController.h */; };
-		042D00AA29C197C100907326 /* QMUICommonViewController+Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4729C197C000907326 /* QMUICommonViewController+Alert.h */; };
-		042D00AB29C197C100907326 /* QMUICommonViewController+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4829C197C000907326 /* QMUICommonViewController+Search.h */; };
-		042D00AC29C197C100907326 /* QMUICommonViewController+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4929C197C000907326 /* QMUICommonViewController+EmptyView.h */; };
+		042D00A829C197C100907326 /* ZZNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4529C197C000907326 /* ZZNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D00A929C197C100907326 /* ZZCommonTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4629C197C000907326 /* ZZCommonTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D00AA29C197C100907326 /* QMUICommonViewController+Alert.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4729C197C000907326 /* QMUICommonViewController+Alert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D00AB29C197C100907326 /* QMUICommonViewController+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4829C197C000907326 /* QMUICommonViewController+Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D00AC29C197C100907326 /* QMUICommonViewController+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4929C197C000907326 /* QMUICommonViewController+EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00AD29C197C100907326 /* ZZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4A29C197C000907326 /* ZZTabBarViewController.m */; };
 		042D00AE29C197C100907326 /* QMUICommonViewController+FixBackGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4B29C197C000907326 /* QMUICommonViewController+FixBackGesture.m */; };
 		042D00AF29C197C100907326 /* QMUICommonViewController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4C29C197C000907326 /* QMUICommonViewController+Search.m */; };
 		042D00B029C197C100907326 /* QMUICommonViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4D29C197C000907326 /* QMUICommonViewController+Alert.m */; };
-		042D00B129C197C100907326 /* ZZCommonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4E29C197C000907326 /* ZZCommonViewController.h */; };
+		042D00B129C197C100907326 /* ZZCommonViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF4E29C197C000907326 /* ZZCommonViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00B229C197C100907326 /* ZZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF4F29C197C000907326 /* ZZNavigationController.m */; };
 		042D00B329C197C100907326 /* ZZCommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF5029C197C000907326 /* ZZCommonTableViewController.m */; };
 		042D00B429C197C100907326 /* QMUICommonViewController+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF5129C197C000907326 /* QMUICommonViewController+EmptyView.m */; };
-		042D015C29C1A7B800907326 /* ZZTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015B29C1A7B800907326 /* ZZTheme.h */; };
-		042D015E29C1A81000907326 /* ZZMainFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015D29C1A81000907326 /* ZZMainFrame.h */; };
-		042D016029C1AA3400907326 /* ZZEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015F29C1AA3400907326 /* ZZEnum.h */; };
-		042D016229C1ABA700907326 /* ZZApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016129C1ABA700907326 /* ZZApi.h */; };
-		042D016E29C1AD5900907326 /* UIView+SDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016529C1AD5800907326 /* UIView+SDExtension.h */; };
-		042D016F29C1AD5900907326 /* SDCycleScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016629C1AD5800907326 /* SDCycleScrollView.h */; };
-		042D017029C1AD5900907326 /* SDCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016729C1AD5800907326 /* SDCollectionViewCell.h */; };
+		042D015C29C1A7B800907326 /* ZZTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015B29C1A7B800907326 /* ZZTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D015E29C1A81000907326 /* ZZMainFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015D29C1A81000907326 /* ZZMainFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D016029C1AA3400907326 /* ZZEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D015F29C1AA3400907326 /* ZZEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D016229C1ABA700907326 /* ZZApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016129C1ABA700907326 /* ZZApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D016E29C1AD5900907326 /* UIView+SDExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016529C1AD5800907326 /* UIView+SDExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D016F29C1AD5900907326 /* SDCycleScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016629C1AD5800907326 /* SDCycleScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D017029C1AD5900907326 /* SDCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016729C1AD5800907326 /* SDCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D017129C1AD5900907326 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D016829C1AD5800907326 /* SDCycleScrollView.m */; };
 		042D017229C1AD5900907326 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D016929C1AD5800907326 /* UIView+SDExtension.m */; };
 		042D017329C1AD5900907326 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D016A29C1AD5800907326 /* SDCollectionViewCell.m */; };
-		042D017429C1AD5900907326 /* EllipsePageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016C29C1AD5800907326 /* EllipsePageControl.h */; };
+		042D017429C1AD5900907326 /* EllipsePageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016C29C1AD5800907326 /* EllipsePageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D017529C1AD5900907326 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D016D29C1AD5800907326 /* EllipsePageControl.m */; };
-		042D017B29C1AF7D00907326 /* ZZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017A29C1AF7D00907326 /* ZZUtils.h */; };
-		042D017D29C1B08900907326 /* ZZLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017C29C1B08900907326 /* ZZLogin.h */; };
-		042D017F29C1B16300907326 /* ZZComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017E29C1B16300907326 /* ZZComponents.h */; };
-		042D018129C1B36D00907326 /* ZZOtherLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D018029C1B36D00907326 /* ZZOtherLib.h */; };
+		042D017B29C1AF7D00907326 /* ZZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017A29C1AF7D00907326 /* ZZUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D017D29C1B08900907326 /* ZZLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017C29C1B08900907326 /* ZZLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D017F29C1B16300907326 /* ZZComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017E29C1B16300907326 /* ZZComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D018129C1B36D00907326 /* ZZOtherLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D018029C1B36D00907326 /* ZZOtherLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAAD29C1975F00907326 /* AppDelegate.m */; };
 		042DFAB129C1975F00907326 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAB029C1975F00907326 /* SceneDelegate.m */; };
 		042DFAB429C1975F00907326 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAB329C1975F00907326 /* ViewController.m */; };
@@ -200,48 +200,48 @@
 		042DFABC29C1976000907326 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042DFABA29C1976000907326 /* LaunchScreen.storyboard */; };
 		042DFABF29C1976000907326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFABE29C1976000907326 /* main.m */; };
 		042DFF5329C197C000907326 /* ZZThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDBE29C197BD00907326 /* ZZThemeManager.m */; };
-		042DFF5629C197C000907326 /* ZZThemeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC129C197BD00907326 /* ZZThemeProtocol.h */; };
-		042DFF5729C197C000907326 /* ZZThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC229C197BD00907326 /* ZZThemeManager.h */; };
+		042DFF5629C197C000907326 /* ZZThemeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC129C197BD00907326 /* ZZThemeProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF5729C197C000907326 /* ZZThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC229C197BD00907326 /* ZZThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF5929C197C000907326 /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDC729C197BD00907326 /* BRResultModel.m */; };
-		042DFF5A29C197C000907326 /* BRStringPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC829C197BD00907326 /* BRStringPickerView.h */; };
-		042DFF5B29C197C000907326 /* BRResultModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC929C197BD00907326 /* BRResultModel.h */; };
+		042DFF5A29C197C000907326 /* BRStringPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC829C197BD00907326 /* BRStringPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF5B29C197C000907326 /* BRResultModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDC929C197BD00907326 /* BRResultModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF5C29C197C000907326 /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDCA29C197BD00907326 /* BRStringPickerView.m */; };
-		042DFF5D29C197C000907326 /* BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDCB29C197BD00907326 /* BRPickerView.h */; };
+		042DFF5D29C197C000907326 /* BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDCB29C197BD00907326 /* BRPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF5E29C197C000907326 /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDCD29C197BD00907326 /* BRDatePickerView+BR.m */; };
-		042DFF5F29C197C000907326 /* BRDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDCE29C197BD00907326 /* BRDatePickerView.h */; };
+		042DFF5F29C197C000907326 /* BRDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDCE29C197BD00907326 /* BRDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF6029C197C000907326 /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDCF29C197BD00907326 /* NSDate+BRPickerView.m */; };
 		042DFF6129C197C000907326 /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDD029C197BD00907326 /* BRDatePickerView.m */; };
-		042DFF6229C197C000907326 /* BRDatePickerView+BR.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD129C197BD00907326 /* BRDatePickerView+BR.h */; };
-		042DFF6329C197C000907326 /* NSDate+BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD229C197BD00907326 /* NSDate+BRPickerView.h */; };
-		042DFF6429C197C000907326 /* NSBundle+BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD429C197BD00907326 /* NSBundle+BRPickerView.h */; };
-		042DFF6529C197C000907326 /* BRPickerViewMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD529C197BD00907326 /* BRPickerViewMacro.h */; };
+		042DFF6229C197C000907326 /* BRDatePickerView+BR.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD129C197BD00907326 /* BRDatePickerView+BR.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF6329C197C000907326 /* NSDate+BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD229C197BD00907326 /* NSDate+BRPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF6429C197C000907326 /* NSBundle+BRPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD429C197BD00907326 /* NSBundle+BRPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF6529C197C000907326 /* BRPickerViewMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDD529C197BD00907326 /* BRPickerViewMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF6629C197C000907326 /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042DFDD629C197BD00907326 /* BRPickerView.bundle */; };
 		042DFF6729C197C000907326 /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDD729C197BD00907326 /* BRPickerStyle.m */; };
 		042DFF6829C197C000907326 /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDD829C197BD00907326 /* BRBaseView.m */; };
 		042DFF6929C197C000907326 /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDD929C197BD00907326 /* NSBundle+BRPickerView.m */; };
-		042DFF6A29C197C000907326 /* BRBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDA29C197BD00907326 /* BRBaseView.h */; };
-		042DFF6B29C197C000907326 /* BRPickerStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDB29C197BD00907326 /* BRPickerStyle.h */; };
+		042DFF6A29C197C000907326 /* BRBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDA29C197BD00907326 /* BRBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF6B29C197C000907326 /* BRPickerStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDB29C197BD00907326 /* BRPickerStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF6C29C197C000907326 /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDDD29C197BD00907326 /* BRAddressModel.m */; };
-		042DFF6D29C197C000907326 /* BRAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDE29C197BD00907326 /* BRAddressPickerView.h */; };
-		042DFF6E29C197C000907326 /* BRAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDF29C197BD00907326 /* BRAddressModel.h */; };
+		042DFF6D29C197C000907326 /* BRAddressPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDE29C197BD00907326 /* BRAddressPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF6E29C197C000907326 /* BRAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDDF29C197BD00907326 /* BRAddressModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF6F29C197C000907326 /* BRAddressPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 042DFDE029C197BD00907326 /* BRAddressPickerView.bundle */; };
 		042DFF7029C197C000907326 /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDE129C197BD00907326 /* BRAddressPickerView.m */; };
 		042DFF7129C197C000907326 /* LOTRenderNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDE429C197BD00907326 /* LOTRenderNode.m */; };
-		042DFF7229C197C000907326 /* LOTAnimatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE529C197BD00907326 /* LOTAnimatorNode.h */; };
-		042DFF7329C197C000907326 /* LOTRenderNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE629C197BD00907326 /* LOTRenderNode.h */; };
-		042DFF7429C197C000907326 /* LOTTrimPathNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE829C197BD00907326 /* LOTTrimPathNode.h */; };
+		042DFF7229C197C000907326 /* LOTAnimatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE529C197BD00907326 /* LOTAnimatorNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7329C197C000907326 /* LOTRenderNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE629C197BD00907326 /* LOTRenderNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7429C197C000907326 /* LOTTrimPathNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDE829C197BD00907326 /* LOTTrimPathNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF7529C197C000907326 /* LOTTrimPathNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDE929C197BD00907326 /* LOTTrimPathNode.m */; };
 		042DFF7629C197C000907326 /* LOTColorInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDEB29C197BD00907326 /* LOTColorInterpolator.m */; };
 		042DFF7729C197C000907326 /* LOTPathInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDEC29C197BD00907326 /* LOTPathInterpolator.m */; };
-		042DFF7829C197C000907326 /* LOTSizeInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDED29C197BD00907326 /* LOTSizeInterpolator.h */; };
-		042DFF7929C197C000907326 /* LOTValueInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDEE29C197BD00907326 /* LOTValueInterpolator.h */; };
-		042DFF7A29C197C000907326 /* LOTPointInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDEF29C197BD00907326 /* LOTPointInterpolator.h */; };
-		042DFF7B29C197C000907326 /* LOTNumberInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF029C197BD00907326 /* LOTNumberInterpolator.h */; };
-		042DFF7C29C197C000907326 /* LOTTransformInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF129C197BD00907326 /* LOTTransformInterpolator.h */; };
-		042DFF7D29C197C000907326 /* LOTArrayInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF229C197BD00907326 /* LOTArrayInterpolator.h */; };
-		042DFF7E29C197C000907326 /* LOTColorInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF329C197BD00907326 /* LOTColorInterpolator.h */; };
+		042DFF7829C197C000907326 /* LOTSizeInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDED29C197BD00907326 /* LOTSizeInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7929C197C000907326 /* LOTValueInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDEE29C197BD00907326 /* LOTValueInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7A29C197C000907326 /* LOTPointInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDEF29C197BD00907326 /* LOTPointInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7B29C197C000907326 /* LOTNumberInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF029C197BD00907326 /* LOTNumberInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7C29C197C000907326 /* LOTTransformInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF129C197BD00907326 /* LOTTransformInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7D29C197C000907326 /* LOTArrayInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF229C197BD00907326 /* LOTArrayInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF7E29C197C000907326 /* LOTColorInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF329C197BD00907326 /* LOTColorInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF7F29C197C000907326 /* LOTSizeInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDF429C197BD00907326 /* LOTSizeInterpolator.m */; };
-		042DFF8029C197C000907326 /* LOTPathInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF529C197BD00907326 /* LOTPathInterpolator.h */; };
+		042DFF8029C197C000907326 /* LOTPathInterpolator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFDF529C197BD00907326 /* LOTPathInterpolator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF8129C197C000907326 /* LOTPointInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDF629C197BD00907326 /* LOTPointInterpolator.m */; };
 		042DFF8229C197C000907326 /* LOTValueInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDF729C197BD00907326 /* LOTValueInterpolator.m */; };
 		042DFF8329C197C000907326 /* LOTTransformInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDF829C197BD00907326 /* LOTTransformInterpolator.m */; };
@@ -251,73 +251,73 @@
 		042DFF8729C197C000907326 /* LOTPathAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDFD29C197BD00907326 /* LOTPathAnimator.m */; };
 		042DFF8829C197C000907326 /* LOTPolystarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDFE29C197BD00907326 /* LOTPolystarAnimator.m */; };
 		042DFF8929C197C000907326 /* LOTPolygonAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFDFF29C197BD00907326 /* LOTPolygonAnimator.m */; };
-		042DFF8A29C197C000907326 /* LOTRoundedRectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0029C197BD00907326 /* LOTRoundedRectAnimator.h */; };
+		042DFF8A29C197C000907326 /* LOTRoundedRectAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0029C197BD00907326 /* LOTRoundedRectAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF8B29C197C000907326 /* LOTCircleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0129C197BD00907326 /* LOTCircleAnimator.m */; };
-		042DFF8C29C197C000907326 /* LOTPolystarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0229C197BD00907326 /* LOTPolystarAnimator.h */; };
-		042DFF8D29C197C000907326 /* LOTPathAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0329C197BD00907326 /* LOTPathAnimator.h */; };
-		042DFF8E29C197C000907326 /* LOTCircleAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0429C197BD00907326 /* LOTCircleAnimator.h */; };
+		042DFF8C29C197C000907326 /* LOTPolystarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0229C197BD00907326 /* LOTPolystarAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF8D29C197C000907326 /* LOTPathAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0329C197BD00907326 /* LOTPathAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF8E29C197C000907326 /* LOTCircleAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0429C197BD00907326 /* LOTCircleAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF8F29C197C000907326 /* LOTRoundedRectAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0529C197BD00907326 /* LOTRoundedRectAnimator.m */; };
-		042DFF9029C197C000907326 /* LOTPolygonAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0629C197BD00907326 /* LOTPolygonAnimator.h */; };
+		042DFF9029C197C000907326 /* LOTPolygonAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0629C197BD00907326 /* LOTPolygonAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF9129C197C000907326 /* LOTRenderGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0829C197BD00907326 /* LOTRenderGroup.m */; };
 		042DFF9229C197C000907326 /* LOTGradientFillRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0929C197BD00907326 /* LOTGradientFillRender.m */; };
-		042DFF9329C197C000907326 /* LOTFillRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0A29C197BD00907326 /* LOTFillRenderer.h */; };
-		042DFF9429C197C000907326 /* LOTStrokeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0B29C197BD00907326 /* LOTStrokeRenderer.h */; };
-		042DFF9529C197C000907326 /* LOTRepeaterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0C29C197BD00907326 /* LOTRepeaterRenderer.h */; };
-		042DFF9629C197C000907326 /* LOTRenderGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0D29C197BD00907326 /* LOTRenderGroup.h */; };
+		042DFF9329C197C000907326 /* LOTFillRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0A29C197BD00907326 /* LOTFillRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF9429C197C000907326 /* LOTStrokeRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0B29C197BD00907326 /* LOTStrokeRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF9529C197C000907326 /* LOTRepeaterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0C29C197BD00907326 /* LOTRepeaterRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF9629C197C000907326 /* LOTRenderGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE0D29C197BD00907326 /* LOTRenderGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF9729C197C000907326 /* LOTStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0E29C197BD00907326 /* LOTStrokeRenderer.m */; };
 		042DFF9829C197C000907326 /* LOTFillRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE0F29C197BD00907326 /* LOTFillRenderer.m */; };
-		042DFF9929C197C000907326 /* LOTGradientFillRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1029C197BD00907326 /* LOTGradientFillRender.h */; };
+		042DFF9929C197C000907326 /* LOTGradientFillRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1029C197BD00907326 /* LOTGradientFillRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF9A29C197C000907326 /* LOTRepeaterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1129C197BD00907326 /* LOTRepeaterRenderer.m */; };
-		042DFF9B29C197C000907326 /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1329C197BD00907326 /* UIColor.h */; };
+		042DFF9B29C197C000907326 /* UIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1329C197BD00907326 /* UIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF9C29C197C000907326 /* UIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1429C197BD00907326 /* UIBezierPath.m */; };
-		042DFF9D29C197C000907326 /* CALayer+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1529C197BD00907326 /* CALayer+Compat.h */; };
-		042DFF9E29C197C000907326 /* NSValue+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1629C197BD00907326 /* NSValue+Compat.h */; };
+		042DFF9D29C197C000907326 /* CALayer+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1529C197BD00907326 /* CALayer+Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFF9E29C197C000907326 /* NSValue+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1629C197BD00907326 /* NSValue+Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFF9F29C197C000907326 /* UIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1729C197BD00907326 /* UIColor.m */; };
-		042DFFA029C197C000907326 /* LOTPlatformCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1829C197BD00907326 /* LOTPlatformCompat.h */; };
-		042DFFA129C197C000907326 /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1929C197BD00907326 /* UIBezierPath.h */; };
+		042DFFA029C197C000907326 /* LOTPlatformCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1829C197BD00907326 /* LOTPlatformCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFA129C197C000907326 /* UIBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE1929C197BD00907326 /* UIBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFA229C197C000907326 /* NSValue+Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1A29C197BD00907326 /* NSValue+Compat.m */; };
 		042DFFA329C197C000907326 /* CALayer+Compat.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1B29C197BD00907326 /* CALayer+Compat.m */; };
 		042DFFA429C197C000907326 /* LOTMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1D29C197BD00907326 /* LOTMask.m */; };
 		042DFFA529C197C000907326 /* LOTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1E29C197BD00907326 /* LOTLayer.m */; };
 		042DFFA629C197C000907326 /* LOTAssetGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE1F29C197BD00907326 /* LOTAssetGroup.m */; };
-		042DFFA729C197C000907326 /* LOTShapeRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2029C197BD00907326 /* LOTShapeRectangle.h */; };
-		042DFFA829C197C000907326 /* LOTShapeRepeater.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2129C197BD00907326 /* LOTShapeRepeater.h */; };
-		042DFFA929C197C000907326 /* LOTAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2229C197BD00907326 /* LOTAsset.h */; };
-		042DFFAA29C197C000907326 /* LOTShapeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2329C197BD00907326 /* LOTShapeCircle.h */; };
+		042DFFA729C197C000907326 /* LOTShapeRectangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2029C197BD00907326 /* LOTShapeRectangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFA829C197C000907326 /* LOTShapeRepeater.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2129C197BD00907326 /* LOTShapeRepeater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFA929C197C000907326 /* LOTAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2229C197BD00907326 /* LOTAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFAA29C197C000907326 /* LOTShapeCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2329C197BD00907326 /* LOTShapeCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFAB29C197C000907326 /* LOTLayerGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2429C197BD00907326 /* LOTLayerGroup.m */; };
 		042DFFAC29C197C000907326 /* LOTShapeStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2529C197BD00907326 /* LOTShapeStar.m */; };
 		042DFFAD29C197C000907326 /* LOTShapeTrimPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2629C197BD00907326 /* LOTShapeTrimPath.m */; };
-		042DFFAE29C197C000907326 /* LOTShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2729C197BD00907326 /* LOTShapeGroup.h */; };
-		042DFFAF29C197C000907326 /* LOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2829C197BD00907326 /* LOTShapePath.h */; };
-		042DFFB029C197C000907326 /* LOTShapeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2929C197BD00907326 /* LOTShapeStroke.h */; };
+		042DFFAE29C197C000907326 /* LOTShapeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2729C197BD00907326 /* LOTShapeGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFAF29C197C000907326 /* LOTShapePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2829C197BD00907326 /* LOTShapePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFB029C197C000907326 /* LOTShapeStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2929C197BD00907326 /* LOTShapeStroke.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFB129C197C000907326 /* LOTShapeGradientFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2A29C197BD00907326 /* LOTShapeGradientFill.m */; };
-		042DFFB229C197C000907326 /* LOTShapeFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2B29C197BD00907326 /* LOTShapeFill.h */; };
-		042DFFB329C197C000907326 /* LOTShapeTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2C29C197BD00907326 /* LOTShapeTransform.h */; };
+		042DFFB229C197C000907326 /* LOTShapeFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2B29C197BD00907326 /* LOTShapeFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFB329C197C000907326 /* LOTShapeTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2C29C197BD00907326 /* LOTShapeTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFB429C197C000907326 /* LOTAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2D29C197BD00907326 /* LOTAsset.m */; };
-		042DFFB529C197C000907326 /* LOTModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2E29C197BD00907326 /* LOTModels.h */; };
+		042DFFB529C197C000907326 /* LOTModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE2E29C197BD00907326 /* LOTModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFB629C197C000907326 /* LOTShapeRepeater.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE2F29C197BD00907326 /* LOTShapeRepeater.m */; };
-		042DFFB729C197C000907326 /* LOTAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3029C197BD00907326 /* LOTAssetGroup.h */; };
+		042DFFB729C197C000907326 /* LOTAssetGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3029C197BD00907326 /* LOTAssetGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFB829C197C000907326 /* LOTShapeRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3129C197BD00907326 /* LOTShapeRectangle.m */; };
-		042DFFB929C197C000907326 /* LOTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3229C197BD00907326 /* LOTLayer.h */; };
-		042DFFBA29C197C000907326 /* LOTMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3329C197BD00907326 /* LOTMask.h */; };
-		042DFFBB29C197C000907326 /* LOTShapeStar.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3429C197BD00907326 /* LOTShapeStar.h */; };
-		042DFFBC29C197C000907326 /* LOTLayerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3529C197BD00907326 /* LOTLayerGroup.h */; };
+		042DFFB929C197C000907326 /* LOTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3229C197BD00907326 /* LOTLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFBA29C197C000907326 /* LOTMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3329C197BD00907326 /* LOTMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFBB29C197C000907326 /* LOTShapeStar.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3429C197BD00907326 /* LOTShapeStar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFBC29C197C000907326 /* LOTLayerGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3529C197BD00907326 /* LOTLayerGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFBD29C197C000907326 /* LOTShapeCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3629C197BD00907326 /* LOTShapeCircle.m */; };
 		042DFFBE29C197C000907326 /* LOTShapePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3729C197BD00907326 /* LOTShapePath.m */; };
 		042DFFBF29C197C000907326 /* LOTShapeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3829C197BD00907326 /* LOTShapeGroup.m */; };
-		042DFFC029C197C000907326 /* LOTShapeTrimPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3929C197BD00907326 /* LOTShapeTrimPath.h */; };
+		042DFFC029C197C000907326 /* LOTShapeTrimPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3929C197BD00907326 /* LOTShapeTrimPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFC129C197C000907326 /* LOTShapeFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3A29C197BD00907326 /* LOTShapeFill.m */; };
 		042DFFC229C197C000907326 /* LOTShapeTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3B29C197BD00907326 /* LOTShapeTransform.m */; };
-		042DFFC329C197C000907326 /* LOTShapeGradientFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3C29C197BD00907326 /* LOTShapeGradientFill.h */; };
+		042DFFC329C197C000907326 /* LOTShapeGradientFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3C29C197BD00907326 /* LOTShapeGradientFill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFC429C197C000907326 /* LOTShapeStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE3D29C197BD00907326 /* LOTShapeStroke.m */; };
-		042DFFC529C197C000907326 /* LOTHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3F29C197BD00907326 /* LOTHelpers.h */; };
-		042DFFC629C197C000907326 /* LOTRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4029C197BD00907326 /* LOTRadialGradientLayer.h */; };
+		042DFFC529C197C000907326 /* LOTHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE3F29C197BD00907326 /* LOTHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFC629C197C000907326 /* LOTRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4029C197BD00907326 /* LOTRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFC729C197C000907326 /* CGGeometry+LOTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4129C197BD00907326 /* CGGeometry+LOTAdditions.m */; };
 		042DFFC829C197C000907326 /* LOTBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4229C197BD00907326 /* LOTBezierPath.m */; };
-		042DFFC929C197C000907326 /* UIColor+Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4329C197BD00907326 /* UIColor+Expanded.h */; };
+		042DFFC929C197C000907326 /* UIColor+Expanded.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4329C197BD00907326 /* UIColor+Expanded.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFCA29C197C000907326 /* LOTRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4429C197BD00907326 /* LOTRadialGradientLayer.m */; };
-		042DFFCB29C197C000907326 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4529C197BD00907326 /* CGGeometry+LOTAdditions.h */; };
-		042DFFCC29C197C000907326 /* LOTBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4629C197BD00907326 /* LOTBezierPath.h */; };
+		042DFFCB29C197C000907326 /* CGGeometry+LOTAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4529C197BD00907326 /* CGGeometry+LOTAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFCC29C197C000907326 /* LOTBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4629C197BD00907326 /* LOTBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFCD29C197C000907326 /* UIColor+Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4729C197BD00907326 /* UIColor+Expanded.m */; };
 		042DFFCE29C197C000907326 /* LOTAnimationCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4929C197BD00907326 /* LOTAnimationCache.m */; };
 		042DFFCF29C197C000907326 /* LOTComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4A29C197BD00907326 /* LOTComposition.m */; };
@@ -325,7 +325,7 @@
 		042DFFD129C197C000907326 /* LOTBlockCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4C29C197BD00907326 /* LOTBlockCallback.m */; };
 		042DFFD229C197C000907326 /* LOTAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4D29C197BD00907326 /* LOTAnimationView.m */; };
 		042DFFD329C197C000907326 /* LOTAnimationTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE4E29C197BD00907326 /* LOTAnimationTransitionController.m */; };
-		042DFFD429C197C000907326 /* LOTAnimationView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4F29C197BD00907326 /* LOTAnimationView_Internal.h */; };
+		042DFFD429C197C000907326 /* LOTAnimationView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE4F29C197BD00907326 /* LOTAnimationView_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFD529C197C000907326 /* LOTKeypath.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5029C197BD00907326 /* LOTKeypath.m */; };
 		042DFFD629C197C000907326 /* LOTCacheProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5129C197BD00907326 /* LOTCacheProvider.m */; };
 		042DFFD729C197C000907326 /* LOTAnimatedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5229C197BD00907326 /* LOTAnimatedControl.m */; };
@@ -333,46 +333,47 @@
 		042DFFD929C197C000907326 /* LOTAnimatedSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5429C197BD00907326 /* LOTAnimatedSwitch.m */; };
 		042DFFDA29C197C000907326 /* LOTKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5629C197BD00907326 /* LOTKeyframe.m */; };
 		042DFFDB29C197C000907326 /* LOTBezierData.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5729C197BD00907326 /* LOTBezierData.m */; };
-		042DFFDC29C197C000907326 /* LOTKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5829C197BD00907326 /* LOTKeyframe.h */; };
-		042DFFDD29C197C000907326 /* LOTBezierData.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5929C197BD00907326 /* LOTBezierData.h */; };
+		042DFFDC29C197C000907326 /* LOTKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5829C197BD00907326 /* LOTKeyframe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFDD29C197C000907326 /* LOTBezierData.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5929C197BD00907326 /* LOTBezierData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFDE29C197C000907326 /* LOTLayerContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5B29C197BD00907326 /* LOTLayerContainer.m */; };
-		042DFFDF29C197C000907326 /* LOTCompositionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5C29C197BD00907326 /* LOTCompositionContainer.h */; };
-		042DFFE029C197C000907326 /* LOTMaskContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5D29C197BD00907326 /* LOTMaskContainer.h */; };
-		042DFFE129C197C100907326 /* LOTLayerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5E29C197BD00907326 /* LOTLayerContainer.h */; };
+		042DFFDF29C197C000907326 /* LOTCompositionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5C29C197BD00907326 /* LOTCompositionContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE029C197C000907326 /* LOTMaskContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5D29C197BD00907326 /* LOTMaskContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE129C197C100907326 /* LOTLayerContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE5E29C197BD00907326 /* LOTLayerContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFE229C197C100907326 /* LOTCompositionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE5F29C197BD00907326 /* LOTCompositionContainer.m */; };
 		042DFFE329C197C100907326 /* LOTMaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE6029C197BD00907326 /* LOTMaskContainer.m */; };
-		042DFFE429C197C100907326 /* LOTValueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6229C197BD00907326 /* LOTValueDelegate.h */; };
-		042DFFE529C197C100907326 /* LOTAnimatedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6329C197BD00907326 /* LOTAnimatedControl.h */; };
-		042DFFE629C197C100907326 /* LOTCacheProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6429C197BD00907326 /* LOTCacheProvider.h */; };
-		042DFFE729C197C100907326 /* LOTKeypath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6529C197BD00907326 /* LOTKeypath.h */; };
-		042DFFE829C197C100907326 /* LOTInterpolatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6629C197BD00907326 /* LOTInterpolatorCallback.h */; };
-		042DFFE929C197C100907326 /* LOTAnimatedSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6729C197BD00907326 /* LOTAnimatedSwitch.h */; };
-		042DFFEA29C197C100907326 /* LOTAnimationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6829C197BD00907326 /* LOTAnimationCache.h */; };
-		042DFFEB29C197C100907326 /* Lottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6929C197BD00907326 /* Lottie.h */; };
-		042DFFEC29C197C100907326 /* LOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6A29C197BD00907326 /* LOTComposition.h */; };
-		042DFFED29C197C100907326 /* LOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6B29C197BD00907326 /* LOTAnimationTransitionController.h */; };
-		042DFFEE29C197C100907326 /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6C29C197BD00907326 /* LOTAnimationView.h */; };
-		042DFFEF29C197C100907326 /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6D29C197BD00907326 /* LOTAnimationView_Compat.h */; };
-		042DFFF029C197C100907326 /* LOTValueCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6E29C197BD00907326 /* LOTValueCallback.h */; };
-		042DFFF129C197C100907326 /* LOTBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6F29C197BD00907326 /* LOTBlockCallback.h */; };
+		042DFFE429C197C100907326 /* LOTValueDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6229C197BD00907326 /* LOTValueDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE529C197C100907326 /* LOTAnimatedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6329C197BD00907326 /* LOTAnimatedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE629C197C100907326 /* LOTCacheProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6429C197BD00907326 /* LOTCacheProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE729C197C100907326 /* LOTKeypath.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6529C197BD00907326 /* LOTKeypath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE829C197C100907326 /* LOTInterpolatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6629C197BD00907326 /* LOTInterpolatorCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFE929C197C100907326 /* LOTAnimatedSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6729C197BD00907326 /* LOTAnimatedSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFEA29C197C100907326 /* LOTAnimationCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6829C197BD00907326 /* LOTAnimationCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFEB29C197C100907326 /* Lottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6929C197BD00907326 /* Lottie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFEC29C197C100907326 /* LOTComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6A29C197BD00907326 /* LOTComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFED29C197C100907326 /* LOTAnimationTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6B29C197BD00907326 /* LOTAnimationTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFEE29C197C100907326 /* LOTAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6C29C197BD00907326 /* LOTAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFEF29C197C100907326 /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6D29C197BD00907326 /* LOTAnimationView_Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFF029C197C100907326 /* LOTValueCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6E29C197BD00907326 /* LOTValueCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFF129C197C100907326 /* LOTBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6F29C197BD00907326 /* LOTBlockCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF229C197C100907326 /* AVAudioSession+QDAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */; };
 		042DFFF329C197C100907326 /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7229C197BD00907326 /* NSString+AES.m */; };
 		042DFFF429C197C100907326 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7329C197BD00907326 /* TimeUtil.m */; };
-		042DFFF529C197C100907326 /* ComUserHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7429C197BD00907326 /* ComUserHelper.h */; };
+		042DFFF529C197C100907326 /* ComUserHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7429C197BD00907326 /* ComUserHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF629C197C100907326 /* UUIDStringThen.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7529C197BD00907326 /* UUIDStringThen.m */; };
-		042DFFF729C197C100907326 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7629C197BD00907326 /* NSDictionary+Extension.h */; };
-		042DFFF829C197C100907326 /* UIImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7729C197BD00907326 /* UIImageEffects.h */; };
-		042DFFF929C197C100907326 /* UIScrollView+RequestPageExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7829C197BD00907326 /* UIScrollView+RequestPageExtension.h */; };
-		042DFFFA29C197C100907326 /* UIImageView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7929C197BD00907326 /* UIImageView+Extension.h */; };
-		042DFFFB29C197C100907326 /* QDDialogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7A29C197BD00907326 /* QDDialogHelper.h */; };
-		042DFFFC29C197C100907326 /* ColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7B29C197BD00907326 /* ColorUtil.h */; };
+		042DFFF729C197C100907326 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7629C197BD00907326 /* NSDictionary+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFF829C197C100907326 /* UIImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7729C197BD00907326 /* UIImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFF929C197C100907326 /* UIScrollView+RequestPageExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7829C197BD00907326 /* UIScrollView+RequestPageExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFFA29C197C100907326 /* UIImageView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7929C197BD00907326 /* UIImageView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFFB29C197C100907326 /* QDDialogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7A29C197BD00907326 /* QDDialogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFFC29C197C100907326 /* ColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7B29C197BD00907326 /* ColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFFD29C197C100907326 /* UIView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7C29C197BD00907326 /* UIView+EmptyView.m */; };
 		042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7D29C197BD00907326 /* NSBundle+Extension.m */; };
-		042DFFFF29C197C100907326 /* QDNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* QDNavigateHelper.h */; };
+		042DFFFF29C197C100907326 /* QDNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* QDNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		043DF7DB29C30BDB0074EC08 /* ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; };
 		04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64029C1BC780017C7FB /* ZZImagePicker.m */; };
-		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; };
+		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9F64729C1BD7F0017C7FB /* ZZImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */; };
-		04E9F64829C1BD7F0017C7FB /* ZZImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */; };
+		04E9F64829C1BD7F0017C7FB /* ZZImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BECD5BA34473C55EDDAC5C7B /* Pods_ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */; };
 		F38C59DEEE931898015587FB /* Pods_ZZCommonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7582CBC0BEAEFA6BCF69185 /* Pods_ZZCommonDemo.framework */; };
 /* End PBXBuildFile section */
@@ -771,6 +772,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043DF7DB29C30BDB0074EC08 /* ZZCommon.framework in Frameworks */,
 				F38C59DEEE931898015587FB /* Pods_ZZCommonDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1626,20 +1628,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */,
-				042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */,
 				042D017F29C1B16300907326 /* ZZComponents.h in Headers */,
 				042D000329C197C100907326 /* GTMBase64.h in Headers */,
 				042D005E29C197C100907326 /* CheckRadioView.h in Headers */,
-				042D016229C1ABA700907326 /* ZZApi.h in Headers */,
 				042DFF6529C197C000907326 /* BRPickerViewMacro.h in Headers */,
 				042DFFC929C197C000907326 /* UIColor+Expanded.h in Headers */,
 				042D008529C197C100907326 /* CommonWebShareBarView.h in Headers */,
-				042D002929C197C100907326 /* ZZApiHeader.h in Headers */,
 				042DFFE429C197C100907326 /* LOTValueDelegate.h in Headers */,
 				042DFFCC29C197C000907326 /* LOTBezierPath.h in Headers */,
 				042D006C29C197C100907326 /* ZZWelcomeViewController.h in Headers */,
 				042D003C29C197C100907326 /* PageModel.h in Headers */,
-				042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */,
 				042DFFFF29C197C100907326 /* QDNavigateHelper.h in Headers */,
 				042D000229C197C100907326 /* UIView+Extension.h in Headers */,
 				042DFF7E29C197C000907326 /* LOTColorInterpolator.h in Headers */,
@@ -1675,7 +1673,6 @@
 				042DFF7429C197C000907326 /* LOTTrimPathNode.h in Headers */,
 				042DFFA829C197C000907326 /* LOTShapeRepeater.h in Headers */,
 				042D009129C197C100907326 /* CountdownTimer.h in Headers */,
-				042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */,
 				042DFFBA29C197C000907326 /* LOTMask.h in Headers */,
 				042DFF6D29C197C000907326 /* BRAddressPickerView.h in Headers */,
 				042D00A829C197C100907326 /* ZZNavigationController.h in Headers */,
@@ -1722,11 +1719,8 @@
 				042D016F29C1AD5900907326 /* SDCycleScrollView.h in Headers */,
 				042D00A629C197C100907326 /* QMUICommonViewController+FixBackGesture.h in Headers */,
 				042DFF6A29C197C000907326 /* BRBaseView.h in Headers */,
-				042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */,
-				042D003829C197C100907326 /* AppVersionModel.h in Headers */,
 				042D00AB29C197C100907326 /* QMUICommonViewController+Search.h in Headers */,
 				042DFFE129C197C100907326 /* LOTLayerContainer.h in Headers */,
-				042D003429C197C100907326 /* ZZCommonMacros.h in Headers */,
 				042DFF5D29C197C000907326 /* BRPickerView.h in Headers */,
 				042D008629C197C100907326 /* CommonWebViewController.h in Headers */,
 				042D00A129C197C100907326 /* TTRangeSliderDelegate.h in Headers */,
@@ -1765,7 +1759,6 @@
 				042D007829C197C100907326 /* ZZMultipleImagePickerPreviewViewController.h in Headers */,
 				042DFFEA29C197C100907326 /* LOTAnimationCache.h in Headers */,
 				042DFF8029C197C000907326 /* LOTPathInterpolator.h in Headers */,
-				042D002B29C197C100907326 /* ZZApiHelper.h in Headers */,
 				042DFF7B29C197C000907326 /* LOTNumberInterpolator.h in Headers */,
 				042DFFEE29C197C100907326 /* LOTAnimationView.h in Headers */,
 				042D005929C197C100907326 /* ZZFilterView.h in Headers */,
@@ -1796,7 +1789,6 @@
 				042D006329C197C100907326 /* SegmentHeaderView.h in Headers */,
 				042D001729C197C100907326 /* NSBundle+Extension.h in Headers */,
 				042D007929C197C100907326 /* ZZImagePickerController.h in Headers */,
-				042D00A429C197C100907326 /* ZZCommon.h in Headers */,
 				042DFFFB29C197C100907326 /* QDDialogHelper.h in Headers */,
 				042D002129C197C100907326 /* MIUAES.h in Headers */,
 				042D015C29C1A7B800907326 /* ZZTheme.h in Headers */,
@@ -1815,6 +1807,16 @@
 				042D007F29C197C100907326 /* CountdownViewController.h in Headers */,
 				042D007B29C197C100907326 /* JHVerificationCodeView.h in Headers */,
 				042DFFC029C197C000907326 /* LOTShapeTrimPath.h in Headers */,
+				042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */,
+				042D016229C1ABA700907326 /* ZZApi.h in Headers */,
+				042D002929C197C100907326 /* ZZApiHeader.h in Headers */,
+				042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */,
+				042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */,
+				042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */,
+				042D003829C197C100907326 /* AppVersionModel.h in Headers */,
+				042D003429C197C100907326 /* ZZCommonMacros.h in Headers */,
+				042D002B29C197C100907326 /* ZZApiHelper.h in Headers */,
+				042D00A429C197C100907326 /* ZZCommon.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2385,6 +2387,55 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DateTools\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"PhotosUI\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"QMUIKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YTKNetwork\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZZCommon.ZZCommonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -2414,6 +2465,55 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DateTools\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"IQKeyboardManager\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"Photos\"",
+					"-framework",
+					"\"PhotosUI\"",
+					"-framework",
+					"\"PureLayout\"",
+					"-framework",
+					"\"QMUIKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"YTKNetwork\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZZCommon.ZZCommonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
