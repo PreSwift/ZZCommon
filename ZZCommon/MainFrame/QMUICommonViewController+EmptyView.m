@@ -5,6 +5,7 @@
 //
 
 #import "QMUICommonViewController+EmptyView.h"
+#import "ZZCommonMacros.h"
 
 @implementation QMUICommonViewController (EmptyView)
 

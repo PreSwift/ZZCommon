@@ -8,6 +8,7 @@
 
 #import "CountdownTimer.h"
 #import <pthread/pthread.h>
+#import "ZZCommonMacros.h"
 
 @interface CountdownTimer()
 @property (nonatomic, strong) NSMutableDictionary <NSNumber *, dispatch_source_t> *timers;

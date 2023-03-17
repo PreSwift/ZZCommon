@@ -5,6 +5,7 @@
 //
 
 #import "CheckButton.h"
+#import "ZZCommonMacros.h"
 
 @interface CheckButtonCollectionItemCell : UICollectionViewCell
 

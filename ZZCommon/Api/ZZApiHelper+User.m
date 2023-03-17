@@ -5,6 +5,7 @@
 //
 
 #import "ZZApiHelper+User.h"
+#import "ZZCommonMacros.h"
 
 @implementation ZZApiHelper (User)
 

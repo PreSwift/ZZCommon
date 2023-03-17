@@ -5,6 +5,7 @@
 //
 
 #import "CommonWebShareBarView.h"
+#import "ZZCommonMacros.h"
 
 @interface CommonWebShareBarView ()
 

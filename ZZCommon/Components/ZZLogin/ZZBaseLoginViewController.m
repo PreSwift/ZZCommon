@@ -6,6 +6,7 @@
 
 #import "ZZBaseLoginViewController.h"
 #import "ZZPasswordLoginViewController.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZBaseLoginViewController ()
 

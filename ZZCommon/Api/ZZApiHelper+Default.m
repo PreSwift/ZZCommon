@@ -5,6 +5,7 @@
 //
 
 #import "ZZApiHelper+Default.h"
+#import "ZZCommonMacros.h"
 
 @implementation ZZApiHelper (Default)
 

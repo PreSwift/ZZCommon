@@ -5,6 +5,7 @@
 //
 
 #import "CheckImageButton.h"
+#import "ZZCommonMacros.h"
 
 @interface CheckImageButton ()
 

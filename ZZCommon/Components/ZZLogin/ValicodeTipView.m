@@ -5,6 +5,7 @@
 //
 
 #import "ValicodeTipView.h"
+#import "ZZCommonMacros.h"
 
 @interface ValicodeTipView ()
 

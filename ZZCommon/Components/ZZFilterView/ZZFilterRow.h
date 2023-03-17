@@ -5,6 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZZCommonMacros.h"
 
 #define TitleHeight SS(22)
 #define SpaceTitle Spaceing(5)

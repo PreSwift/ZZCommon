@@ -5,6 +5,7 @@
 //
 
 #import "QDDialogHelper.h"
+#import "ZZCommonMacros.h"
 
 @implementation QDDialogHelper
 

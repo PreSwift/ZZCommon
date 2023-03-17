@@ -3,6 +3,7 @@
 //
 
 #import "ZZMultipleImagePickerPreviewViewController.h"
+#import "ZZCommonMacros.h"
 
 #define ImageCountLabelSize CGSizeMake(18, 18)
 

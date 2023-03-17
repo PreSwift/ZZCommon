@@ -3,6 +3,7 @@
 //
 
 #import "ZZThemeManager.h"
+#import "ZZCommonMacros.h"
 
 NSString *const QDSelectedThemeIdentifier = @"selectedThemeIdentifier";
 NSString *const QDThemeIdentifierDefault = @"Default";

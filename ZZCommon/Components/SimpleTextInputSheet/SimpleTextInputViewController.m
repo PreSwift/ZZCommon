@@ -5,6 +5,7 @@
 //
 
 #import "SimpleTextInputViewController.h"
+#import "ZZCommonMacros.h"
 
 @interface SimpleTextInputViewController () <QMUITextFieldDelegate>
 

@@ -5,6 +5,7 @@
 //
 
 #import "ZZImagePicker.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZImagePicker() <UIImagePickerControllerDelegate, UINavigationControllerDelegate, ZZImagePickerControllerDelegate>
 

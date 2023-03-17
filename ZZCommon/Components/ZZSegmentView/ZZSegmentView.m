@@ -5,6 +5,7 @@
 //
 
 #import "ZZSegmentView.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZSegmentView ()
 

@@ -2,6 +2,7 @@
 //  ZZTabBarViewController.h
 //
 
+#import <QMUIKit/QMUIKit.h>
 
 @interface ZZTabBarViewController : QMUITabBarViewController
 

@@ -7,7 +7,7 @@
 #import "CommonWebViewController.h"
 #import "CommonWebViewDelegate.h"
 #import "CommonWebShareBarView.h"
-
+#import "ZZCommonMacros.h"
 
 #define SaveEmailKey @"SaveEmailKey"
 

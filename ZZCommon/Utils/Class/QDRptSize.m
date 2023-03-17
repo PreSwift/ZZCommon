@@ -5,6 +5,7 @@
 //
 
 #import "QDRptSize.h"
+#import "ZZCommonMacros.h"
 
 static CGFloat globalMuta = -1;
 

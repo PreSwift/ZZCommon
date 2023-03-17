@@ -5,6 +5,7 @@
 //
 
 #import "PopupMenuButton.h"
+#import "ZZCommonMacros.h"
 
 @interface PopupMenuButton<T:NSObject *> ()
 

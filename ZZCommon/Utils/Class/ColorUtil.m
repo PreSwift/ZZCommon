@@ -5,6 +5,7 @@
 //
 
 #import "ColorUtil.h"
+#import "ZZCommonMacros.h"
 
 @implementation ColorUtil
 

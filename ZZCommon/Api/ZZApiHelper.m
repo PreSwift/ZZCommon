@@ -6,6 +6,7 @@
 
 #import "ZZApiHelper.h"
 #import "ZZBaseLoginViewController.h"
+#import "ZZCommonMacros.h"
 
 NSString * _Nullable BASE_HOST;
 NSString * _Nullable BASE_WEB_HOST;

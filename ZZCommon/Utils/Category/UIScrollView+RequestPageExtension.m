@@ -6,6 +6,7 @@
 
 #import "UIScrollView+RequestPageExtension.h"
 #import <objc/runtime.h>
+#import "ZZCommonMacros.h"
 
 @interface UIScrollView (RequestPageExtension)
 

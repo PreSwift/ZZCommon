@@ -5,6 +5,7 @@
 #import "ZZTabBarViewController.h"
 #import "ZZLoginViewController.h"
 #import "ZZWelcomeViewController.h"
+#import "ZZNavigationController.h"
 
 @interface ZZTabBarViewController ()
 

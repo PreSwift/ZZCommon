@@ -5,6 +5,7 @@
 //
 
 #import "QDRefreshHeader.h"
+#import "ZZCommonMacros.h"
 
 @implementation QDRefreshHeader
 

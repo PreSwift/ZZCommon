@@ -5,6 +5,7 @@
 //
 
 #import "QDRefreshFooter.h"
+#import "ZZCommonMacros.h"
 
 @implementation QDRefreshFooter
 

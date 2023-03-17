@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZZCommonMacros.h"
 
 @interface QDUIHelper : NSObject
 

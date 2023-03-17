@@ -5,6 +5,7 @@
 //
 
 #import "ZZNumberInputView.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZNumberInputView ()
 

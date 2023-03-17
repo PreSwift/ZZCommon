@@ -7,6 +7,8 @@
 #import <UIKit/UIKit.h>
 #import "ZZFilterItemCell.h"
 
+@class ZZFilterRow;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZZFilterView : UIView

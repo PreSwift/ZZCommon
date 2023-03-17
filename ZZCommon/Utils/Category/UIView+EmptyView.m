@@ -5,6 +5,7 @@
 //
 
 #import "UIView+EmptyView.h"
+#import "ZZCommonMacros.h"
 
 @interface UIView (EmptyView)
 

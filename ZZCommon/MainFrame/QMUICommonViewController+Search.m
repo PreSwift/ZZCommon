@@ -5,6 +5,7 @@
 //
 
 #import "QMUICommonViewController+Search.h"
+#import "ZZCommonMacros.h"
 
 @interface QMUICommonViewController (Search)<UISearchBarDelegate>
 

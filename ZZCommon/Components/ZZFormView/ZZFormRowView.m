@@ -5,6 +5,7 @@
 //
 
 #import "ZZFormRowView.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZFormRowView ()
 

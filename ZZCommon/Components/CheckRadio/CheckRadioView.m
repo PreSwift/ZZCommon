@@ -6,6 +6,7 @@
 
 #import "CheckRadioView.h"
 #import "CheckRadioItem.h"
+#import "ZZCommonMacros.h"
 
 @interface CheckRadioView ()
 

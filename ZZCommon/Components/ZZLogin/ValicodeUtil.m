@@ -5,6 +5,7 @@
 //
 
 #import "ValicodeUtil.h"
+#import "ZZCommonMacros.h"
 
 @implementation ValicodeUtil
 

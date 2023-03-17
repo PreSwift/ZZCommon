@@ -5,6 +5,7 @@
 //
 
 #import "GridImageView.h"
+#import "ZZCommonMacros.h"
 
 @interface GridImageView ()
 

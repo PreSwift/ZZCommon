@@ -5,6 +5,9 @@
 //
 
 #import "ZZFilterItemCell.h"
+#import <QMUIKit.h>
+#import <PureLayout.h>
+#import "QDUIHelper.h"
 
 @interface ZZFilterItemCell ()
 

@@ -28,6 +28,7 @@
 //  SOFTWARE.
 
 #import "JHVerificationCodeView.h"
+#import "ZZCommonMacros.h"
 
 #define kFlickerAnimation @"kFlickerAnimation"
 

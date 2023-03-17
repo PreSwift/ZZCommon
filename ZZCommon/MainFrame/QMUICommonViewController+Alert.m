@@ -5,6 +5,7 @@
 //
 
 #import "QMUICommonViewController+Alert.h"
+#import "ZZCommonMacros.h"
 
 @implementation QMUICommonViewController (Alert)
 

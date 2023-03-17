@@ -8,6 +8,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class IDNameModel;
+
 @interface CheckButton : QMUIButton
 
 @property(nonatomic, strong, readonly) NSArray<IDNameModel *> *checkItems;

@@ -8,6 +8,7 @@
 #import "ZZTabBarViewController.h"
 #import "ProtocolAndPrivacyView.h"
 #import "ZZPasswordLoginViewController.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZLoginViewController ()
 

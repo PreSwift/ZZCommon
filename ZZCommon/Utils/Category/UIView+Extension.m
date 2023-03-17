@@ -5,6 +5,7 @@
 //
 
 #import "UIView+Extension.h"
+#import "ZZCommonMacros.h"
 
 
 @implementation UIView (Extension)

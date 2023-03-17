@@ -6,6 +6,7 @@
 
 #import "ProtocolAndPrivacyView.h"
 #import "CommonWebViewController.h"
+#import "ZZCommonMacros.h"
 
 @interface ProtocolAndPrivacyView ()
 

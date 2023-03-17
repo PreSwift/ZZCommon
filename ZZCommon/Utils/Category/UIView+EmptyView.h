@@ -5,6 +5,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QMUIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

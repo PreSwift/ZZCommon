@@ -9,6 +9,7 @@
 
 #import "BRPickerStyle.h"
 #import "NSBundle+BRPickerView.h"
+#import "ZZCommonMacros.h"
 
 // 标题颜色
 #define kBRDefaultTextColor BR_RGB_HEX(0x333333, 1.0f)

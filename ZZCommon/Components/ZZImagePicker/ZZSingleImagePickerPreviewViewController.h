@@ -2,6 +2,8 @@
 //  ZZSingleImagePickerPreviewViewController.h
 //
 
+#import <QMUIKit.h>
+
 @class ZZSingleImagePickerPreviewViewController;
 
 @protocol ZZSingleImagePickerPreviewViewControllerDelegate <QMUIImagePickerPreviewViewControllerDelegate>

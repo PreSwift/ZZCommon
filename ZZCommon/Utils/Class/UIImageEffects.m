@@ -48,6 +48,7 @@
  */
 
 #import "UIImageEffects.h"
+#import <UIKit/UIKit.h>
 
 @import Accelerate;
 

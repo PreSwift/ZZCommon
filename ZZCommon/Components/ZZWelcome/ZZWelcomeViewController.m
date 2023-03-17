@@ -8,6 +8,7 @@
 #import "SDCycleScrollView.h"
 #import "ZZWelcomePageItem.h"
 #import "ZZTabBarViewController.h"
+#import "ZZCommonMacros.h"
 
 @interface QDWelcomeCollectionCell : UICollectionViewCell
 

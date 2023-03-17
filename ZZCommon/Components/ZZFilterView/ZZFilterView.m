@@ -5,6 +5,7 @@
 //
 
 #import "ZZFilterView.h"
+#import "ZZCommonMacros.h"
 
 @interface ZZFilterView () <UICollectionViewDataSource, UICollectionViewDelegate, UIGestureRecognizerDelegate>
 

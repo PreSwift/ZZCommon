@@ -5,6 +5,7 @@
 //
 
 #import "SegmentHeaderView.h"
+#import "ZZCommonMacros.h"
 
 @interface SegmentHeaderView()
 

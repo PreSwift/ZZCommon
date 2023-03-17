@@ -5,6 +5,7 @@
 //
 
 #import "ListRowTitleTableViewCell.h"
+#import "ZZCommonMacros.h"
 
 @interface ListRowTitleTableViewCell ()
 

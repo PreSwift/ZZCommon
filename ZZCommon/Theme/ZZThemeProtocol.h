@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QMUIKit/QMUIKit.h>
 
 /// 所有主题均应实现这个协议，规定了 QMUI Demo 里常用的几个关键外观属性
 @protocol ZZThemeProtocol <QMUIConfigurationTemplateProtocol>

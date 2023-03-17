@@ -5,6 +5,7 @@
 //
 
 #import "ZZLoginBaseVC.h"
+#import "QDUITips.h"
 
 @interface ZZLoginBaseVC ()
 

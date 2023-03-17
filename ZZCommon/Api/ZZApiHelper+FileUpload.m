@@ -5,6 +5,7 @@
 //
 
 #import "ZZApiHelper+FileUpload.h"
+#import "ZZCommonMacros.h"
 
 @implementation ComUploadFileData
 

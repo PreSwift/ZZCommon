@@ -5,6 +5,7 @@
 //
 
 #import "CheckRadioItem.h"
+#import "ZZCommonMacros.h"
 
 @implementation CheckRadioItem
 

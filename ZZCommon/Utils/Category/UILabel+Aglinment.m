@@ -6,6 +6,7 @@
 
 #import "UILabel+Aglinment.h"
 #import <CoreText/CoreText.h>
+#import "ZZCommonMacros.h"
 
 @implementation UILabel (Aglinment)
 
