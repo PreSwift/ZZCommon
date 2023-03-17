@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZZCommon"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "收集整合的一些常用工具和代码"
 
   # This description is used to generate tags and improve search results.
@@ -146,7 +146,7 @@ Pod::Spec.new do |spec|
     'CLANG_ENABLE_OBJC_WEAK' => 'YES'
   }
 
-  # spec.prefix_header_file = 'ZZCommon/ZZCommonMacros.h'
+  spec.prefix_header_file = 'ZZCommon/ZZCommonMacros.h'
 
   spec.requires_arc = true
   non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{m}'
