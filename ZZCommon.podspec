@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZZCommon"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "收集整合的一些常用工具和代码"
 
   # This description is used to generate tags and improve search results.
@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = "Foundation", "UIKit"
 
   # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+  spec.libraries = "sqlite3", "c++"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -127,8 +127,6 @@ Pod::Spec.new do |spec|
   #  If your library depends on compiler flags you can set them in the xcconfig hash
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
-
-  # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "QMUIKit", "4.6.0"
@@ -142,6 +140,20 @@ Pod::Spec.new do |spec|
   spec.dependency "DateTools"
   spec.dependency "ReactiveObjC"
 
-  spec.prefix_header_file = 'ZZCommon/ZZCommonMacros.h'
+  # ――― Build settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+  spec.xcconfig = {
+    'CLANG_ENABLE_OBJC_WEAK' => 'YES'
+  }
+
+  # spec.prefix_header_file = 'ZZCommon/ZZCommonMacros.h'
+
+  spec.requires_arc = true
+  non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{m}'
+  spec.exclude_files = non_arc_files
+  spec.subspec 'no-arc' do |sp|
+    sp.source_files = non_arc_files
+    sp.requires_arc = false
+  end
 
 end
