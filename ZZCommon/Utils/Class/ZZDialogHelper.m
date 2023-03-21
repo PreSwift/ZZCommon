@@ -1,16 +1,16 @@
 //
-//  QDDialogHelper.m
+//  ZZDialogHelper.m
 
 //  Created by west007 on 2021/7/13.
 //
 
-#import "QDDialogHelper.h"
+#import "ZZDialogHelper.h"
 #import "ZZCommonMacros.h"
 
-@implementation QDDialogHelper
+@implementation ZZDialogHelper
 
 + (void)showAlertDialog:(NSString *)title content:(NSString *)content okBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))block {
-    [QDDialogHelper showAlertDialog:title content:content okBtnTitle:@"我知道了" okBlock:block];
+    [ZZDialogHelper showAlertDialog:title content:content okBtnTitle:@"我知道了" okBlock:block];
 }
 
 + (void)showAlertDialog:(NSString *)title content:(NSString *)content okBtnTitle:(NSString *)okBtnTitle okBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))block {

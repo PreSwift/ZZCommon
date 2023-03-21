@@ -5,8 +5,8 @@
 //
 
 #import "ZZApiHeader.h"
-#import <YTKNetwork.h>
-#import <ReactiveObjC.h>
+#import <YTKNetwork/YTKNetwork.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 extern NSString * _Nullable BASE_HOST;
 extern NSString * _Nullable BASE_WEB_HOST;

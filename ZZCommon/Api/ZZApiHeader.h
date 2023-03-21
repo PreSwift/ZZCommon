@@ -10,12 +10,9 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFURLRequestSerialization.h>
 
+#import "UploadResponseModel.h"
+#import "NSString+AES.h"
 #import "ResponseModel.h"
 #import "PageModel.h"
-#import "LoginModel.h"
-#import "FileUploadResponseModel.h"
-#import "NSString+AES.h"
-#import "IDNameModel.h"
-#import "AppVersionModel.h"
 
 #endif /* ZZApiHeader_h */

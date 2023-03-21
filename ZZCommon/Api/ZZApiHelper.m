@@ -5,7 +5,6 @@
 //
 
 #import "ZZApiHelper.h"
-#import "ZZBaseLoginViewController.h"
 #import "ZZCommonMacros.h"
 
 NSString * _Nullable BASE_HOST;
@@ -322,7 +321,7 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
             if (![[QMUIHelper visibleViewController] isKindOfClass:[ZZBaseLoginViewController class]]) {
                 if (![ComUserHelper shareInstance].hasShowOverdue) {
                     [ComUserHelper shareInstance].hasShowOverdue = YES;
-                    [QDDialogHelper showAlertDialog:@"温馨提示" content:errorMsg ? errorMsg : @"用户凭证已过期，请重新登录!" okBlock:^(__kindof QMUIModalPresentationViewController * _Nonnull dialogViewController) {
+                    [ZZDialogHelper showAlertDialog:@"温馨提示" content:errorMsg ? errorMsg : @"用户凭证已过期，请重新登录!" okBlock:^(__kindof QMUIModalPresentationViewController * _Nonnull dialogViewController) {
                         [ComUserHelper logoutWithClear:YES];
                         [ComUserHelper shareInstance].hasShowOverdue = NO;
                     }];

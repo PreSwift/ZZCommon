@@ -208,13 +208,13 @@
         
         CGFloat lx=mpSelect.origin.x;
          if(new<old)
-            lx+=_controlSize;
-        oldSelect.frame=CGRectMake(lx, mpSelect.origin.y, _controlSize, _controlSize);
+             lx+=self->_controlSize;
+        oldSelect.frame=CGRectMake(lx, mpSelect.origin.y, self->_controlSize, self->_controlSize);
  
         CGFloat mx=newTemp.origin.x;
         if(new>old)
-            mx-=_controlSize;
-        newSeltect.frame=CGRectMake(mx, newTemp.origin.y, _controlSize*2, _controlSize);
+            mx-=self->_controlSize;
+        newSeltect.frame=CGRectMake(mx, newTemp.origin.y, self->_controlSize*2, self->_controlSize);
  
         // 左边的时候到右边 越过点击
         if(new-old>1)
@@ -222,7 +222,7 @@
             for(NSInteger t=old+1;t<new;t++)
             {
               UIView *ms=[self viewWithTag:1000+t];
-              ms.frame=CGRectMake(ms.frame.origin.x-_controlSize, ms.frame.origin.y, _controlSize, _controlSize);
+                ms.frame=CGRectMake(ms.frame.origin.x-self->_controlSize, ms.frame.origin.y, self->_controlSize, self->_controlSize);
             }
         }
         // 右边选中到左边的时候 越过点击
@@ -231,7 +231,7 @@
             for(NSInteger t=new+1;t<old;t++)
             {
                 UIView *ms=[self viewWithTag:1000+t];
-                ms.frame=CGRectMake(ms.frame.origin.x+_controlSize, ms.frame.origin.y, _controlSize, _controlSize);
+                ms.frame=CGRectMake(ms.frame.origin.x+self->_controlSize, ms.frame.origin.y, self->_controlSize, self->_controlSize);
             }
         }
         

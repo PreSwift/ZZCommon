@@ -2,7 +2,7 @@
 //  ZZSingleImagePickerPreviewViewController.h
 //
 
-#import <QMUIKit.h>
+#import <QMUIKit/QMUIKit.h>
 
 @class ZZSingleImagePickerPreviewViewController;
 

@@ -147,7 +147,7 @@ Pod::Spec.new do |spec|
   }
 
   spec.requires_arc = true
-  non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{m}'
+  non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{h,m}', 'ZZCommon/Utils/Class/GTMDefines.h'
   spec.exclude_files = non_arc_files
   spec.subspec 'no-arc' do |sp|
     sp.source_files = non_arc_files

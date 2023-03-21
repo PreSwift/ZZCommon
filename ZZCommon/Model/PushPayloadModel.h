@@ -1,5 +1,5 @@
 //
-//  NotificationModel.h
+//  PushPayloadModel.h
 //  ZZCommon
 //
 //  Created by mac on 2023/3/10.
@@ -26,19 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface PayloadModel : NSObject
+@interface PushPayloadModel : NSObject
 
 @property(nonatomic, assign) NSInteger messageType;
 @property(nonatomic, assign) NSInteger objId;
 @property(nonatomic, strong) ApsModel *aps;
-
-@end
-
-@interface NotificationModel : NSObject
-
-@property(nonatomic, strong) NSString * DESC;
-@property(nonatomic, strong) NSString * appKey;
-@property(nonatomic, strong) PayloadModel *payload;
 
 @end
 

@@ -24,7 +24,7 @@
 #import "ZZFormView.h"
 #import "ZZImagePicker.h"
 #import "ZZImagePreviewViewController.h"
-#import "ZZLogin.h"
+#import "ValicodeTipView.h"
 #import "ZZNumberInputView.h"
 #import "ZZSegmentView.h"
 #import "ZZWelcomeViewController.h"

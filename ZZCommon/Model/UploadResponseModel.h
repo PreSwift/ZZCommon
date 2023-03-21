@@ -1,5 +1,5 @@
 //
-//  FileUploadResponseModel.h
+//  UploadResponseModel.h
 
 //  Created by west007 on 2021/7/29.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FileUploadResponseModel : NSObject
+@interface UploadResponseModel : NSObject
 
 @property(nonatomic, copy) NSString *url;
 @property(nonatomic, assign) CGFloat width;

@@ -5,7 +5,7 @@
 //
 
 #import "ZZApiHelper.h"
-#import <QMUIKit.h>
+#import <QMUIKit/QMUIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -63,18 +63,19 @@ NS_ASSUME_NONNULL_BEGIN
  上传单个本地URL文件
  isForBatch:是否为批量上传做数据准备，如果为YES，则success和failure回调无效，可以直接传nil。
  */
-- (ZZApiHelper<FileUploadResponseModel *> *)uploadWithFileURL:(NSURL *)fileURL isAudio:(BOOL)isAudio;
+- (ZZApiHelper<UploadResponseModel *> *)uploadToServerURL:(NSString *)serverURLStr withFileURL:(NSURL *)fileURL isAudio:(BOOL)isAudio;
 
 /**
  上传单个DATA文件
  isForBatch:是否为批量上传做数据准备，如果为YES，则success和failure回调无效，可以直接传nil。
  */
-- (ZZApiHelper<FileUploadResponseModel *> *)uploadWithFileData:(ComUploadFileData *)fileData;
+- (ZZApiHelper<UploadResponseModel *> *)uploadToServerURL:(NSString *)serverURLStr withFileData:(ComUploadFileData *)fileData;
 
 /**
  上传多个文件
  */
-+ (void)uploadWithFileDatas:(NSArray<ComUploadFile *> *)fileDatas
++ (void)uploadToServerURL:(NSString *)serverURLStr
+            withFileDatas:(NSArray<ComUploadFile *> *)fileDatas
            batchRequestTask:(nullable void (^)(YTKBatchRequest * _Nullable batchRequest))batchRequestTask
                     success:(nullable void (^)(YTKBatchRequest * _Nullable batchRequest, NSArray<NSString *> * _Nullable fileUrls))success
                     failure:(nullable void (^)(YTKBatchRequest * _Nullable batchRequest, ResponseModel * _Nullable responseModel))failure;

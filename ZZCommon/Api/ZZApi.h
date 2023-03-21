@@ -10,8 +10,6 @@
 
 #import "ZZApiHeader.h"
 #import "ZZApiHelper+Batch.h"
-#import "ZZApiHelper+User.h"
-#import "ZZApiHelper+Default.h"
 #import "ZZApiHelper+FileUpload.h"
 
 #endif /* ZZApi_h */

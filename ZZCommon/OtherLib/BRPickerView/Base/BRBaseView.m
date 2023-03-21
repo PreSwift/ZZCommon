@@ -263,14 +263,14 @@
         self.frame = view.bounds;
         self.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
-        CGFloat accessoryViewHeight = 0;
+//        CGFloat accessoryViewHeight = 0;
         if (self.pickerHeaderView) {
             CGRect rect = self.pickerHeaderView.frame;
             self.pickerHeaderView.frame = CGRectMake(0, 0, view.bounds.size.width, rect.size.height);
             self.pickerHeaderView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             [self addSubview:self.pickerHeaderView];
             
-            accessoryViewHeight += self.pickerHeaderView.bounds.size.height;
+//            accessoryViewHeight += self.pickerHeaderView.bounds.size.height;
         }
         if (self.pickerFooterView) {
             CGRect rect = self.pickerFooterView.frame;
@@ -278,7 +278,7 @@
             self.pickerFooterView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
             [self addSubview:self.pickerFooterView];
             
-            accessoryViewHeight += self.pickerFooterView.bounds.size.height;
+//            accessoryViewHeight += self.pickerFooterView.bounds.size.height;
         }
         
         [view addSubview:self];

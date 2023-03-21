@@ -1,5 +1,5 @@
 //
-//  QDNavigateHelper.h
+//  ZZNavigateHelper.h
 
 //  Created by westMac on 2021/10/21.
 //
@@ -8,13 +8,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol QDNavigateHelper <NSObject>
+@protocol ZZNavigateHelper <NSObject>
 
 + (void)pushToVCWith:(NSString *)jumnData;
 
 @end
 
-@interface QDNavigateHelper : NSObject <QDNavigateHelper>
+@interface ZZNavigateHelper : NSObject <ZZNavigateHelper>
 
 @end
 

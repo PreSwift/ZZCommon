@@ -89,10 +89,10 @@
         inputBoxWidth = _config.inputBoxWidth;
     }
     
-    CGFloat leftMargin = 0;
+//    CGFloat leftMargin = 0;
     if (inputBoxWidth > 0) {
         _config.leftMargin = (CGRectGetWidth(frame)-inputBoxWidth*_config.inputBoxNumber-inputBoxSpacing*(_config.inputBoxNumber-1))*0.5;
-        leftMargin = _config.leftMargin;
+//        leftMargin = _config.leftMargin;
     }else{
         _config.inputBoxWidth = (CGRectGetWidth(frame)-inputBoxSpacing*(_config.inputBoxNumber-1)-_config.leftMargin*2)/_config.inputBoxNumber;
         inputBoxWidth = _config.inputBoxWidth;
@@ -102,7 +102,7 @@
         _config.leftMargin = 0;
         _config.inputBoxWidth = (CGRectGetWidth(frame)-inputBoxSpacing*(_config.inputBoxNumber-1)-_config.leftMargin*2)/_config.inputBoxNumber;
         
-        leftMargin = _config.leftMargin;
+//        leftMargin = _config.leftMargin;
         inputBoxWidth = _config.inputBoxWidth;
     }
     

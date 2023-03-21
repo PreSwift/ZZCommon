@@ -10,7 +10,6 @@
 
 #import "AVAudioSession+QDAudioSession.h"
 #import "ColorUtil.h"
-#import "ComUserHelper.h"
 #import "GTMBase64.h"
 #import "GTMDefines.h"
 #import "HtmlUtil.h"
@@ -19,8 +18,8 @@
 #import "NSDictionary+Extension.h"
 #import "NSString+AES.h"
 #import "NSStringUtil.h"
-#import "QDDialogHelper.h"
-#import "QDNavigateHelper.h"
+#import "ZZDialogHelper.h"
+#import "ZZNavigateHelper.h"
 #import "QDRefreshFooter.h"
 #import "QDRefreshHeader.h"
 #import "QDRptSize.h"

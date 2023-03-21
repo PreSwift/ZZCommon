@@ -1,12 +1,12 @@
 //
-//  QDNavigateHelper.m
+//  ZZNavigateHelper.m
 
 //  Created by westMac on 2021/10/21.
 //
 
-#import "QDNavigateHelper.h"
+#import "ZZNavigateHelper.h"
 
-@implementation QDNavigateHelper
+@implementation ZZNavigateHelper
 
 + (void)pushToVCWith:(nonnull NSString *)jumnData {
     

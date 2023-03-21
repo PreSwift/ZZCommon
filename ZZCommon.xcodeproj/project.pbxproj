@@ -24,7 +24,6 @@
 		042D000E29C197C100907326 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8D29C197BD00907326 /* UIImageEffects.m */; };
 		042D000F29C197C100907326 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8E29C197BD00907326 /* NSDictionary+Extension.m */; };
 		042D001029C197C100907326 /* UUIDStringThen.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8F29C197BD00907326 /* UUIDStringThen.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D001129C197C100907326 /* ComUserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9029C197BD00907326 /* ComUserHelper.m */; };
 		042D001229C197C100907326 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9129C197BD00907326 /* TimeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,7 +32,7 @@
 		042D001729C197C100907326 /* NSBundle+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9629C197BD00907326 /* NSBundle+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001829C197C100907326 /* UIView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9729C197BD00907326 /* UIView+EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001929C197C100907326 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9829C197BD00907326 /* ColorUtil.m */; };
-		042D001A29C197C100907326 /* QDDialogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9929C197BD00907326 /* QDDialogHelper.m */; };
+		042D001A29C197C100907326 /* ZZDialogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9929C197BD00907326 /* ZZDialogHelper.m */; };
 		042D001B29C197C100907326 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9A29C197BD00907326 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001C29C197C100907326 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9B29C197BD00907326 /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001D29C197C100907326 /* QDUITips.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9C29C197BD00907326 /* QDUITips.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,28 +50,20 @@
 		042D002929C197C100907326 /* ZZApiHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAA29C197BE00907326 /* ZZApiHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002A29C197C100907326 /* ZZApiHelper+FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAB29C197BE00907326 /* ZZApiHelper+FileUpload.m */; };
 		042D002B29C197C100907326 /* ZZApiHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAC29C197BE00907326 /* ZZApiHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEAD29C197BE00907326 /* ZZApiHelper+User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002D29C197C100907326 /* ZZApiHelper+Batch.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAE29C197BE00907326 /* ZZApiHelper+Batch.m */; };
-		042D002E29C197C100907326 /* ZZApiHelper+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEAF29C197BE00907326 /* ZZApiHelper+Default.m */; };
 		042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB029C197BE00907326 /* ZZApiHelper+FileUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003029C197C100907326 /* ZZApiHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB129C197BE00907326 /* ZZApiHelper.m */; };
 		042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB229C197BE00907326 /* ZZApiHelper+Batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D003229C197C100907326 /* ZZApiHelper+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB329C197BE00907326 /* ZZApiHelper+User.m */; };
-		042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB429C197BE00907326 /* ZZApiHelper+Default.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003429C197C100907326 /* ZZCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEB529C197BE00907326 /* ZZCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003529C197C100907326 /* PageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB729C197BF00907326 /* PageModel.m */; };
-		042D003629C197C100907326 /* FileUploadResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB829C197BF00907326 /* FileUploadResponseModel.m */; };
-		042D003729C197C100907326 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB929C197BF00907326 /* LoginModel.m */; };
-		042D003829C197C100907326 /* AppVersionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBA29C197BF00907326 /* AppVersionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003629C197C100907326 /* UploadResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEB829C197BF00907326 /* UploadResponseModel.m */; };
 		042D003929C197C100907326 /* IDNameModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBB29C197BF00907326 /* IDNameModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003A29C197C100907326 /* ResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBC29C197BF00907326 /* ResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D003B29C197C100907326 /* NotificationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBD29C197BF00907326 /* NotificationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003B29C197C100907326 /* PushPayloadModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBD29C197BF00907326 /* PushPayloadModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003C29C197C100907326 /* PageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBE29C197BF00907326 /* PageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D003D29C197C100907326 /* LoginModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEBF29C197BF00907326 /* LoginModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D003E29C197C100907326 /* FileUploadResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC029C197BF00907326 /* FileUploadResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D003E29C197C100907326 /* UploadResponseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC029C197BF00907326 /* UploadResponseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D003F29C197C100907326 /* IDNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC129C197BF00907326 /* IDNameModel.m */; };
-		042D004029C197C100907326 /* AppVersionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC229C197BF00907326 /* AppVersionModel.m */; };
-		042D004129C197C100907326 /* NotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC329C197BF00907326 /* NotificationModel.m */; };
+		042D004129C197C100907326 /* PushPayloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC329C197BF00907326 /* PushPayloadModel.m */; };
 		042D004229C197C100907326 /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC429C197BF00907326 /* ResponseModel.m */; };
 		042D004329C197C100907326 /* AppGrayStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEC729C197BF00907326 /* AppGrayStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D004429C197C100907326 /* AppGrayStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEC829C197BF00907326 /* AppGrayStyle.m */; };
@@ -141,20 +132,10 @@
 		042D008F29C197C100907326 /* ListRowTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF2929C197BF00907326 /* ListRowTitleTableViewCell.m */; };
 		042D009029C197C100907326 /* ListRowTitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2A29C197BF00907326 /* ListRowTitleTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009129C197C100907326 /* CountdownTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2C29C197BF00907326 /* CountdownTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009229C197C100907326 /* ValicodeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2D29C197BF00907326 /* ValicodeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009329C197C100907326 /* ZZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF2E29C197BF00907326 /* ZZLoginViewController.m */; };
-		042D009429C197C100907326 /* ZZBaseLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF2F29C197BF00907326 /* ZZBaseLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009529C197C100907326 /* ZZLoginBaseVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3029C197BF00907326 /* ZZLoginBaseVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009629C197C100907326 /* ProtocolAndPrivacyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009729C197C100907326 /* ZZPasswordLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3229C197BF00907326 /* ZZPasswordLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D009829C197C100907326 /* ValicodeTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3329C197BF00907326 /* ValicodeTipView.m */; };
-		042D009929C197C100907326 /* ValicodeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3429C197BF00907326 /* ValicodeUtil.m */; };
 		042D009A29C197C100907326 /* CountdownTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3529C197BF00907326 /* CountdownTimer.m */; };
-		042D009B29C197C100907326 /* ZZLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3629C197BF00907326 /* ZZLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009C29C197C100907326 /* ZZLoginBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3729C197BF00907326 /* ZZLoginBaseVC.m */; };
-		042D009D29C197C100907326 /* ZZBaseLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3829C197BF00907326 /* ZZBaseLoginViewController.m */; };
 		042D009E29C197C100907326 /* ValicodeTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3929C197BF00907326 /* ValicodeTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D009F29C197C100907326 /* ZZPasswordLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3A29C197BF00907326 /* ZZPasswordLoginViewController.m */; };
 		042D00A029C197C100907326 /* ProtocolAndPrivacyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3B29C197BF00907326 /* ProtocolAndPrivacyView.m */; };
 		042D00A129C197C100907326 /* TTRangeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFF3D29C197BF00907326 /* TTRangeSliderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D00A229C197C100907326 /* TTRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFF3E29C197BF00907326 /* TTRangeSlider.m */; };
@@ -189,7 +170,6 @@
 		042D017429C1AD5900907326 /* EllipsePageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D016C29C1AD5800907326 /* EllipsePageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D017529C1AD5900907326 /* EllipsePageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 042D016D29C1AD5800907326 /* EllipsePageControl.m */; };
 		042D017B29C1AF7D00907326 /* ZZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017A29C1AF7D00907326 /* ZZUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D017D29C1B08900907326 /* ZZLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017C29C1B08900907326 /* ZZLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D017F29C1B16300907326 /* ZZComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017E29C1B16300907326 /* ZZComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D018129C1B36D00907326 /* ZZOtherLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D018029C1B36D00907326 /* ZZOtherLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAAD29C1975F00907326 /* AppDelegate.m */; };
@@ -358,17 +338,16 @@
 		042DFFF229C197C100907326 /* AVAudioSession+QDAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */; };
 		042DFFF329C197C100907326 /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7229C197BD00907326 /* NSString+AES.m */; };
 		042DFFF429C197C100907326 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7329C197BD00907326 /* TimeUtil.m */; };
-		042DFFF529C197C100907326 /* ComUserHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7429C197BD00907326 /* ComUserHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF629C197C100907326 /* UUIDStringThen.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7529C197BD00907326 /* UUIDStringThen.m */; };
 		042DFFF729C197C100907326 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7629C197BD00907326 /* NSDictionary+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF829C197C100907326 /* UIImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7729C197BD00907326 /* UIImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF929C197C100907326 /* UIScrollView+RequestPageExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7829C197BD00907326 /* UIScrollView+RequestPageExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFFA29C197C100907326 /* UIImageView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7929C197BD00907326 /* UIImageView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042DFFFB29C197C100907326 /* QDDialogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7A29C197BD00907326 /* QDDialogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFFB29C197C100907326 /* ZZDialogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7A29C197BD00907326 /* ZZDialogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFFC29C197C100907326 /* ColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7B29C197BD00907326 /* ColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFFD29C197C100907326 /* UIView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7C29C197BD00907326 /* UIView+EmptyView.m */; };
 		042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7D29C197BD00907326 /* NSBundle+Extension.m */; };
-		042DFFFF29C197C100907326 /* QDNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* QDNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		043DF7DB29C30BDB0074EC08 /* ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; };
 		04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64029C1BC780017C7FB /* ZZImagePicker.m */; };
 		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -392,7 +371,6 @@
 		042D016C29C1AD5800907326 /* EllipsePageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EllipsePageControl.h; sourceTree = "<group>"; };
 		042D016D29C1AD5800907326 /* EllipsePageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EllipsePageControl.m; sourceTree = "<group>"; };
 		042D017A29C1AF7D00907326 /* ZZUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZUtils.h; sourceTree = "<group>"; };
-		042D017C29C1B08900907326 /* ZZLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZLogin.h; sourceTree = "<group>"; };
 		042D017E29C1B16300907326 /* ZZComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZComponents.h; sourceTree = "<group>"; };
 		042D018029C1B36D00907326 /* ZZOtherLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZOtherLib.h; sourceTree = "<group>"; };
 		042DFA9C29C1972900907326 /* ZZCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZZCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -567,17 +545,16 @@
 		042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+QDAudioSession.m"; sourceTree = "<group>"; };
 		042DFE7229C197BD00907326 /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
 		042DFE7329C197BD00907326 /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
-		042DFE7429C197BD00907326 /* ComUserHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComUserHelper.h; sourceTree = "<group>"; };
 		042DFE7529C197BD00907326 /* UUIDStringThen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDStringThen.m; sourceTree = "<group>"; };
 		042DFE7629C197BD00907326 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
 		042DFE7729C197BD00907326 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
 		042DFE7829C197BD00907326 /* UIScrollView+RequestPageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RequestPageExtension.h"; sourceTree = "<group>"; };
 		042DFE7929C197BD00907326 /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
-		042DFE7A29C197BD00907326 /* QDDialogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDDialogHelper.h; sourceTree = "<group>"; };
+		042DFE7A29C197BD00907326 /* ZZDialogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDialogHelper.h; sourceTree = "<group>"; };
 		042DFE7B29C197BD00907326 /* ColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtil.h; sourceTree = "<group>"; };
 		042DFE7C29C197BD00907326 /* UIView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyView.m"; sourceTree = "<group>"; };
 		042DFE7D29C197BD00907326 /* NSBundle+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Extension.m"; sourceTree = "<group>"; };
-		042DFE7E29C197BD00907326 /* QDNavigateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDNavigateHelper.h; sourceTree = "<group>"; };
+		042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNavigateHelper.h; sourceTree = "<group>"; };
 		042DFE7F29C197BD00907326 /* HtmlUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlUtil.m; sourceTree = "<group>"; };
 		042DFE8029C197BD00907326 /* NSStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringUtil.m; sourceTree = "<group>"; };
 		042DFE8129C197BD00907326 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -595,7 +572,6 @@
 		042DFE8D29C197BD00907326 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		042DFE8E29C197BD00907326 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		042DFE8F29C197BD00907326 /* UUIDStringThen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDStringThen.h; sourceTree = "<group>"; };
-		042DFE9029C197BD00907326 /* ComUserHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComUserHelper.m; sourceTree = "<group>"; };
 		042DFE9129C197BD00907326 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+QDAudioSession.h"; sourceTree = "<group>"; };
 		042DFE9329C197BD00907326 /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
@@ -604,7 +580,7 @@
 		042DFE9629C197BD00907326 /* NSBundle+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Extension.h"; sourceTree = "<group>"; };
 		042DFE9729C197BD00907326 /* UIView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyView.h"; sourceTree = "<group>"; };
 		042DFE9829C197BD00907326 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
-		042DFE9929C197BD00907326 /* QDDialogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDDialogHelper.m; sourceTree = "<group>"; };
+		042DFE9929C197BD00907326 /* ZZDialogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDialogHelper.m; sourceTree = "<group>"; };
 		042DFE9A29C197BD00907326 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		042DFE9B29C197BD00907326 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		042DFE9C29C197BD00907326 /* QDUITips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUITips.h; sourceTree = "<group>"; };
@@ -622,28 +598,20 @@
 		042DFEAA29C197BE00907326 /* ZZApiHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZApiHeader.h; sourceTree = "<group>"; };
 		042DFEAB29C197BE00907326 /* ZZApiHelper+FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZZApiHelper+FileUpload.m"; sourceTree = "<group>"; };
 		042DFEAC29C197BE00907326 /* ZZApiHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZApiHelper.h; sourceTree = "<group>"; };
-		042DFEAD29C197BE00907326 /* ZZApiHelper+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZZApiHelper+User.h"; sourceTree = "<group>"; };
 		042DFEAE29C197BE00907326 /* ZZApiHelper+Batch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZZApiHelper+Batch.m"; sourceTree = "<group>"; };
-		042DFEAF29C197BE00907326 /* ZZApiHelper+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZZApiHelper+Default.m"; sourceTree = "<group>"; };
 		042DFEB029C197BE00907326 /* ZZApiHelper+FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZZApiHelper+FileUpload.h"; sourceTree = "<group>"; };
 		042DFEB129C197BE00907326 /* ZZApiHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZApiHelper.m; sourceTree = "<group>"; };
 		042DFEB229C197BE00907326 /* ZZApiHelper+Batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZZApiHelper+Batch.h"; sourceTree = "<group>"; };
-		042DFEB329C197BE00907326 /* ZZApiHelper+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZZApiHelper+User.m"; sourceTree = "<group>"; };
-		042DFEB429C197BE00907326 /* ZZApiHelper+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZZApiHelper+Default.h"; sourceTree = "<group>"; };
 		042DFEB529C197BE00907326 /* ZZCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCommonMacros.h; sourceTree = "<group>"; };
 		042DFEB729C197BF00907326 /* PageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageModel.m; sourceTree = "<group>"; };
-		042DFEB829C197BF00907326 /* FileUploadResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUploadResponseModel.m; sourceTree = "<group>"; };
-		042DFEB929C197BF00907326 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		042DFEBA29C197BF00907326 /* AppVersionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppVersionModel.h; sourceTree = "<group>"; };
+		042DFEB829C197BF00907326 /* UploadResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadResponseModel.m; sourceTree = "<group>"; };
 		042DFEBB29C197BF00907326 /* IDNameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDNameModel.h; sourceTree = "<group>"; };
 		042DFEBC29C197BF00907326 /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
-		042DFEBD29C197BF00907326 /* NotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationModel.h; sourceTree = "<group>"; };
+		042DFEBD29C197BF00907326 /* PushPayloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushPayloadModel.h; sourceTree = "<group>"; };
 		042DFEBE29C197BF00907326 /* PageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageModel.h; sourceTree = "<group>"; };
-		042DFEBF29C197BF00907326 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
-		042DFEC029C197BF00907326 /* FileUploadResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUploadResponseModel.h; sourceTree = "<group>"; };
+		042DFEC029C197BF00907326 /* UploadResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadResponseModel.h; sourceTree = "<group>"; };
 		042DFEC129C197BF00907326 /* IDNameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDNameModel.m; sourceTree = "<group>"; };
-		042DFEC229C197BF00907326 /* AppVersionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppVersionModel.m; sourceTree = "<group>"; };
-		042DFEC329C197BF00907326 /* NotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationModel.m; sourceTree = "<group>"; };
+		042DFEC329C197BF00907326 /* PushPayloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushPayloadModel.m; sourceTree = "<group>"; };
 		042DFEC429C197BF00907326 /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 		042DFEC729C197BF00907326 /* AppGrayStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppGrayStyle.h; sourceTree = "<group>"; };
 		042DFEC829C197BF00907326 /* AppGrayStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppGrayStyle.m; sourceTree = "<group>"; };
@@ -712,20 +680,10 @@
 		042DFF2929C197BF00907326 /* ListRowTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListRowTitleTableViewCell.m; sourceTree = "<group>"; };
 		042DFF2A29C197BF00907326 /* ListRowTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListRowTitleTableViewCell.h; sourceTree = "<group>"; };
 		042DFF2C29C197BF00907326 /* CountdownTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownTimer.h; sourceTree = "<group>"; };
-		042DFF2D29C197BF00907326 /* ValicodeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValicodeUtil.h; sourceTree = "<group>"; };
-		042DFF2E29C197BF00907326 /* ZZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoginViewController.m; sourceTree = "<group>"; };
-		042DFF2F29C197BF00907326 /* ZZBaseLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBaseLoginViewController.h; sourceTree = "<group>"; };
-		042DFF3029C197BF00907326 /* ZZLoginBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoginBaseVC.h; sourceTree = "<group>"; };
 		042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolAndPrivacyView.h; sourceTree = "<group>"; };
-		042DFF3229C197BF00907326 /* ZZPasswordLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPasswordLoginViewController.h; sourceTree = "<group>"; };
 		042DFF3329C197BF00907326 /* ValicodeTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValicodeTipView.m; sourceTree = "<group>"; };
-		042DFF3429C197BF00907326 /* ValicodeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValicodeUtil.m; sourceTree = "<group>"; };
 		042DFF3529C197BF00907326 /* CountdownTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownTimer.m; sourceTree = "<group>"; };
-		042DFF3629C197BF00907326 /* ZZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoginViewController.h; sourceTree = "<group>"; };
-		042DFF3729C197BF00907326 /* ZZLoginBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoginBaseVC.m; sourceTree = "<group>"; };
-		042DFF3829C197BF00907326 /* ZZBaseLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBaseLoginViewController.m; sourceTree = "<group>"; };
 		042DFF3929C197BF00907326 /* ValicodeTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValicodeTipView.h; sourceTree = "<group>"; };
-		042DFF3A29C197BF00907326 /* ZZPasswordLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPasswordLoginViewController.m; sourceTree = "<group>"; };
 		042DFF3B29C197BF00907326 /* ProtocolAndPrivacyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolAndPrivacyView.m; sourceTree = "<group>"; };
 		042DFF3D29C197BF00907326 /* TTRangeSliderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRangeSliderDelegate.h; sourceTree = "<group>"; };
 		042DFF3E29C197BF00907326 /* TTRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRangeSlider.m; sourceTree = "<group>"; };
@@ -835,8 +793,6 @@
 			children = (
 				042DFE7B29C197BD00907326 /* ColorUtil.h */,
 				042DFE9829C197BD00907326 /* ColorUtil.m */,
-				042DFE7429C197BD00907326 /* ComUserHelper.h */,
-				042DFE9029C197BD00907326 /* ComUserHelper.m */,
 				042DFE8229C197BD00907326 /* GTMBase64.h */,
 				042DFE9D29C197BD00907326 /* GTMBase64.m */,
 				042DFE9A29C197BD00907326 /* GTMDefines.h */,
@@ -846,9 +802,9 @@
 				042DFE8A29C197BD00907326 /* MIUAES.m */,
 				042DFE9E29C197BD00907326 /* NSStringUtil.h */,
 				042DFE8029C197BD00907326 /* NSStringUtil.m */,
-				042DFE7A29C197BD00907326 /* QDDialogHelper.h */,
-				042DFE9929C197BD00907326 /* QDDialogHelper.m */,
-				042DFE7E29C197BD00907326 /* QDNavigateHelper.h */,
+				042DFE7A29C197BD00907326 /* ZZDialogHelper.h */,
+				042DFE9929C197BD00907326 /* ZZDialogHelper.m */,
+				042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */,
 				042DFE9529C197BD00907326 /* QDNavigateHelper.m */,
 				042DFEA429C197BD00907326 /* QDRefreshFooter.h */,
 				042DFE8629C197BD00907326 /* QDRefreshFooter.m */,
@@ -941,6 +897,7 @@
 			children = (
 				042D018029C1B36D00907326 /* ZZOtherLib.h */,
 				042DFDC529C197BD00907326 /* BRPickerView */,
+				04DC0E4629C45879003AD950 /* CountdownTimer */,
 				042DFF0E29C197BF00907326 /* JHVerificationCodeView */,
 				042DFDE229C197BD00907326 /* lottie-ios */,
 				042D016429C1AD5800907326 /* SDCycleScrollView */,
@@ -1273,12 +1230,8 @@
 				042DFEB129C197BE00907326 /* ZZApiHelper.m */,
 				042DFEB229C197BE00907326 /* ZZApiHelper+Batch.h */,
 				042DFEAE29C197BE00907326 /* ZZApiHelper+Batch.m */,
-				042DFEB429C197BE00907326 /* ZZApiHelper+Default.h */,
-				042DFEAF29C197BE00907326 /* ZZApiHelper+Default.m */,
 				042DFEB029C197BE00907326 /* ZZApiHelper+FileUpload.h */,
 				042DFEAB29C197BE00907326 /* ZZApiHelper+FileUpload.m */,
-				042DFEAD29C197BE00907326 /* ZZApiHelper+User.h */,
-				042DFEB329C197BE00907326 /* ZZApiHelper+User.m */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -1286,20 +1239,16 @@
 		042DFEB629C197BF00907326 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				042DFEBA29C197BF00907326 /* AppVersionModel.h */,
-				042DFEC229C197BF00907326 /* AppVersionModel.m */,
-				042DFEC029C197BF00907326 /* FileUploadResponseModel.h */,
-				042DFEB829C197BF00907326 /* FileUploadResponseModel.m */,
 				042DFEBB29C197BF00907326 /* IDNameModel.h */,
 				042DFEC129C197BF00907326 /* IDNameModel.m */,
-				042DFEBF29C197BF00907326 /* LoginModel.h */,
-				042DFEB929C197BF00907326 /* LoginModel.m */,
-				042DFEBD29C197BF00907326 /* NotificationModel.h */,
-				042DFEC329C197BF00907326 /* NotificationModel.m */,
 				042DFEBE29C197BF00907326 /* PageModel.h */,
 				042DFEB729C197BF00907326 /* PageModel.m */,
+				042DFEBD29C197BF00907326 /* PushPayloadModel.h */,
+				042DFEC329C197BF00907326 /* PushPayloadModel.m */,
 				042DFEBC29C197BF00907326 /* ResponseModel.h */,
 				042DFEC429C197BF00907326 /* ResponseModel.m */,
+				042DFEC029C197BF00907326 /* UploadResponseModel.h */,
+				042DFEB829C197BF00907326 /* UploadResponseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1317,14 +1266,15 @@
 				042DFEDA29C197BF00907326 /* GridImageView */,
 				042DFF2829C197BF00907326 /* ListRowTitleCell */,
 				042DFEFF29C197BF00907326 /* PopupMenu */,
+				04DC0E4529C45810003AD950 /* ProtocolAndPrivacyView */,
 				042DFEEE29C197BF00907326 /* SegmentHeaderView */,
 				042DFEF129C197BF00907326 /* SimpleTextInputSheet */,
 				042DFEF429C197BF00907326 /* SortButton */,
+				04DC0E4729C458BA003AD950 /* ValicodeTipView */,
 				042DFEDD29C197BF00907326 /* ZZFilterView */,
 				042DFECF29C197BF00907326 /* ZZFormView */,
 				042DFF0729C197BF00907326 /* ZZImagePicker */,
 				04E9F64429C1BD7F0017C7FB /* ZZImagePreview */,
-				042DFF2B29C197BF00907326 /* ZZLogin */,
 				042DFEC929C197BF00907326 /* ZZNumberInputView */,
 				042DFF1129C197BF00907326 /* ZZSegmentView */,
 				042DFEFA29C197BF00907326 /* ZZWelcome */,
@@ -1533,30 +1483,6 @@
 			path = ListRowTitleCell;
 			sourceTree = "<group>";
 		};
-		042DFF2B29C197BF00907326 /* ZZLogin */ = {
-			isa = PBXGroup;
-			children = (
-				042D017C29C1B08900907326 /* ZZLogin.h */,
-				042DFF3029C197BF00907326 /* ZZLoginBaseVC.h */,
-				042DFF3729C197BF00907326 /* ZZLoginBaseVC.m */,
-				042DFF3629C197BF00907326 /* ZZLoginViewController.h */,
-				042DFF2E29C197BF00907326 /* ZZLoginViewController.m */,
-				042DFF2F29C197BF00907326 /* ZZBaseLoginViewController.h */,
-				042DFF3829C197BF00907326 /* ZZBaseLoginViewController.m */,
-				042DFF3229C197BF00907326 /* ZZPasswordLoginViewController.h */,
-				042DFF3A29C197BF00907326 /* ZZPasswordLoginViewController.m */,
-				042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */,
-				042DFF3B29C197BF00907326 /* ProtocolAndPrivacyView.m */,
-				042DFF3929C197BF00907326 /* ValicodeTipView.h */,
-				042DFF3329C197BF00907326 /* ValicodeTipView.m */,
-				042DFF2C29C197BF00907326 /* CountdownTimer.h */,
-				042DFF3529C197BF00907326 /* CountdownTimer.m */,
-				042DFF2D29C197BF00907326 /* ValicodeUtil.h */,
-				042DFF3429C197BF00907326 /* ValicodeUtil.m */,
-			);
-			path = ZZLogin;
-			sourceTree = "<group>";
-		};
 		042DFF3C29C197BF00907326 /* TTRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
@@ -1589,6 +1515,33 @@
 				042DFF4C29C197C000907326 /* QMUICommonViewController+Search.m */,
 			);
 			path = MainFrame;
+			sourceTree = "<group>";
+		};
+		04DC0E4529C45810003AD950 /* ProtocolAndPrivacyView */ = {
+			isa = PBXGroup;
+			children = (
+				042DFF3129C197BF00907326 /* ProtocolAndPrivacyView.h */,
+				042DFF3B29C197BF00907326 /* ProtocolAndPrivacyView.m */,
+			);
+			path = ProtocolAndPrivacyView;
+			sourceTree = "<group>";
+		};
+		04DC0E4629C45879003AD950 /* CountdownTimer */ = {
+			isa = PBXGroup;
+			children = (
+				042DFF2C29C197BF00907326 /* CountdownTimer.h */,
+				042DFF3529C197BF00907326 /* CountdownTimer.m */,
+			);
+			path = CountdownTimer;
+			sourceTree = "<group>";
+		};
+		04DC0E4729C458BA003AD950 /* ValicodeTipView */ = {
+			isa = PBXGroup;
+			children = (
+				042DFF3929C197BF00907326 /* ValicodeTipView.h */,
+				042DFF3329C197BF00907326 /* ValicodeTipView.m */,
+			);
+			path = ValicodeTipView;
 			sourceTree = "<group>";
 		};
 		04E9F64429C1BD7F0017C7FB /* ZZImagePreview */ = {
@@ -1638,13 +1591,12 @@
 				042DFFCC29C197C000907326 /* LOTBezierPath.h in Headers */,
 				042D006C29C197C100907326 /* ZZWelcomeViewController.h in Headers */,
 				042D003C29C197C100907326 /* PageModel.h in Headers */,
-				042DFFFF29C197C100907326 /* QDNavigateHelper.h in Headers */,
+				042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */,
 				042D000229C197C100907326 /* UIView+Extension.h in Headers */,
 				042DFF7E29C197C000907326 /* LOTColorInterpolator.h in Headers */,
-				042D003E29C197C100907326 /* FileUploadResponseModel.h in Headers */,
+				042D003E29C197C100907326 /* UploadResponseModel.h in Headers */,
 				042D001229C197C100907326 /* TimeUtil.h in Headers */,
 				042DFFEB29C197C100907326 /* Lottie.h in Headers */,
-				042D003D29C197C100907326 /* LoginModel.h in Headers */,
 				042D008429C197C100907326 /* CommonWebViewDelegate.h in Headers */,
 				042DFF6E29C197C000907326 /* BRAddressModel.h in Headers */,
 				042DFFF929C197C100907326 /* UIScrollView+RequestPageExtension.h in Headers */,
@@ -1658,7 +1610,6 @@
 				042DFFBB29C197C000907326 /* LOTShapeStar.h in Headers */,
 				042D015E29C1A81000907326 /* ZZMainFrame.h in Headers */,
 				042DFFE629C197C100907326 /* LOTCacheProvider.h in Headers */,
-				042D017D29C1B08900907326 /* ZZLogin.h in Headers */,
 				042D004829C197C100907326 /* CheckImageButton.h in Headers */,
 				042D004E29C197C100907326 /* ZZFormItemModel.h in Headers */,
 				042DFF9D29C197C000907326 /* CALayer+Compat.h in Headers */,
@@ -1682,11 +1633,9 @@
 				042DFFB529C197C000907326 /* LOTModels.h in Headers */,
 				042DFF5A29C197C000907326 /* BRStringPickerView.h in Headers */,
 				042D017429C1AD5900907326 /* EllipsePageControl.h in Headers */,
-				042D009B29C197C100907326 /* ZZLoginViewController.h in Headers */,
 				042DFF5F29C197C000907326 /* BRDatePickerView.h in Headers */,
 				042D00AC29C197C100907326 /* QMUICommonViewController+EmptyView.h in Headers */,
 				042DFFAF29C197C000907326 /* LOTShapePath.h in Headers */,
-				042D009229C197C100907326 /* ValicodeUtil.h in Headers */,
 				042D001529C197C100907326 /* HtmlUtil.h in Headers */,
 				042DFFE829C197C100907326 /* LOTInterpolatorCallback.h in Headers */,
 				042D016E29C1AD5900907326 /* UIView+SDExtension.h in Headers */,
@@ -1730,7 +1679,6 @@
 				042D004329C197C100907326 /* AppGrayStyle.h in Headers */,
 				042D009629C197C100907326 /* ProtocolAndPrivacyView.h in Headers */,
 				042D001B29C197C100907326 /* GTMDefines.h in Headers */,
-				042D009429C197C100907326 /* ZZBaseLoginViewController.h in Headers */,
 				042D002529C197C100907326 /* QDRefreshFooter.h in Headers */,
 				042DFFB029C197C000907326 /* LOTShapeStroke.h in Headers */,
 				042DFFC629C197C000907326 /* LOTRadialGradientLayer.h in Headers */,
@@ -1738,11 +1686,10 @@
 				042DFFCB29C197C000907326 /* CGGeometry+LOTAdditions.h in Headers */,
 				042D002829C197C100907326 /* ZZEnumBase.h in Headers */,
 				042DFF6329C197C000907326 /* NSDate+BRPickerView.h in Headers */,
-				042D009729C197C100907326 /* ZZPasswordLoginViewController.h in Headers */,
 				042D006F29C197C100907326 /* PopupMenuButton.h in Headers */,
 				042DFFDF29C197C000907326 /* LOTCompositionContainer.h in Headers */,
 				042DFF7229C197C000907326 /* LOTAnimatorNode.h in Headers */,
-				042D003B29C197C100907326 /* NotificationModel.h in Headers */,
+				042D003B29C197C100907326 /* PushPayloadModel.h in Headers */,
 				042D007029C197C100907326 /* DownPopupMenuButton.h in Headers */,
 				042D009029C197C100907326 /* ListRowTitleTableViewCell.h in Headers */,
 				042DFF6B29C197C000907326 /* BRPickerStyle.h in Headers */,
@@ -1767,7 +1714,6 @@
 				042DFFDD29C197C000907326 /* LOTBezierData.h in Headers */,
 				042D007A29C197C100907326 /* ZZSingleImagePickerPreviewViewController.h in Headers */,
 				042DFFEC29C197C100907326 /* LOTComposition.h in Headers */,
-				042DFFF529C197C100907326 /* ComUserHelper.h in Headers */,
 				042DFFE729C197C100907326 /* LOTKeypath.h in Headers */,
 				042D006929C197C100907326 /* CheckButton.h in Headers */,
 				042D00A929C197C100907326 /* ZZCommonTableViewController.h in Headers */,
@@ -1789,10 +1735,9 @@
 				042D006329C197C100907326 /* SegmentHeaderView.h in Headers */,
 				042D001729C197C100907326 /* NSBundle+Extension.h in Headers */,
 				042D007929C197C100907326 /* ZZImagePickerController.h in Headers */,
-				042DFFFB29C197C100907326 /* QDDialogHelper.h in Headers */,
+				042DFFFB29C197C100907326 /* ZZDialogHelper.h in Headers */,
 				042D002129C197C100907326 /* MIUAES.h in Headers */,
 				042D015C29C1A7B800907326 /* ZZTheme.h in Headers */,
-				042D009529C197C100907326 /* ZZLoginBaseVC.h in Headers */,
 				042DFFA029C197C000907326 /* LOTPlatformCompat.h in Headers */,
 				042DFF7C29C197C000907326 /* LOTTransformInterpolator.h in Headers */,
 				042DFFE029C197C000907326 /* LOTMaskContainer.h in Headers */,
@@ -1810,10 +1755,7 @@
 				042D002F29C197C100907326 /* ZZApiHelper+FileUpload.h in Headers */,
 				042D016229C1ABA700907326 /* ZZApi.h in Headers */,
 				042D002929C197C100907326 /* ZZApiHeader.h in Headers */,
-				042D003329C197C100907326 /* ZZApiHelper+Default.h in Headers */,
 				042D003129C197C100907326 /* ZZApiHelper+Batch.h in Headers */,
-				042D002C29C197C100907326 /* ZZApiHelper+User.h in Headers */,
-				042D003829C197C100907326 /* AppVersionModel.h in Headers */,
 				042D003429C197C100907326 /* ZZCommonMacros.h in Headers */,
 				042D002B29C197C100907326 /* ZZApiHelper.h in Headers */,
 				042D00A429C197C100907326 /* ZZCommon.h in Headers */,
@@ -2004,7 +1946,6 @@
 				042DFF8429C197C000907326 /* LOTArrayInterpolator.m in Sources */,
 				042DFFC729C197C000907326 /* CGGeometry+LOTAdditions.m in Sources */,
 				042DFF9129C197C000907326 /* LOTRenderGroup.m in Sources */,
-				042D009F29C197C100907326 /* ZZPasswordLoginViewController.m in Sources */,
 				042DFF8329C197C000907326 /* LOTTransformInterpolator.m in Sources */,
 				042DFFD329C197C000907326 /* LOTAnimationTransitionController.m in Sources */,
 				042DFF8829C197C000907326 /* LOTPolystarAnimator.m in Sources */,
@@ -2013,7 +1954,7 @@
 				042D004429C197C100907326 /* AppGrayStyle.m in Sources */,
 				042DFFBF29C197C000907326 /* LOTShapeGroup.m in Sources */,
 				042DFF6829C197C000907326 /* BRBaseView.m in Sources */,
-				042D001A29C197C100907326 /* QDDialogHelper.m in Sources */,
+				042D001A29C197C100907326 /* ZZDialogHelper.m in Sources */,
 				042D00AE29C197C100907326 /* QMUICommonViewController+FixBackGesture.m in Sources */,
 				042DFF7629C197C000907326 /* LOTColorInterpolator.m in Sources */,
 				042D000529C197C100907326 /* UIImage+Extension.m in Sources */,
@@ -2028,8 +1969,6 @@
 				042D00AF29C197C100907326 /* QMUICommonViewController+Search.m in Sources */,
 				042DFF8929C197C000907326 /* LOTPolygonAnimator.m in Sources */,
 				042D006229C197C100907326 /* CheckRadioItem.m in Sources */,
-				042D009929C197C100907326 /* ValicodeUtil.m in Sources */,
-				042D003229C197C100907326 /* ZZApiHelper+User.m in Sources */,
 				042DFF9C29C197C000907326 /* UIBezierPath.m in Sources */,
 				042D002429C197C100907326 /* QDRptSize.m in Sources */,
 				042D00AD29C197C100907326 /* ZZTabBarViewController.m in Sources */,
@@ -2053,12 +1992,11 @@
 				042D007129C197C100907326 /* PopupMenuButton.m in Sources */,
 				042DFFCE29C197C000907326 /* LOTAnimationCache.m in Sources */,
 				042DFF8529C197C000907326 /* LOTNumberInterpolator.m in Sources */,
-				042D009D29C197C100907326 /* ZZBaseLoginViewController.m in Sources */,
 				042DFFC129C197C000907326 /* LOTShapeFill.m in Sources */,
 				042D002A29C197C100907326 /* ZZApiHelper+FileUpload.m in Sources */,
 				042D001929C197C100907326 /* ColorUtil.m in Sources */,
 				042D000C29C197C100907326 /* UIImageView+Extension.m in Sources */,
-				042D003629C197C100907326 /* FileUploadResponseModel.m in Sources */,
+				042D003629C197C100907326 /* UploadResponseModel.m in Sources */,
 				042D003029C197C100907326 /* ZZApiHelper.m in Sources */,
 				042D000B29C197C100907326 /* MIUAES.m in Sources */,
 				042DFFD629C197C000907326 /* LOTCacheProvider.m in Sources */,
@@ -2070,12 +2008,11 @@
 				042D00A229C197C100907326 /* TTRangeSlider.m in Sources */,
 				042DFFCD29C197C000907326 /* UIColor+Expanded.m in Sources */,
 				042D004629C197C100907326 /* ZZNumberInputView.m in Sources */,
-				042D001129C197C100907326 /* ComUserHelper.m in Sources */,
 				042D005329C197C100907326 /* GridImageView.m in Sources */,
 				042DFFCF29C197C000907326 /* LOTComposition.m in Sources */,
 				042D006829C197C100907326 /* SortButton.m in Sources */,
 				042DFF8629C197C000907326 /* LOTAnimatorNode.m in Sources */,
-				042D004129C197C100907326 /* NotificationModel.m in Sources */,
+				042D004129C197C100907326 /* PushPayloadModel.m in Sources */,
 				042D00A029C197C100907326 /* ProtocolAndPrivacyView.m in Sources */,
 				042DFFC429C197C000907326 /* LOTShapeStroke.m in Sources */,
 				042DFFAB29C197C000907326 /* LOTLayerGroup.m in Sources */,
@@ -2099,7 +2036,6 @@
 				042DFFD929C197C000907326 /* LOTAnimatedSwitch.m in Sources */,
 				042DFF9829C197C000907326 /* LOTFillRenderer.m in Sources */,
 				042D000E29C197C100907326 /* UIImageEffects.m in Sources */,
-				042D003729C197C100907326 /* LoginModel.m in Sources */,
 				042DFF8F29C197C000907326 /* LOTRoundedRectAnimator.m in Sources */,
 				042DFFE229C197C100907326 /* LOTCompositionContainer.m in Sources */,
 				042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */,
@@ -2116,7 +2052,6 @@
 				042D004C29C197C100907326 /* ZZFormRowView.m in Sources */,
 				042DFFB129C197C000907326 /* LOTShapeGradientFill.m in Sources */,
 				042D001629C197C100907326 /* QDNavigateHelper.m in Sources */,
-				042D009329C197C100907326 /* ZZLoginViewController.m in Sources */,
 				042DFF5C29C197C000907326 /* BRStringPickerView.m in Sources */,
 				042DFFBE29C197C000907326 /* LOTShapePath.m in Sources */,
 				042DFF7129C197C000907326 /* LOTRenderNode.m in Sources */,
@@ -2131,8 +2066,6 @@
 				042DFF7029C197C000907326 /* BRAddressPickerView.m in Sources */,
 				042D000029C197C100907326 /* HtmlUtil.m in Sources */,
 				042D00B329C197C100907326 /* ZZCommonTableViewController.m in Sources */,
-				042D002E29C197C100907326 /* ZZApiHelper+Default.m in Sources */,
-				042D004029C197C100907326 /* AppVersionModel.m in Sources */,
 				042D006B29C197C100907326 /* ZZWelcomePageItem.m in Sources */,
 				042DFF7729C197C000907326 /* LOTPathInterpolator.m in Sources */,
 				042D009829C197C100907326 /* ValicodeTipView.m in Sources */,
@@ -2151,7 +2084,6 @@
 				042D017529C1AD5900907326 /* EllipsePageControl.m in Sources */,
 				042D007629C197C100907326 /* ZZSingleImagePickerPreviewViewController.m in Sources */,
 				042DFFA229C197C000907326 /* NSValue+Compat.m in Sources */,
-				042D009C29C197C100907326 /* ZZLoginBaseVC.m in Sources */,
 				042D007529C197C100907326 /* ZZMultipleImagePickerPreviewViewController.m in Sources */,
 				042DFFB629C197C000907326 /* LOTShapeRepeater.m in Sources */,
 				042D004729C197C100907326 /* CheckImageButton.m in Sources */,
@@ -2381,7 +2313,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2459,7 +2391,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

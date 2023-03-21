@@ -1,5 +1,5 @@
 //
-//  QDDialogHelper.h
+//  ZZDialogHelper.h
 
 //  Created by west007 on 2021/7/13.
 //
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDDialogHelper : NSObject
+@interface ZZDialogHelper : NSObject
 
 ///提示类对话框，只有一个“我知道了”的确认按钮
 + (void)showAlertDialog:(NSString *)title
