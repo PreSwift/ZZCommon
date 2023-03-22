@@ -173,7 +173,6 @@
 		042D017F29C1B16300907326 /* ZZComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D017E29C1B16300907326 /* ZZComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D018129C1B36D00907326 /* ZZOtherLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 042D018029C1B36D00907326 /* ZZOtherLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAAD29C1975F00907326 /* AppDelegate.m */; };
-		042DFAB129C1975F00907326 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAB029C1975F00907326 /* SceneDelegate.m */; };
 		042DFAB429C1975F00907326 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFAB329C1975F00907326 /* ViewController.m */; };
 		042DFAB729C1975F00907326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042DFAB529C1975F00907326 /* Main.storyboard */; };
 		042DFAB929C1976000907326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042DFAB829C1976000907326 /* Assets.xcassets */; };
@@ -349,23 +348,27 @@
 		042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7D29C197BD00907326 /* NSBundle+Extension.m */; };
 		042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */; };
-		049960F729CAFAB800CD084C /* ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; };
+		0499626E29CB09BF00CD084C /* ZZCommon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64029C1BC780017C7FB /* ZZImagePicker.m */; };
 		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9F64729C1BD7F0017C7FB /* ZZImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */; };
 		04E9F64829C1BD7F0017C7FB /* ZZImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F82DB9344E50305B7B86273 /* Pods_ZZCommonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE5CFD31A93D3CCFD2E998E /* Pods_ZZCommonDemo.framework */; };
 		BECD5BA34473C55EDDAC5C7B /* Pods_ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		049960DD29CAF8F700CD084C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 042DFA9329C1972900907326 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 042DFA9B29C1972900907326;
-			remoteInfo = ZZCommon;
+/* Begin PBXCopyFilesBuildPhase section */
+		0499626D29CB09A800CD084C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0499626E29CB09BF00CD084C /* ZZCommon.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		042D015B29C1A7B800907326 /* ZZTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTheme.h; sourceTree = "<group>"; };
@@ -387,8 +390,6 @@
 		042DFAAA29C1975F00907326 /* ZZCommonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZCommonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042DFAAC29C1975F00907326 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		042DFAAD29C1975F00907326 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		042DFAAF29C1975F00907326 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		042DFAB029C1975F00907326 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		042DFAB229C1975F00907326 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		042DFAB329C1975F00907326 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		042DFAB629C1975F00907326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -732,9 +733,12 @@
 		04E9F64129C1BC780017C7FB /* ZZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagePicker.h; sourceTree = "<group>"; };
 		04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagePreviewViewController.m; sourceTree = "<group>"; };
 		04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagePreviewViewController.h; sourceTree = "<group>"; };
+		1AB13D22BEDE4A9D687A1CF1 /* Pods-ZZCommonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommonDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1B4963005D7F8E3E194949D8 /* Pods-ZZCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommon.release.xcconfig"; path = "Target Support Files/Pods-ZZCommon/Pods-ZZCommon.release.xcconfig"; sourceTree = "<group>"; };
 		65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE5CFD31A93D3CCFD2E998E /* Pods_ZZCommonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZCommonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCE52BEA1736027851694E1 /* Pods-ZZCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommon.debug.xcconfig"; path = "Target Support Files/Pods-ZZCommon/Pods-ZZCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		C6903CAFF6F52D92F12C3972 /* Pods-ZZCommonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommonDemo.release.xcconfig"; path = "Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -750,7 +754,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049960F729CAFAB800CD084C /* ZZCommon.framework in Frameworks */,
+				3F82DB9344E50305B7B86273 /* Pods_ZZCommonDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -887,8 +891,6 @@
 			children = (
 				042DFAAC29C1975F00907326 /* AppDelegate.h */,
 				042DFAAD29C1975F00907326 /* AppDelegate.m */,
-				042DFAAF29C1975F00907326 /* SceneDelegate.h */,
-				042DFAB029C1975F00907326 /* SceneDelegate.m */,
 				049960D829CAF68F00CD084C /* QMUIConfigurationTemplate.h */,
 				049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */,
 				042DFAB229C1975F00907326 /* ViewController.h */,
@@ -1589,6 +1591,7 @@
 				0499610A29CAFBD800CD084C /* SDWebImage.framework */,
 				0499610C29CAFBD800CD084C /* YTKNetwork.framework */,
 				65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */,
+				8BE5CFD31A93D3CCFD2E998E /* Pods_ZZCommonDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1598,6 +1601,8 @@
 			children = (
 				9CCE52BEA1736027851694E1 /* Pods-ZZCommon.debug.xcconfig */,
 				1B4963005D7F8E3E194949D8 /* Pods-ZZCommon.release.xcconfig */,
+				1AB13D22BEDE4A9D687A1CF1 /* Pods-ZZCommonDemo.debug.xcconfig */,
+				C6903CAFF6F52D92F12C3972 /* Pods-ZZCommonDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1817,14 +1822,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042DFAC029C1976000907326 /* Build configuration list for PBXNativeTarget "ZZCommonDemo" */;
 			buildPhases = (
+				DA5266EAA6E121DA5C7527DB /* [CP] Check Pods Manifest.lock */,
 				042DFAA629C1975F00907326 /* Sources */,
 				042DFAA729C1975F00907326 /* Frameworks */,
 				042DFAA829C1975F00907326 /* Resources */,
+				31F1BB2B5EEA09981B570A40 /* [CP] Embed Pods Frameworks */,
+				0499626D29CB09A800CD084C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				049960DE29CAF8F700CD084C /* PBXTargetDependency */,
 			);
 			name = ZZCommonDemo;
 			productName = ZZCommonDemo;
@@ -1890,6 +1897,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		31F1BB2B5EEA09981B570A40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8A9D670D77D79926F295BC31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1906,6 +1930,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZZCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5266EAA6E121DA5C7527DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZZCommonDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2087,19 +2133,10 @@
 				042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */,
 				049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */,
 				042DFABF29C1976000907326 /* main.m in Sources */,
-				042DFAB129C1975F00907326 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		049960DE29CAF8F700CD084C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 042DFA9B29C1972900907326 /* ZZCommon */;
-			targetProxy = 049960DD29CAF8F700CD084C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		042DFAB529C1975F00907326 /* Main.storyboard */ = {
@@ -2297,6 +2334,7 @@
 		};
 		042DFAC129C1976000907326 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB13D22BEDE4A9D687A1CF1 /* Pods-ZZCommonDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2317,6 +2355,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"$(inherited)",
 					"-framework",
 					"\"AFNetworking\"",
@@ -2374,6 +2413,7 @@
 		};
 		042DFAC229C1976000907326 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6903CAFF6F52D92F12C3972 /* Pods-ZZCommonDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2394,6 +2434,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"$(inherited)",
 					"-framework",
 					"\"AFNetworking\"",

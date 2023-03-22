@@ -73,6 +73,16 @@
 }
 
 
+- (void)didInitWindow {
+    self.window.rootViewController = [self generateWindowRootViewController];
+    [self.window makeKeyAndVisible];
+    [self startLaunchingAnimation];
+}
+
+- (UIViewController *)generateWindowRootViewController {
+    return [[TabBarViewController alloc] init];
+}
+
 #pragma mark - UISceneSession lifecycle
 
 
