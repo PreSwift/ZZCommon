@@ -49,7 +49,7 @@
         if (weakSelf.menuItems && weakSelf.menuItems.count > 0) {
             [weakSelf.menuView showWithAnimated:YES];
         } else {
-            [QDUITips showError:@"没有选项数据" inView:weakSelf.qmui_viewController.view];
+            [ZZUITips showError:@"没有选项数据" inView:weakSelf.qmui_viewController.view];
         }
     };
 }

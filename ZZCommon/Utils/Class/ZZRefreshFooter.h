@@ -1,5 +1,5 @@
 //
-//  QDRefreshHeader.h
+//  ZZRefreshFooter.h
 
 //  Created by mac on 2022/7/12.
 //
@@ -8,7 +8,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDRefreshHeader : MJRefreshNormalHeader
+@interface ZZRefreshFooter : MJRefreshAutoNormalFooter
+
+- (NSString *)noMoreDataTitle;
 
 @end
 

@@ -1,10 +1,10 @@
 //
-//  QDUIHelper.m
+//  ZZUIHelper.m
 //
 
-#import "QDUIHelper.h"
+#import "ZZUIHelper.h"
 
-@implementation QDUIHelper
+@implementation ZZUIHelper
 
 + (void)load {
     static dispatch_once_t onceToken;
@@ -48,12 +48,12 @@
 }
 
 + (void)renderGlobalAppearances {
-    [QDUIHelper customMoreOperationAppearance];
-    [QDUIHelper customAlertControllerAppearance];
-    [QDUIHelper customDialogViewControllerAppearance];
-    [QDUIHelper customImagePickerAppearance];
-    [QDUIHelper customEmotionViewAppearance];
-    [QDUIHelper customPopupAppearance];
+    [ZZUIHelper customMoreOperationAppearance];
+    [ZZUIHelper customAlertControllerAppearance];
+    [ZZUIHelper customDialogViewControllerAppearance];
+    [ZZUIHelper customImagePickerAppearance];
+    [ZZUIHelper customEmotionViewAppearance];
+    [ZZUIHelper customPopupAppearance];
     
     UISearchBar *searchBar = [UISearchBar appearance];
     searchBar.searchTextPositionAdjustment = UIOffsetMake(4, 0);
@@ -69,7 +69,7 @@
 @end
 
 
-@implementation QDUIHelper (QMUIMoreOperationAppearance)
+@implementation ZZUIHelper (QMUIMoreOperationAppearance)
 
 + (void)customMoreOperationAppearance {
     // 如果需要统一修改全局的 QMUIMoreOperationController 样式，在这里修改 appearance 的值即可
@@ -79,7 +79,7 @@
 @end
 
 
-@implementation QDUIHelper (QMUIAlertControllerAppearance)
+@implementation ZZUIHelper (QMUIAlertControllerAppearance)
 
 + (void)customAlertControllerAppearance {
     // 如果需要统一修改全局的 QMUIAlertController 样式，在这里修改 appearance 的值即可
@@ -87,7 +87,7 @@
 
 @end
 
-@implementation QDUIHelper (QMUIDialogViewControllerAppearance)
+@implementation ZZUIHelper (QMUIDialogViewControllerAppearance)
 
 + (void)customDialogViewControllerAppearance {
     // 如果需要统一修改全局的 QMUIDialogViewController 样式，在这里修改 appearance 的值即可
@@ -123,7 +123,7 @@
 @end
 
 
-@implementation QDUIHelper (QMUIEmotionView)
+@implementation ZZUIHelper (QMUIEmotionView)
 
 + (void)customEmotionViewAppearance {
     [QMUIEmotionView appearance].emotionSize = CGSizeMake(24, 24);
@@ -133,7 +133,7 @@
 
 @end
 
-@implementation QDUIHelper (QMUIImagePicker)
+@implementation ZZUIHelper (QMUIImagePicker)
 
 + (void)customImagePickerAppearance {
     UIImage *checkboxImage = [QMUIHelper imageWithName:@"QMUI_pickerImage_checkbox"];
@@ -145,7 +145,7 @@
 
 @end
 
-@implementation QDUIHelper (QMUIPopupContainerView)
+@implementation ZZUIHelper (QMUIPopupContainerView)
 
 + (void)customPopupAppearance {
     QMUIPopupContainerView *popup = QMUIPopupContainerView.appearance;
@@ -163,7 +163,7 @@
 
 @end
 
-@implementation QDUIHelper (UITabBarItem)
+@implementation ZZUIHelper (UITabBarItem)
 
 + (UITabBarItem *)tabBarItemWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage tag:(NSInteger)tag {
     UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:image tag:tag];
@@ -174,7 +174,7 @@
 @end
 
 
-@implementation QDUIHelper (Button)
+@implementation ZZUIHelper (Button)
 
 + (QMUIButton *)generateDarkFilledButton {
     QMUIButton *button = [[QMUIButton alloc] qmui_initWithSize:CGSizeMake(200, 40)];
@@ -234,7 +234,7 @@
 @end
 
 
-@implementation QDUIHelper (Emotion)
+@implementation ZZUIHelper (Emotion)
 
 NSString *const QMUIEmotionString =
 @"01-[微笑];02-[开心];03-[生气];04-[委屈];05-[亲亲];06-[坏笑];07-[鄙视];08-[啊]\
@@ -289,7 +289,7 @@ static NSArray<QMUIEmotion *> *QMUIEmotionArray;
 @end
 
 
-@implementation QDUIHelper (SavePhoto)
+@implementation ZZUIHelper (SavePhoto)
 
 + (void)showAlertWhenSavedPhotoFailureByPermissionDenied {
     NSString *tipString = nil;
@@ -311,7 +311,7 @@ static NSArray<QMUIEmotion *> *QMUIEmotionArray;
 @end
 
 
-@implementation QDUIHelper (Calculate)
+@implementation ZZUIHelper (Calculate)
 
 + (NSString *)humanReadableFileSize:(long long)size {
     NSString * strSize = nil;
@@ -328,7 +328,7 @@ static NSArray<QMUIEmotion *> *QMUIEmotionArray;
 @end
 
 
-@implementation QDUIHelper (Theme)
+@implementation ZZUIHelper (Theme)
 
 + (UIImage *)navigationBarBackgroundImageWithThemeColor:(UIColor *)color {
     CGSize size = CGSizeMake(4, 88);
@@ -346,7 +346,7 @@ static NSArray<QMUIEmotion *> *QMUIEmotionArray;
 
 @end
 
-@implementation QDUIHelper (Layer)
+@implementation ZZUIHelper (Layer)
 
 + (CALayer *)generateSeparatorLayer {
     CALayer *layer = [CALayer layer];

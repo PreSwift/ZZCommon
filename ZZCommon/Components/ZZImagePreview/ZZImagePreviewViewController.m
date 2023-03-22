@@ -250,7 +250,7 @@
     }else{
         msg = @"保存图片成功" ;
     }
-    [QDUITips showWithText:msg inView:self.view];
+    [ZZUITips showWithText:msg inView:self.view];
 }
 
 

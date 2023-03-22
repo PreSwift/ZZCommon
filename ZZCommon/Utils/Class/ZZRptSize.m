@@ -1,15 +1,15 @@
 //
-//  QDRptSize.m
+//  ZZRptSize.m
 
 //  Created by west007 on 2021/7/7.
 //
 
-#import "QDRptSize.h"
+#import "ZZRptSize.h"
 #import "ZZCommonMacros.h"
 
 static CGFloat globalMuta = -1;
 
-@implementation QDRptSize
+@implementation ZZRptSize
 
 + (CGFloat)pt2rpt:(NSNumber *)pt {
     if (globalMuta == -1) {

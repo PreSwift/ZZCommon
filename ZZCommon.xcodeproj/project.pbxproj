@@ -11,13 +11,13 @@
 		042D000129C197C100907326 /* NSStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8029C197BD00907326 /* NSStringUtil.m */; };
 		042D000229C197C100907326 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8129C197BD00907326 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D000329C197C100907326 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8229C197BD00907326 /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D000429C197C100907326 /* QDUITips.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8329C197BD00907326 /* QDUITips.m */; };
+		042D000429C197C100907326 /* ZZUITips.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8329C197BD00907326 /* ZZUITips.m */; };
 		042D000529C197C100907326 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8429C197BD00907326 /* UIImage+Extension.m */; };
 		042D000629C197C100907326 /* UILabel+Aglinment.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8529C197BD00907326 /* UILabel+Aglinment.m */; };
-		042D000729C197C100907326 /* QDRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8629C197BD00907326 /* QDRefreshFooter.m */; };
-		042D000829C197C100907326 /* QDRptSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8729C197BD00907326 /* QDRptSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D000929C197C100907326 /* QDUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8829C197BD00907326 /* QDUIHelper.m */; };
-		042D000A29C197C100907326 /* QDRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8929C197BD00907326 /* QDRefreshHeader.m */; };
+		042D000729C197C100907326 /* ZZRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8629C197BD00907326 /* ZZRefreshFooter.m */; };
+		042D000829C197C100907326 /* ZZRptSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8729C197BD00907326 /* ZZRptSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D000929C197C100907326 /* ZZUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8829C197BD00907326 /* ZZUIHelper.m */; };
+		042D000A29C197C100907326 /* ZZRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8929C197BD00907326 /* ZZRefreshHeader.m */; };
 		042D000B29C197C100907326 /* MIUAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8A29C197BD00907326 /* MIUAES.m */; };
 		042D000C29C197C100907326 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8B29C197BD00907326 /* UIImageView+Extension.m */; };
 		042D000D29C197C100907326 /* UIScrollView+RequestPageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8C29C197BD00907326 /* UIScrollView+RequestPageExtension.m */; };
@@ -28,22 +28,22 @@
 		042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001529C197C100907326 /* HtmlUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9429C197BD00907326 /* HtmlUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D001629C197C100907326 /* QDNavigateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9529C197BD00907326 /* QDNavigateHelper.m */; };
+		042D001629C197C100907326 /* ZZNavigateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9529C197BD00907326 /* ZZNavigateHelper.m */; };
 		042D001729C197C100907326 /* NSBundle+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9629C197BD00907326 /* NSBundle+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001829C197C100907326 /* UIView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9729C197BD00907326 /* UIView+EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001929C197C100907326 /* ColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9829C197BD00907326 /* ColorUtil.m */; };
 		042D001A29C197C100907326 /* ZZDialogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9929C197BD00907326 /* ZZDialogHelper.m */; };
 		042D001B29C197C100907326 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9A29C197BD00907326 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001C29C197C100907326 /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9B29C197BD00907326 /* UIImage+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D001D29C197C100907326 /* QDUITips.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9C29C197BD00907326 /* QDUITips.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001D29C197C100907326 /* ZZUITips.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9C29C197BD00907326 /* ZZUITips.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001E29C197C100907326 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9D29C197BD00907326 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		042D001F29C197C100907326 /* NSStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9E29C197BD00907326 /* NSStringUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002029C197C100907326 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9F29C197BD00907326 /* UIView+Extension.m */; };
 		042D002129C197C100907326 /* MIUAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA029C197BD00907326 /* MIUAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D002229C197C100907326 /* QDRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA129C197BD00907326 /* QDRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D002329C197C100907326 /* QDUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA229C197BD00907326 /* QDUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D002429C197C100907326 /* QDRptSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEA329C197BD00907326 /* QDRptSize.m */; };
-		042D002529C197C100907326 /* QDRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA429C197BD00907326 /* QDRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002229C197C100907326 /* ZZRefreshHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA129C197BD00907326 /* ZZRefreshHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002329C197C100907326 /* ZZUIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA229C197BD00907326 /* ZZUIHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D002429C197C100907326 /* ZZRptSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEA329C197BD00907326 /* ZZRptSize.m */; };
+		042D002529C197C100907326 /* ZZRefreshFooter.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA429C197BD00907326 /* ZZRefreshFooter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002629C197C100907326 /* UILabel+Aglinment.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA529C197BD00907326 /* UILabel+Aglinment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D002729C197C100907326 /* ZZEnumBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFEA729C197BE00907326 /* ZZEnumBase.m */; };
 		042D002829C197C100907326 /* ZZEnumBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFEA829C197BE00907326 /* ZZEnumBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -348,14 +348,24 @@
 		042DFFFD29C197C100907326 /* UIView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7C29C197BD00907326 /* UIView+EmptyView.m */; };
 		042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7D29C197BD00907326 /* NSBundle+Extension.m */; };
 		042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		043DF7DB29C30BDB0074EC08 /* ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; };
+		049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */; };
+		049960F729CAFAB800CD084C /* ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; };
 		04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64029C1BC780017C7FB /* ZZImagePicker.m */; };
 		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9F64729C1BD7F0017C7FB /* ZZImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */; };
 		04E9F64829C1BD7F0017C7FB /* ZZImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BECD5BA34473C55EDDAC5C7B /* Pods_ZZCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */; };
-		F38C59DEEE931898015587FB /* Pods_ZZCommonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7582CBC0BEAEFA6BCF69185 /* Pods_ZZCommonDemo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049960DD29CAF8F700CD084C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042DFA9329C1972900907326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042DFA9B29C1972900907326;
+			remoteInfo = ZZCommon;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		042D015B29C1A7B800907326 /* ZZTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZTheme.h; sourceTree = "<group>"; };
@@ -559,13 +569,13 @@
 		042DFE8029C197BD00907326 /* NSStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringUtil.m; sourceTree = "<group>"; };
 		042DFE8129C197BD00907326 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		042DFE8229C197BD00907326 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		042DFE8329C197BD00907326 /* QDUITips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUITips.m; sourceTree = "<group>"; };
+		042DFE8329C197BD00907326 /* ZZUITips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZUITips.m; sourceTree = "<group>"; };
 		042DFE8429C197BD00907326 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		042DFE8529C197BD00907326 /* UILabel+Aglinment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Aglinment.m"; sourceTree = "<group>"; };
-		042DFE8629C197BD00907326 /* QDRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDRefreshFooter.m; sourceTree = "<group>"; };
-		042DFE8729C197BD00907326 /* QDRptSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDRptSize.h; sourceTree = "<group>"; };
-		042DFE8829C197BD00907326 /* QDUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDUIHelper.m; sourceTree = "<group>"; };
-		042DFE8929C197BD00907326 /* QDRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDRefreshHeader.m; sourceTree = "<group>"; };
+		042DFE8629C197BD00907326 /* ZZRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZRefreshFooter.m; sourceTree = "<group>"; };
+		042DFE8729C197BD00907326 /* ZZRptSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZRptSize.h; sourceTree = "<group>"; };
+		042DFE8829C197BD00907326 /* ZZUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZUIHelper.m; sourceTree = "<group>"; };
+		042DFE8929C197BD00907326 /* ZZRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZRefreshHeader.m; sourceTree = "<group>"; };
 		042DFE8A29C197BD00907326 /* MIUAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIUAES.m; sourceTree = "<group>"; };
 		042DFE8B29C197BD00907326 /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
 		042DFE8C29C197BD00907326 /* UIScrollView+RequestPageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RequestPageExtension.m"; sourceTree = "<group>"; };
@@ -576,22 +586,22 @@
 		042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+QDAudioSession.h"; sourceTree = "<group>"; };
 		042DFE9329C197BD00907326 /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		042DFE9429C197BD00907326 /* HtmlUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlUtil.h; sourceTree = "<group>"; };
-		042DFE9529C197BD00907326 /* QDNavigateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDNavigateHelper.m; sourceTree = "<group>"; };
+		042DFE9529C197BD00907326 /* ZZNavigateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigateHelper.m; sourceTree = "<group>"; };
 		042DFE9629C197BD00907326 /* NSBundle+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Extension.h"; sourceTree = "<group>"; };
 		042DFE9729C197BD00907326 /* UIView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyView.h"; sourceTree = "<group>"; };
 		042DFE9829C197BD00907326 /* ColorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtil.m; sourceTree = "<group>"; };
 		042DFE9929C197BD00907326 /* ZZDialogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDialogHelper.m; sourceTree = "<group>"; };
 		042DFE9A29C197BD00907326 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		042DFE9B29C197BD00907326 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
-		042DFE9C29C197BD00907326 /* QDUITips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUITips.h; sourceTree = "<group>"; };
+		042DFE9C29C197BD00907326 /* ZZUITips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZUITips.h; sourceTree = "<group>"; };
 		042DFE9D29C197BD00907326 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		042DFE9E29C197BD00907326 /* NSStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringUtil.h; sourceTree = "<group>"; };
 		042DFE9F29C197BD00907326 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		042DFEA029C197BD00907326 /* MIUAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIUAES.h; sourceTree = "<group>"; };
-		042DFEA129C197BD00907326 /* QDRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDRefreshHeader.h; sourceTree = "<group>"; };
-		042DFEA229C197BD00907326 /* QDUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDUIHelper.h; sourceTree = "<group>"; };
-		042DFEA329C197BD00907326 /* QDRptSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QDRptSize.m; sourceTree = "<group>"; };
-		042DFEA429C197BD00907326 /* QDRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QDRefreshFooter.h; sourceTree = "<group>"; };
+		042DFEA129C197BD00907326 /* ZZRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZRefreshHeader.h; sourceTree = "<group>"; };
+		042DFEA229C197BD00907326 /* ZZUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZUIHelper.h; sourceTree = "<group>"; };
+		042DFEA329C197BD00907326 /* ZZRptSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZRptSize.m; sourceTree = "<group>"; };
+		042DFEA429C197BD00907326 /* ZZRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZRefreshFooter.h; sourceTree = "<group>"; };
 		042DFEA529C197BD00907326 /* UILabel+Aglinment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Aglinment.h"; sourceTree = "<group>"; };
 		042DFEA729C197BE00907326 /* ZZEnumBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZEnumBase.m; sourceTree = "<group>"; };
 		042DFEA829C197BE00907326 /* ZZEnumBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZEnumBase.h; sourceTree = "<group>"; };
@@ -705,16 +715,26 @@
 		042DFF4F29C197C000907326 /* ZZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigationController.m; sourceTree = "<group>"; };
 		042DFF5029C197C000907326 /* ZZCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCommonTableViewController.m; sourceTree = "<group>"; };
 		042DFF5129C197C000907326 /* QMUICommonViewController+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUICommonViewController+EmptyView.m"; sourceTree = "<group>"; };
+		049960D829CAF68F00CD084C /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
+		049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
+		049960F829CAFBD800CD084C /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049960FA29CAFBD800CD084C /* DateTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DateTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049960FC29CAFBD800CD084C /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		049960FE29CAFBD800CD084C /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610029CAFBD800CD084C /* MJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610229CAFBD800CD084C /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610429CAFBD800CD084C /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610629CAFBD800CD084C /* QMUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QMUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610829CAFBD800CD084C /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610A29CAFBD800CD084C /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0499610C29CAFBD800CD084C /* YTKNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YTKNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E9F64029C1BC780017C7FB /* ZZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagePicker.m; sourceTree = "<group>"; };
 		04E9F64129C1BC780017C7FB /* ZZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagePicker.h; sourceTree = "<group>"; };
 		04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagePreviewViewController.m; sourceTree = "<group>"; };
 		04E9F64629C1BD7F0017C7FB /* ZZImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagePreviewViewController.h; sourceTree = "<group>"; };
 		1B4963005D7F8E3E194949D8 /* Pods-ZZCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommon.release.xcconfig"; path = "Target Support Files/Pods-ZZCommon/Pods-ZZCommon.release.xcconfig"; sourceTree = "<group>"; };
-		25D27EED1766F0EBE0BC1773 /* Pods-ZZCommonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommonDemo.debug.xcconfig"; path = "Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCE52BEA1736027851694E1 /* Pods-ZZCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommon.debug.xcconfig"; path = "Target Support Files/Pods-ZZCommon/Pods-ZZCommon.debug.xcconfig"; sourceTree = "<group>"; };
-		A7582CBC0BEAEFA6BCF69185 /* Pods_ZZCommonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZZCommonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF4062117656F25B80CA2C36 /* Pods-ZZCommonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZZCommonDemo.release.xcconfig"; path = "Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -730,8 +750,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043DF7DB29C30BDB0074EC08 /* ZZCommon.framework in Frameworks */,
-				F38C59DEEE931898015587FB /* Pods_ZZCommonDemo.framework in Frameworks */,
+				049960F729CAFAB800CD084C /* ZZCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,26 +821,26 @@
 				042DFE8A29C197BD00907326 /* MIUAES.m */,
 				042DFE9E29C197BD00907326 /* NSStringUtil.h */,
 				042DFE8029C197BD00907326 /* NSStringUtil.m */,
-				042DFE7A29C197BD00907326 /* ZZDialogHelper.h */,
-				042DFE9929C197BD00907326 /* ZZDialogHelper.m */,
-				042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */,
-				042DFE9529C197BD00907326 /* QDNavigateHelper.m */,
-				042DFEA429C197BD00907326 /* QDRefreshFooter.h */,
-				042DFE8629C197BD00907326 /* QDRefreshFooter.m */,
-				042DFEA129C197BD00907326 /* QDRefreshHeader.h */,
-				042DFE8929C197BD00907326 /* QDRefreshHeader.m */,
-				042DFE8729C197BD00907326 /* QDRptSize.h */,
-				042DFEA329C197BD00907326 /* QDRptSize.m */,
-				042DFEA229C197BD00907326 /* QDUIHelper.h */,
-				042DFE8829C197BD00907326 /* QDUIHelper.m */,
-				042DFE9C29C197BD00907326 /* QDUITips.h */,
-				042DFE8329C197BD00907326 /* QDUITips.m */,
 				042DFE9129C197BD00907326 /* TimeUtil.h */,
 				042DFE7329C197BD00907326 /* TimeUtil.m */,
 				042DFE7729C197BD00907326 /* UIImageEffects.h */,
 				042DFE8D29C197BD00907326 /* UIImageEffects.m */,
 				042DFE8F29C197BD00907326 /* UUIDStringThen.h */,
 				042DFE7529C197BD00907326 /* UUIDStringThen.m */,
+				042DFE7A29C197BD00907326 /* ZZDialogHelper.h */,
+				042DFE9929C197BD00907326 /* ZZDialogHelper.m */,
+				042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */,
+				042DFE9529C197BD00907326 /* ZZNavigateHelper.m */,
+				042DFEA429C197BD00907326 /* ZZRefreshFooter.h */,
+				042DFE8629C197BD00907326 /* ZZRefreshFooter.m */,
+				042DFEA129C197BD00907326 /* ZZRefreshHeader.h */,
+				042DFE8929C197BD00907326 /* ZZRefreshHeader.m */,
+				042DFE8729C197BD00907326 /* ZZRptSize.h */,
+				042DFEA329C197BD00907326 /* ZZRptSize.m */,
+				042DFEA229C197BD00907326 /* ZZUIHelper.h */,
+				042DFE8829C197BD00907326 /* ZZUIHelper.m */,
+				042DFE9C29C197BD00907326 /* ZZUITips.h */,
+				042DFE8329C197BD00907326 /* ZZUITips.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -870,6 +889,8 @@
 				042DFAAD29C1975F00907326 /* AppDelegate.m */,
 				042DFAAF29C1975F00907326 /* SceneDelegate.h */,
 				042DFAB029C1975F00907326 /* SceneDelegate.m */,
+				049960D829CAF68F00CD084C /* QMUIConfigurationTemplate.h */,
+				049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */,
 				042DFAB229C1975F00907326 /* ViewController.h */,
 				042DFAB329C1975F00907326 /* ViewController.m */,
 				042DFAB529C1975F00907326 /* Main.storyboard */,
@@ -1556,8 +1577,18 @@
 		4B3532B51D0429CBF9A44C14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				049960F829CAFBD800CD084C /* AFNetworking.framework */,
+				049960FA29CAFBD800CD084C /* DateTools.framework */,
+				049960FC29CAFBD800CD084C /* IQKeyboardManager.framework */,
+				049960FE29CAFBD800CD084C /* Masonry.framework */,
+				0499610029CAFBD800CD084C /* MJExtension.framework */,
+				0499610229CAFBD800CD084C /* MJRefresh.framework */,
+				0499610429CAFBD800CD084C /* PureLayout.framework */,
+				0499610629CAFBD800CD084C /* QMUIKit.framework */,
+				0499610829CAFBD800CD084C /* ReactiveObjC.framework */,
+				0499610A29CAFBD800CD084C /* SDWebImage.framework */,
+				0499610C29CAFBD800CD084C /* YTKNetwork.framework */,
 				65FA4F9B1A50F0B4A7B2BFB7 /* Pods_ZZCommon.framework */,
-				A7582CBC0BEAEFA6BCF69185 /* Pods_ZZCommonDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1567,8 +1598,6 @@
 			children = (
 				9CCE52BEA1736027851694E1 /* Pods-ZZCommon.debug.xcconfig */,
 				1B4963005D7F8E3E194949D8 /* Pods-ZZCommon.release.xcconfig */,
-				25D27EED1766F0EBE0BC1773 /* Pods-ZZCommonDemo.debug.xcconfig */,
-				CF4062117656F25B80CA2C36 /* Pods-ZZCommonDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1629,7 +1658,7 @@
 				042D00A829C197C100907326 /* ZZNavigationController.h in Headers */,
 				042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */,
 				042D005629C197C100907326 /* ZZFilterItemCell.h in Headers */,
-				042D002229C197C100907326 /* QDRefreshHeader.h in Headers */,
+				042D002229C197C100907326 /* ZZRefreshHeader.h in Headers */,
 				042DFFB529C197C000907326 /* LOTModels.h in Headers */,
 				042DFF5A29C197C000907326 /* BRStringPickerView.h in Headers */,
 				042D017429C1AD5900907326 /* EllipsePageControl.h in Headers */,
@@ -1641,7 +1670,7 @@
 				042D016E29C1AD5900907326 /* UIView+SDExtension.h in Headers */,
 				042DFFB929C197C000907326 /* LOTLayer.h in Headers */,
 				042D00A329C197C100907326 /* TTRangeSlider.h in Headers */,
-				042D002329C197C100907326 /* QDUIHelper.h in Headers */,
+				042D002329C197C100907326 /* ZZUIHelper.h in Headers */,
 				042D001029C197C100907326 /* UUIDStringThen.h in Headers */,
 				042DFF5B29C197C000907326 /* BRResultModel.h in Headers */,
 				042DFF6429C197C000907326 /* NSBundle+BRPickerView.h in Headers */,
@@ -1679,7 +1708,7 @@
 				042D004329C197C100907326 /* AppGrayStyle.h in Headers */,
 				042D009629C197C100907326 /* ProtocolAndPrivacyView.h in Headers */,
 				042D001B29C197C100907326 /* GTMDefines.h in Headers */,
-				042D002529C197C100907326 /* QDRefreshFooter.h in Headers */,
+				042D002529C197C100907326 /* ZZRefreshFooter.h in Headers */,
 				042DFFB029C197C000907326 /* LOTShapeStroke.h in Headers */,
 				042DFFC629C197C000907326 /* LOTRadialGradientLayer.h in Headers */,
 				042D005429C197C100907326 /* GridImageView.h in Headers */,
@@ -1698,7 +1727,7 @@
 				042D001429C197C100907326 /* NSString+AES.h in Headers */,
 				042DFF9429C197C000907326 /* LOTStrokeRenderer.h in Headers */,
 				042D003A29C197C100907326 /* ResponseModel.h in Headers */,
-				042D001D29C197C100907326 /* QDUITips.h in Headers */,
+				042D001D29C197C100907326 /* ZZUITips.h in Headers */,
 				042D001F29C197C100907326 /* NSStringUtil.h in Headers */,
 				04E9F64829C1BD7F0017C7FB /* ZZImagePreviewViewController.h in Headers */,
 				042DFF6229C197C000907326 /* BRDatePickerView+BR.h in Headers */,
@@ -1719,7 +1748,7 @@
 				042D00A929C197C100907326 /* ZZCommonTableViewController.h in Headers */,
 				042DFFF129C197C100907326 /* LOTBlockCallback.h in Headers */,
 				042D00AA29C197C100907326 /* QMUICommonViewController+Alert.h in Headers */,
-				042D000829C197C100907326 /* QDRptSize.h in Headers */,
+				042D000829C197C100907326 /* ZZRptSize.h in Headers */,
 				042D006029C197C100907326 /* CheckRadioModel.h in Headers */,
 				042DFF7329C197C000907326 /* LOTRenderNode.h in Headers */,
 				042D007E29C197C100907326 /* ZZSegmentView.h in Headers */,
@@ -1788,15 +1817,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042DFAC029C1976000907326 /* Build configuration list for PBXNativeTarget "ZZCommonDemo" */;
 			buildPhases = (
-				0A6188677438E2801C98E1B5 /* [CP] Check Pods Manifest.lock */,
 				042DFAA629C1975F00907326 /* Sources */,
 				042DFAA729C1975F00907326 /* Frameworks */,
 				042DFAA829C1975F00907326 /* Resources */,
-				ECB5AD16E83BA2E4C6CF7705 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				049960DE29CAF8F700CD084C /* PBXTargetDependency */,
 			);
 			name = ZZCommonDemo;
 			productName = ZZCommonDemo;
@@ -1862,28 +1890,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A6188677438E2801C98E1B5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZZCommonDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8A9D670D77D79926F295BC31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1906,23 +1912,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ECB5AD16E83BA2E4C6CF7705 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZZCommonDemo/Pods-ZZCommonDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1932,7 +1921,7 @@
 			files = (
 				042DFFF629C197C100907326 /* UUIDStringThen.m in Sources */,
 				042D004229C197C100907326 /* ResponseModel.m in Sources */,
-				042D000A29C197C100907326 /* QDRefreshHeader.m in Sources */,
+				042D000A29C197C100907326 /* ZZRefreshHeader.m in Sources */,
 				042DFF6129C197C000907326 /* BRDatePickerView.m in Sources */,
 				042D000D29C197C100907326 /* UIScrollView+RequestPageExtension.m in Sources */,
 				042D00B429C197C100907326 /* QMUICommonViewController+EmptyView.m in Sources */,
@@ -1965,12 +1954,12 @@
 				042D007D29C197C100907326 /* ZZSegmentView.m in Sources */,
 				042D00B229C197C100907326 /* ZZNavigationController.m in Sources */,
 				042D006629C197C100907326 /* SimpleTextInputViewController.m in Sources */,
-				042D000429C197C100907326 /* QDUITips.m in Sources */,
+				042D000429C197C100907326 /* ZZUITips.m in Sources */,
 				042D00AF29C197C100907326 /* QMUICommonViewController+Search.m in Sources */,
 				042DFF8929C197C000907326 /* LOTPolygonAnimator.m in Sources */,
 				042D006229C197C100907326 /* CheckRadioItem.m in Sources */,
 				042DFF9C29C197C000907326 /* UIBezierPath.m in Sources */,
-				042D002429C197C100907326 /* QDRptSize.m in Sources */,
+				042D002429C197C100907326 /* ZZRptSize.m in Sources */,
 				042D00AD29C197C100907326 /* ZZTabBarViewController.m in Sources */,
 				042DFFD229C197C000907326 /* LOTAnimationView.m in Sources */,
 				042D005A29C197C100907326 /* ZZFilterRow.m in Sources */,
@@ -2021,7 +2010,7 @@
 				04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */,
 				042D000F29C197C100907326 /* NSDictionary+Extension.m in Sources */,
 				042DFFFD29C197C100907326 /* UIView+EmptyView.m in Sources */,
-				042D000929C197C100907326 /* QDUIHelper.m in Sources */,
+				042D000929C197C100907326 /* ZZUIHelper.m in Sources */,
 				042DFFA429C197C000907326 /* LOTMask.m in Sources */,
 				042D008129C197C100907326 /* CommonWebShareBarView.m in Sources */,
 				042D00B029C197C100907326 /* QMUICommonViewController+Alert.m in Sources */,
@@ -2051,13 +2040,13 @@
 				042D008F29C197C100907326 /* ListRowTitleTableViewCell.m in Sources */,
 				042D004C29C197C100907326 /* ZZFormRowView.m in Sources */,
 				042DFFB129C197C000907326 /* LOTShapeGradientFill.m in Sources */,
-				042D001629C197C100907326 /* QDNavigateHelper.m in Sources */,
+				042D001629C197C100907326 /* ZZNavigateHelper.m in Sources */,
 				042DFF5C29C197C000907326 /* BRStringPickerView.m in Sources */,
 				042DFFBE29C197C000907326 /* LOTShapePath.m in Sources */,
 				042DFF7129C197C000907326 /* LOTRenderNode.m in Sources */,
 				042DFFDB29C197C000907326 /* LOTBezierData.m in Sources */,
 				042DFFE329C197C100907326 /* LOTMaskContainer.m in Sources */,
-				042D000729C197C100907326 /* QDRefreshFooter.m in Sources */,
+				042D000729C197C100907326 /* ZZRefreshFooter.m in Sources */,
 				042DFFB829C197C000907326 /* LOTShapeRectangle.m in Sources */,
 				042DFF7529C197C000907326 /* LOTTrimPathNode.m in Sources */,
 				042DFF9F29C197C000907326 /* UIColor.m in Sources */,
@@ -2096,12 +2085,21 @@
 			files = (
 				042DFAB429C1975F00907326 /* ViewController.m in Sources */,
 				042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */,
+				049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */,
 				042DFABF29C1976000907326 /* main.m in Sources */,
 				042DFAB129C1975F00907326 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049960DE29CAF8F700CD084C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042DFA9B29C1972900907326 /* ZZCommon */;
+			targetProxy = 049960DD29CAF8F700CD084C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		042DFAB529C1975F00907326 /* Main.storyboard */ = {
@@ -2299,7 +2297,6 @@
 		};
 		042DFAC129C1976000907326 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25D27EED1766F0EBE0BC1773 /* Pods-ZZCommonDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2377,7 +2374,6 @@
 		};
 		042DFAC229C1976000907326 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF4062117656F25B80CA2C36 /* Pods-ZZCommonDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

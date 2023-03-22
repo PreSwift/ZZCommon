@@ -1,13 +1,13 @@
 //
-//  QDRefreshFooter.m
+//  ZZRefreshFooter.m
 
 //  Created by mac on 2022/7/12.
 //
 
-#import "QDRefreshFooter.h"
+#import "ZZRefreshFooter.h"
 #import "ZZCommonMacros.h"
 
-@implementation QDRefreshFooter
+@implementation ZZRefreshFooter
 
 - (instancetype)init
 {

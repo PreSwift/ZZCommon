@@ -7,7 +7,7 @@
 #import "ZZFilterItemCell.h"
 #import <QMUIKit/QMUIKit.h>
 #import <PureLayout/PureLayout.h>
-#import "QDUIHelper.h"
+#import "ZZUIHelper.h"
 
 @interface ZZFilterItemCell ()
 
@@ -27,7 +27,7 @@
 }
 
 - (void)initSubviews {
-    _button = [QDUIHelper generateGhostButton];
+    _button = [ZZUIHelper generateGhostButton];
     _button.userInteractionEnabled = NO;
     [self.contentView addSubview:_button];
     [_button autoPinEdgesToSuperviewEdges];

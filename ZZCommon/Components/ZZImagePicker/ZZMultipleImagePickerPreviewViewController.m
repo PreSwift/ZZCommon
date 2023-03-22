@@ -155,7 +155,7 @@
         self.originImageCheckboxButton.hidden = NO;
         if (self.originImageCheckboxButton.selected) {
             [asset assetSize:^(long long size) {
-                [self.originImageCheckboxButton setTitle:[NSString stringWithFormat:@"原图(%@)", [QDUIHelper humanReadableFileSize:size]] forState:UIControlStateNormal];
+                [self.originImageCheckboxButton setTitle:[NSString stringWithFormat:@"原图(%@)", [ZZUIHelper humanReadableFileSize:size]] forState:UIControlStateNormal];
                 [self.originImageCheckboxButton sizeToFit];
                 [self.bottomToolBarView setNeedsLayout];
             }];

@@ -1,5 +1,5 @@
 //
-//  QDRptSize.h
+//  ZZRptSize.h
 
 //  Created by west007 on 2021/7/7.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QDRptSize : NSObject
+@interface ZZRptSize : NSObject
 
 + (CGFloat)pt2rpt: (NSNumber *)pt;
 

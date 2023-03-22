@@ -67,14 +67,14 @@
                     if (status == QMUIAssetAuthorizationStatusAuthorized) {
                         [weakSelf presentAlbumViewController:isCamera];
                     } else {
-                        [QDUITips showWithText:@"权限获取失败" inView:QMUIHelper.visibleViewController.view];
+                        [ZZUITips showWithText:@"权限获取失败" inView:QMUIHelper.visibleViewController.view];
                     }
                 });
             }];
         } else if ([QMUIAssetsManager authorizationStatus] == QMUIAssetAuthorizationStatusAuthorized) {
             [weakSelf presentAlbumViewController:isCamera];
         } else {
-            [QDUITips showWithText:@"权限获取失败" inView:QMUIHelper.visibleViewController.view];
+            [ZZUITips showWithText:@"权限获取失败" inView:QMUIHelper.visibleViewController.view];
         }
     });
 }

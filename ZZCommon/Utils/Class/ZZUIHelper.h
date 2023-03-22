@@ -1,57 +1,57 @@
 //
-//  QDUIHelper.h
+//  ZZUIHelper.h
 //
 
 #import <Foundation/Foundation.h>
 #import "ZZCommonMacros.h"
 
-@interface QDUIHelper : NSObject
+@interface ZZUIHelper : NSObject
 
 + (void)renderGlobalAppearances;
 @end
 
 
-@interface QDUIHelper (QMUIMoreOperationAppearance)
+@interface ZZUIHelper (QMUIMoreOperationAppearance)
 
 + (void)customMoreOperationAppearance;
 @end
 
 
-@interface QDUIHelper (QMUIAlertControllerAppearance)
+@interface ZZUIHelper (QMUIAlertControllerAppearance)
 
 + (void)customAlertControllerAppearance;
 @end
 
-@interface QDUIHelper (QMUIDialogViewControllerAppearance)
+@interface ZZUIHelper (QMUIDialogViewControllerAppearance)
 
 + (void)customDialogViewControllerAppearance;
 @end
 
 
-@interface QDUIHelper (QMUIEmotionView)
+@interface ZZUIHelper (QMUIEmotionView)
 
 + (void)customEmotionViewAppearance;
 @end
 
 
-@interface QDUIHelper (QMUIImagePicker)
+@interface ZZUIHelper (QMUIImagePicker)
 
 + (void)customImagePickerAppearance;
 @end
 
-@interface QDUIHelper (QMUIPopupContainerView)
+@interface ZZUIHelper (QMUIPopupContainerView)
 
 + (void)customPopupAppearance;
 @end
 
 
-@interface QDUIHelper (UITabBarItem)
+@interface ZZUIHelper (UITabBarItem)
 
 + (UITabBarItem *)tabBarItemWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage tag:(NSInteger)tag;
 @end
 
 
-@interface QDUIHelper (Button)
+@interface ZZUIHelper (Button)
 
 + (QMUIButton *)generateDarkFilledButton;
 + (QMUIButton *)generateLightBorderedButton;
@@ -61,7 +61,7 @@
 @end
 
 
-@interface QDUIHelper (Emotion)
+@interface ZZUIHelper (Emotion)
 
 + (NSArray<QMUIEmotion *> *)qmuiEmotions;
 
@@ -70,24 +70,24 @@
 @end
 
 
-@interface QDUIHelper (SavePhoto)
+@interface ZZUIHelper (SavePhoto)
 
 + (void)showAlertWhenSavedPhotoFailureByPermissionDenied;
 @end
 
 
-@interface QDUIHelper (Calculate)
+@interface ZZUIHelper (Calculate)
 
 + (NSString *)humanReadableFileSize:(long long)size;
 @end
 
 
-@interface QDUIHelper (Theme)
+@interface ZZUIHelper (Theme)
 
 + (UIImage *)navigationBarBackgroundImageWithThemeColor:(UIColor *)color;
 @end
 
-@interface QDUIHelper (Layer)
+@interface ZZUIHelper (Layer)
 
 + (CALayer *)generateSeparatorLayer;
 @end

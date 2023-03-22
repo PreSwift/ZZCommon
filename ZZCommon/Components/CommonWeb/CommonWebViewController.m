@@ -142,7 +142,7 @@
                 if (intType == 1) {
                     [self popVC];
                 } else if (intType == 2) {
-                    [self callBackBasicInfo];
+//                    [self callBackBasicInfo];
                 } else if (intType == 3) {
                     self.navigationBarHidden = YES;
                     // 利用runtime调用QMUI内部方法
@@ -166,17 +166,6 @@
 
 - (void)popVC {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (void)callBackBasicInfo {
-    NSMutableDictionary *parameter = [NSMutableDictionary dictionary];
-    parameter[@"token"] = [ComUserHelper shareInstance].accessToken;
-    parameter[@"userID"] = [NSNumber numberWithInteger:[ComUserHelper shareInstance].userInfo.employeeId];
-    NSString *jsEvaluate = [NSString stringWithFormat:@"initView(%@)", [parameter mj_JSONString]];
-    NSLog(@"jsEvaluate: %@", jsEvaluate);
-    [_webView evaluateJavaScript:jsEvaluate completionHandler:^(id _Nullable obj, NSError * _Nullable error) {
-        NSLog(@"Obj: %@ \n Error: %@", obj, error);
-    }];
 }
 
 @end

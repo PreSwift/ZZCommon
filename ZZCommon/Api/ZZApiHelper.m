@@ -10,7 +10,9 @@
 NSString * _Nullable BASE_HOST;
 NSString * _Nullable BASE_WEB_HOST;
 NSString * _Nullable CDN_HOST;
-NSString * _Nullable uuidStr;
+
+HeaderHandleBlock headerHandleBlock;
+StatusCodeValidatorBlock statusCodeValidatorBlock;
 
 typedef void(^ComApiSuccessBlock)(__kindof YTKBaseRequest *request, __kindof NSObject * _Nullable obj);
 typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseModel * _Nullable responseModel);
@@ -54,7 +56,8 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
 }
 
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary {
-    return [ZZApiHelper handleHeaders:_requestHeaderFieldValueDictionary];
+    NSAssert(headerHandleBlock, @"请先配置公共header逻辑，configForDefaultHeader:");
+    return headerHandleBlock(_requestHeaderFieldValueDictionary);
 }
 
 - (NSTimeInterval)requestTimeoutInterval {
@@ -90,6 +93,15 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
     self.failureBlock = nil;
 }
 
+- (BOOL)statusCodeValidator {
+    if (!statusCodeValidatorBlock) {
+        NSInteger statusCode = [self responseStatusCode];
+        return (statusCode >= 200 && statusCode <= 299);
+    } else {
+        return statusCodeValidatorBlock(self);
+    }
+}
+
 /**
  通用处理方式
  */
@@ -116,30 +128,17 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
 }
 
 /**
- 通用添加公共参数Header
+ 配置公共Header处理
  */
-+ (nullable NSDictionary <NSString *, NSString *> *)handleHeaders:(NSDictionary <NSString *, NSString *>  * _Nullable)oldHeaders {
-    NSString *accessToken = [ComUserHelper shareInstance].accessToken;
-    NSMutableDictionary *newHeaders;
-    if (oldHeaders == NULL) {
-        newHeaders = [NSMutableDictionary dictionary];
-    } else if (![oldHeaders.allKeys containsObject:@"Authorization"]) {
-        newHeaders = [NSMutableDictionary dictionaryWithDictionary:oldHeaders];
-    }
-    if (newHeaders!=NULL) {
-        if (accessToken != NULL) {
-            newHeaders[@"Authorization"] = [NSString stringWithFormat:@"Bearer %@", accessToken];
-        }
-        newHeaders[@"platform"] = @"2";
-        if (uuidStr == NULL) {
-            uuidStr = [[UUIDStringThen alloc] getDeviceIDInKeychain];
-        }
-        newHeaders[@"deviceId"] = uuidStr;
-        newHeaders[@"version"] = [NSBundle mainBundle].currentVersonString;
-        return newHeaders;
-    }
-   
-    return oldHeaders;
++ (void)configForDefaultHeader:(HeaderHandleBlock)block {
+    headerHandleBlock = block;
+}
+
+/**
+ 配置公共StatusCode处理
+ */
++ (void)configForStatusCodeValidator:(StatusCodeValidatorBlock)block {
+    statusCodeValidatorBlock = block;
 }
 
 /**
@@ -292,9 +291,6 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
  */
 + (RACTuple *)successResponseModel:(ZZApiHelper *)successRequest {
     ResponseModel *responseModel = [ResponseModel mj_objectWithKeyValues:successRequest.responseJSONObject];
-    if ([successRequest.requestUrl containsString:@"auth/mobile/token/sms"] && [responseModel.data isKindOfClass:NSString.class]) {
-        responseModel.msg = responseModel.data;
-    }
     if (responseModel.code == 0) {
         return [RACTuple tupleWithObjects:@YES, successRequest.objectBlock ? successRequest.objectBlock(successRequest.responseJSONObject) : responseModel, nil];
     } else {
@@ -311,26 +307,6 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
         responseModel = [[ResponseModel alloc] initWithCode:failureRequest.responseStatusCode msg:[ZZApiHelper handleResponseMsg:failureRequest.error.code]];
     }
     return responseModel;
-}
-
-- (BOOL)statusCodeValidator {
-    NSInteger statusCode = [self responseStatusCode];
-    NSString *errorMsg = [[self responseJSONObject] valueForKey:@"msg"];
-    if ((statusCode == 401 || statusCode == 424) && ![_requestUrl isEqualToString:@"auth/token/logout"]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (![[QMUIHelper visibleViewController] isKindOfClass:[ZZBaseLoginViewController class]]) {
-                if (![ComUserHelper shareInstance].hasShowOverdue) {
-                    [ComUserHelper shareInstance].hasShowOverdue = YES;
-                    [ZZDialogHelper showAlertDialog:@"温馨提示" content:errorMsg ? errorMsg : @"用户凭证已过期，请重新登录!" okBlock:^(__kindof QMUIModalPresentationViewController * _Nonnull dialogViewController) {
-                        [ComUserHelper logoutWithClear:YES];
-                        [ComUserHelper shareInstance].hasShowOverdue = NO;
-                    }];
-                }
-                
-            }
-        });
-    }
-    return (statusCode >= 200 && statusCode <= 299);
 }
 
 + (void)configForBaseHost:(NSString *)baseHost baseWebHost:(NSString *)baseWebHost cdnHost:(NSString *)cdnHost {

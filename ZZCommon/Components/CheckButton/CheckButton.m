@@ -29,7 +29,7 @@
 }
 
 - (void)initSubviews {
-    _button = [QDUIHelper generateGhostButton];
+    _button = [ZZUIHelper generateGhostButton];
     _button.userInteractionEnabled = NO;
     [self.contentView addSubview:_button];
     [_button autoPinEdgesToSuperviewEdges];

@@ -1,13 +1,13 @@
 //
-//  QDRefreshHeader.m
+//  ZZRefreshHeader.m
 
 //  Created by mac on 2022/7/12.
 //
 
-#import "QDRefreshHeader.h"
+#import "ZZRefreshHeader.h"
 #import "ZZCommonMacros.h"
 
-@implementation QDRefreshHeader
+@implementation ZZRefreshHeader
 
 - (instancetype)init
 {

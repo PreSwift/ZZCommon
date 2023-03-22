@@ -42,7 +42,7 @@
 /**
  适配宏
  */
-#define SS(x) [QDRptSize pt2rpt:@x]
+#define SS(x) [ZZRptSize pt2rpt:@x]
 
 #define CREAT_URL(x) [[NSString alloc] initWithFormat:@"%@%@", BASE_HOST, x]
 #define CREAT_WEB_URL(x) [[NSString alloc] initWithFormat:@"%@%@", BASE_WEB_HOST, x]

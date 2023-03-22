@@ -48,7 +48,7 @@
 
 - (void)addMJHeader:(BOOL)refreshFirst refreshBlock:(void (^)(void))refreshBlock {
     __weak __typeof(self)weakSelf = self;
-    QDRefreshHeader *header = [QDRefreshHeader headerWithRefreshingBlock:^{
+    ZZRefreshHeader *header = [ZZRefreshHeader headerWithRefreshingBlock:^{
         weakSelf.currentPage = @1;
         refreshBlock();
         if (weakSelf.mj_footer) {
@@ -66,7 +66,7 @@
 }
 
 - (void)addMJFooter:(void (^)(void))refreshBlock {
-    QDRefreshFooter *footer = [QDRefreshFooter footerWithRefreshingBlock:^{
+    ZZRefreshFooter *footer = [ZZRefreshFooter footerWithRefreshingBlock:^{
         refreshBlock();
     }];
     self.mj_footer = footer;
@@ -158,12 +158,12 @@
     } else {
         [(QMUICommonViewController *)self.qmui_viewController hideEmptyView];
         self.backgroundColor = self.oldBackgroundColor;
-        [QDUITips showWithText:responseMsg inView:self.qmui_viewController.view];
+        [ZZUITips showWithText:responseMsg inView:self.qmui_viewController.view];
     }
 }
 
 - (void)resetFooterTitle:(BOOL)isEmpty {
-    QDRefreshFooter *footer = (QDRefreshFooter *)self.mj_footer;
+    ZZRefreshFooter *footer = (ZZRefreshFooter *)self.mj_footer;
     if (footer) {
         if (isEmpty) {
             [footer setTitle:@"" forState:MJRefreshStateNoMoreData];

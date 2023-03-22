@@ -156,16 +156,16 @@
 #pragma mark - 业务方法
 
 - (void)startLoading {
-    [QDUITips showLoading:@"下载中..." detailText:@"正在从iCloud同步下载图片，请稍后" inView:[UIApplication sharedApplication].keyWindow];
+    [ZZUITips showLoading:@"下载中..." detailText:@"正在从iCloud同步下载图片，请稍后" inView:[UIApplication sharedApplication].keyWindow];
 }
 
 - (void)stopLoading {
-    [QDUITips hideAllTips];
+    [ZZUITips hideAllTips];
 }
 
 - (void)showTipLabelWithText:(NSString *)text {
     [self stopLoading];
-    [QDUITips showWithText:text inView:[UIApplication sharedApplication].keyWindow hideAfterDelay:1.0];
+    [ZZUITips showWithText:text inView:[UIApplication sharedApplication].keyWindow hideAfterDelay:1.0];
 }
 
 

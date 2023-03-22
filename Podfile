@@ -9,7 +9,7 @@ use_frameworks!
 
 # ruby语法
 # target数组 如果有新的target直接加入该数组
-targetsArray1 = ['ZZCommon', 'ZZCommonDemo']
+targetsArray1 = ['ZZCommon']
 # 循环
 targetsArray1.each do |t|
   

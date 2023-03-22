@@ -15,6 +15,8 @@ extern NSString * _Nullable CDN_HOST;
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NSObject * _Nullable(^ComApiObjectBlock)(id jsonObj);
+typedef NSDictionary<NSString *, NSString *> * _Nullable (^HeaderHandleBlock)(NSDictionary<NSString *, NSString *> * _Nullable oldHeader);
+typedef BOOL (^StatusCodeValidatorBlock)(YTKRequest *request);
 
 @interface ZZApiHelper<__covariant T:NSObject *> : YTKRequest
 {
@@ -39,11 +41,6 @@ typedef NSObject * _Nullable(^ComApiObjectBlock)(id jsonObj);
                  failure:(nullable void (^)(YTKBaseRequest *request, ResponseModel * _Nullable responseModel))failure;
 
 /**
- 通用添加公共参数Header
- */
-+ (nullable NSDictionary <NSString *, NSString *> *)handleHeaders:(NSDictionary <NSString *, NSString *>  * _Nullable)oldHeaders;
-
-/**
  通用处理错误msg
  */
 + (NSString *)handleResponseMsg:(NSInteger)responseStatusCode;
@@ -65,6 +62,16 @@ typedef NSObject * _Nullable(^ComApiObjectBlock)(id jsonObj);
  设置Host
  */
 + (void)configForBaseHost:(NSString *)baseHost baseWebHost:(nullable NSString *)baseWebHost cdnHost:(nullable NSString *)cdnHost;
+
+/**
+ 配置公共Header处理
+ */
++ (void)configForDefaultHeader:(HeaderHandleBlock)block;
+
+/**
+ 配置公共StatusCode处理
+ */
++ (void)configForStatusCodeValidator:(StatusCodeValidatorBlock)block;
 
 @end
 
