@@ -43,7 +43,7 @@ typedef BOOL (^StatusCodeValidatorBlock)(YTKRequest *request);
 /**
  通用处理错误msg
  */
-+ (NSString *)handleResponseMsg:(NSInteger)responseStatusCode;
++ (NSString *)handleResponseMsg:(YTKRequest *)failRequest;
 
 /**
  解析successRequest
