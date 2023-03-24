@@ -1487,12 +1487,12 @@
 		042DFF1729C197BF00907326 /* CommonWeb */ = {
 			isa = PBXGroup;
 			children = (
+				042DFF1C29C197BF00907326 /* CommonWebShareBarView.h */,
 				042DFF1829C197BF00907326 /* CommonWebShareBarView.m */,
-				042DFF1929C197BF00907326 /* CommonWebViewDelegate.m */,
+				042DFF1D29C197BF00907326 /* CommonWebViewController.h */,
 				042DFF1A29C197BF00907326 /* CommonWebViewController.m */,
 				042DFF1B29C197BF00907326 /* CommonWebViewDelegate.h */,
-				042DFF1C29C197BF00907326 /* CommonWebShareBarView.h */,
-				042DFF1D29C197BF00907326 /* CommonWebViewController.h */,
+				042DFF1929C197BF00907326 /* CommonWebViewDelegate.m */,
 			);
 			path = CommonWeb;
 			sourceTree = "<group>";
