@@ -5,9 +5,9 @@
 #import <Foundation/Foundation.h>
 #import "ZZThemeProtocol.h"
 
-extern NSString * _Nullable const QDSelectedThemeIdentifier;
-extern NSString * _Nullable const QDThemeIdentifierDefault;
-extern NSString * _Nullable const QDThemeIdentifierDark;
+extern NSString * _Nullable const ZZSelectedThemeIdentifier;
+extern NSString * _Nullable const ZZThemeIdentifierDefault;
+extern NSString * _Nullable const ZZThemeIdentifierDark;
 
 /// 简单对 QMUIThemeManager 做一层业务的封装，省去类型转换的工作量
 @interface ZZThemeManager : NSObject
@@ -15,7 +15,7 @@ extern NSString * _Nullable const QDThemeIdentifierDark;
 @property(class, nonatomic, readonly, nullable) NSObject<ZZThemeProtocol> *currentTheme;
 @end
 
-@interface UIColor (QDTheme)
+@interface UIColor (ZZTheme)
 
 @property(class, nonatomic, strong, readonly) UIColor * _Nonnull qd_backgroundColor;
 @property(class, nonatomic, strong, readonly) UIColor * _Nonnull qd_backgroundColorLighten;
@@ -32,7 +32,7 @@ extern NSString * _Nullable const QDThemeIdentifierDark;
 @property(class, nonatomic, strong, readonly) UIColor * _Nonnull qd_separatorColor;
 @end
 
-@interface UIImage (QDTheme)
+@interface UIImage (ZZTheme)
 
 @property(class, nonatomic, strong, readonly) UIImage * _Nonnull qd_navigationBarBackgroundImage;
 @property(class, nonatomic, strong, readonly) UIImage * _Nonnull qd_navigationBarBackIndicatorImage;
@@ -45,7 +45,7 @@ extern NSString * _Nullable const QDThemeIdentifierDark;
 @property(class, nonatomic, strong, readonly) UIImage * _Nonnull qd_searchBarBackgroundImage;
 @end
 
-@interface UIFont (QDTheme)
+@interface UIFont (ZZTheme)
 
 @property(class, nonatomic, strong, readonly) UIFont * _Nonnull qd_navigationBarTitleFont;
 @property(class, nonatomic, strong, readonly) UIFont * _Nonnull qd_titleFont;
@@ -62,7 +62,7 @@ extern NSString * _Nullable const QDThemeIdentifierDark;
 @property(class, nonatomic, strong, readonly) UIFont * _Nonnull qd_otherBoldFont;
 @end
 
-@interface UIVisualEffect (QDTheme)
+@interface UIVisualEffect (ZZTheme)
 
 @property(class, nonatomic, strong, readonly) UIVisualEffect * _Nonnull qd_standardBlurEffect;
 @end

@@ -10,7 +10,7 @@
 #import "ZZTabBarViewController.h"
 #import "ZZCommonMacros.h"
 
-@interface QDWelcomeCollectionCell : UICollectionViewCell
+@interface ZZWelcomeCollectionCell : UICollectionViewCell
 
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) UILabel *label1;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation QDWelcomeCollectionCell
+@implementation ZZWelcomeCollectionCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -129,11 +129,11 @@
 #pragma mark - <SDCycleScrollViewDelegate>
 
 - (Class)customCollectionViewCellClassForCycleScrollView:(SDCycleScrollView *)view {
-    return QDWelcomeCollectionCell.class;
+    return ZZWelcomeCollectionCell.class;
 }
 
 - (void)setupCustomCell:(UICollectionViewCell *)cell forIndex:(NSInteger)index cycleScrollView:(SDCycleScrollView *)view {
-    QDWelcomeCollectionCell *thisCell = (QDWelcomeCollectionCell *)cell;
+    ZZWelcomeCollectionCell *thisCell = (ZZWelcomeCollectionCell *)cell;
     if (thisCell.startBtn.allTargets.count == 0) {
         [thisCell.startBtn addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
     }

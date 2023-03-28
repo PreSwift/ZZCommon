@@ -5,9 +5,9 @@
 #import "ZZThemeManager.h"
 #import "ZZCommonMacros.h"
 
-NSString *const QDSelectedThemeIdentifier = @"selectedThemeIdentifier";
-NSString *const QDThemeIdentifierDefault = @"Default";
-NSString *const QDThemeIdentifierDark = @"Dark";
+NSString *const ZZSelectedThemeIdentifier = @"selectedThemeIdentifier";
+NSString *const ZZThemeIdentifierDefault = @"Default";
+NSString *const ZZThemeIdentifierDark = @"Dark";
 
 @interface ZZThemeManager ()
 
@@ -118,7 +118,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
         self.qd_navigationBarCloseImage = [UIImage qmui_imageWithShape:QMUIImageShapeNavClose size:CGSizeMake(16, 16) tintColor:UIColor.whiteColor];
         self.qd_navigationBarDisclosureIndicatorImage = [[UIImage qmui_imageWithShape:QMUIImageShapeTriangle size:CGSizeMake(8, 5) tintColor:nil] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
         self.qd_tableViewCellDisclosureIndicatorImage = [UIImage qmui_imageWithThemeProvider:^UIImage * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
-            return [identifier isEqualToString:QDThemeIdentifierDark] ? [UIImage qmui_imageWithShape:QMUIImageShapeDisclosureIndicator size:CGSizeMake(6, 10) lineWidth:1 tintColor:UIColorMake(98, 100, 104)] : [UIImage qmui_imageWithShape:QMUIImageShapeDisclosureIndicator size:CGSizeMake(6, 10) lineWidth:1 tintColor:QMUICMI.grayLightenColor];
+            return [identifier isEqualToString:ZZThemeIdentifierDark] ? [UIImage qmui_imageWithShape:QMUIImageShapeDisclosureIndicator size:CGSizeMake(6, 10) lineWidth:1 tintColor:UIColorMake(98, 100, 104)] : [UIImage qmui_imageWithShape:QMUIImageShapeDisclosureIndicator size:CGSizeMake(6, 10) lineWidth:1 tintColor:QMUICMI.grayLightenColor];
         }];
         self.qd_tableViewCellCheckmarkImage = [UIImage qmui_imageWithThemeProvider:^UIImage * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
             return [UIImage qmui_imageWithShape:QMUIImageShapeCheckmark size:CGSizeMake(15, 12) tintColor:self.qd_tintColor];
@@ -134,7 +134,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
         }];
         
         self.qd_standardBlueEffect = [UIVisualEffect qmui_effectWithThemeProvider:^UIVisualEffect * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
-            return [UIBlurEffect effectWithStyle:[identifier isEqualToString:QDThemeIdentifierDark] ? UIBlurEffectStyleDark : UIBlurEffectStyleLight];
+            return [UIBlurEffect effectWithStyle:[identifier isEqualToString:ZZThemeIdentifierDark] ? UIBlurEffectStyleDark : UIBlurEffectStyleLight];
         }];
         
         self.qd_navigationBarTitleFont = CodeMediumFontMake(SS(18));
@@ -160,7 +160,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
 
 @end
 
-@implementation UIColor (QDTheme)
+@implementation UIColor (ZZTheme)
 
 + (instancetype)qd_sharedInstance {
     static dispatch_once_t onceToken;
@@ -225,7 +225,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
 
 @end
 
-@implementation UIImage (QDTheme)
+@implementation UIImage (ZZTheme)
 
 + (UIImage *)qd_navigationBarBackgroundImage {
     return ZZThemeManager.sharedInstance.qd_navigationBarBackgroundImage;
@@ -265,7 +265,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
 
 @end
 
-@implementation UIVisualEffect (QDTheme)
+@implementation UIVisualEffect (ZZTheme)
 
 + (UIVisualEffect *)qd_standardBlurEffect {
     return ZZThemeManager.sharedInstance.qd_standardBlueEffect;
@@ -273,7 +273,7 @@ NSString *const QDThemeIdentifierDark = @"Dark";
 
 @end
 
-@implementation UIFont (QDTheme)
+@implementation UIFont (ZZTheme)
 
 + (UIFont *)qd_navigationBarTitleFont {
     return ZZThemeManager.sharedInstance.qd_navigationBarTitleFont;

@@ -25,7 +25,7 @@
 		042D000F29C197C100907326 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8E29C197BD00907326 /* NSDictionary+Extension.m */; };
 		042D001029C197C100907326 /* UUIDStringThen.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8F29C197BD00907326 /* UUIDStringThen.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001229C197C100907326 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9129C197BD00907326 /* TimeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042D001329C197C100907326 /* AVAudioSession+ZZAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+ZZAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001529C197C100907326 /* HtmlUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9429C197BD00907326 /* HtmlUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001629C197C100907326 /* ZZNavigateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9529C197BD00907326 /* ZZNavigateHelper.m */; };
@@ -334,7 +334,7 @@
 		042DFFEF29C197C100907326 /* LOTAnimationView_Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6D29C197BD00907326 /* LOTAnimationView_Compat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF029C197C100907326 /* LOTValueCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6E29C197BD00907326 /* LOTValueCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042DFFF129C197C100907326 /* LOTBlockCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE6F29C197BD00907326 /* LOTBlockCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042DFFF229C197C100907326 /* AVAudioSession+QDAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */; };
+		042DFFF229C197C100907326 /* AVAudioSession+ZZAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7129C197BD00907326 /* AVAudioSession+ZZAudioSession.m */; };
 		042DFFF329C197C100907326 /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7229C197BD00907326 /* NSString+AES.m */; };
 		042DFFF429C197C100907326 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7329C197BD00907326 /* TimeUtil.m */; };
 		042DFFF629C197C100907326 /* UUIDStringThen.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7529C197BD00907326 /* UUIDStringThen.m */; };
@@ -553,7 +553,7 @@
 		042DFE6D29C197BD00907326 /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView_Compat.h; sourceTree = "<group>"; };
 		042DFE6E29C197BD00907326 /* LOTValueCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTValueCallback.h; sourceTree = "<group>"; };
 		042DFE6F29C197BD00907326 /* LOTBlockCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTBlockCallback.h; sourceTree = "<group>"; };
-		042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+QDAudioSession.m"; sourceTree = "<group>"; };
+		042DFE7129C197BD00907326 /* AVAudioSession+ZZAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAudioSession+ZZAudioSession.m"; sourceTree = "<group>"; };
 		042DFE7229C197BD00907326 /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
 		042DFE7329C197BD00907326 /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
 		042DFE7529C197BD00907326 /* UUIDStringThen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDStringThen.m; sourceTree = "<group>"; };
@@ -584,7 +584,7 @@
 		042DFE8E29C197BD00907326 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		042DFE8F29C197BD00907326 /* UUIDStringThen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDStringThen.h; sourceTree = "<group>"; };
 		042DFE9129C197BD00907326 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
-		042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+QDAudioSession.h"; sourceTree = "<group>"; };
+		042DFE9229C197BD00907326 /* AVAudioSession+ZZAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+ZZAudioSession.h"; sourceTree = "<group>"; };
 		042DFE9329C197BD00907326 /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
 		042DFE9429C197BD00907326 /* HtmlUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlUtil.h; sourceTree = "<group>"; };
 		042DFE9529C197BD00907326 /* ZZNavigateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigateHelper.m; sourceTree = "<group>"; };
@@ -787,8 +787,8 @@
 		042D017829C1AEAF00907326 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				042DFE9229C197BD00907326 /* AVAudioSession+QDAudioSession.h */,
-				042DFE7129C197BD00907326 /* AVAudioSession+QDAudioSession.m */,
+				042DFE9229C197BD00907326 /* AVAudioSession+ZZAudioSession.h */,
+				042DFE7129C197BD00907326 /* AVAudioSession+ZZAudioSession.m */,
 				042DFE9629C197BD00907326 /* NSBundle+Extension.h */,
 				042DFE7D29C197BD00907326 /* NSBundle+Extension.m */,
 				042DFE7629C197BD00907326 /* NSDictionary+Extension.h */,
@@ -1661,7 +1661,7 @@
 				042DFFBA29C197C000907326 /* LOTMask.h in Headers */,
 				042DFF6D29C197C000907326 /* BRAddressPickerView.h in Headers */,
 				042D00A829C197C100907326 /* ZZNavigationController.h in Headers */,
-				042D001329C197C100907326 /* AVAudioSession+QDAudioSession.h in Headers */,
+				042D001329C197C100907326 /* AVAudioSession+ZZAudioSession.h in Headers */,
 				042D005629C197C100907326 /* ZZFilterItemCell.h in Headers */,
 				042D002229C197C100907326 /* ZZRefreshHeader.h in Headers */,
 				042DFFB529C197C000907326 /* LOTModels.h in Headers */,
@@ -1972,7 +1972,7 @@
 				042D000D29C197C100907326 /* UIScrollView+RequestPageExtension.m in Sources */,
 				042D00B429C197C100907326 /* QMUICommonViewController+EmptyView.m in Sources */,
 				042D003529C197C100907326 /* PageModel.m in Sources */,
-				042DFFF229C197C100907326 /* AVAudioSession+QDAudioSession.m in Sources */,
+				042DFFF229C197C100907326 /* AVAudioSession+ZZAudioSession.m in Sources */,
 				042D006E29C197C100907326 /* ZZWelcomeViewController.m in Sources */,
 				042D005829C197C100907326 /* ZZFilterItemCell.m in Sources */,
 				042DFFA529C197C000907326 /* LOTLayer.m in Sources */,

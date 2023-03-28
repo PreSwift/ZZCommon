@@ -1,134 +1,29 @@
-#
-#  Be sure to run `pod spec lint ZZCommon.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |spec|
-
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
   spec.name         = "ZZCommon"
-  spec.version      = "0.0.6"
-  spec.summary      = "收集整合的一些常用工具和代码"
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "第一次测试上传"
-
+  spec.version      = "0.0.7"
+  spec.summary      = "基于一批基础三方库整合的通用OC项目脚手架。"
+  spec.description  = "本项目以QMUIKit为核心，PureLayout和Masnory两套UI布局框架配合使用，YTKNetwork做网络层支撑，MJExtension做数据解析，ReactiveObjC做信号处理方案，以及其他辅助框架。同时整合了一些常用的代码逻辑，本项目还处于完善阶段。请慎重使用。"
+  
   spec.homepage     = "https://github.com/PreSwift/ZZCommon/blob/main/README.md"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  # spec.license      = "MIT (example)"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
   spec.author             = { "Ethan" => "1778031092@qq.com" }
-  # Or just: spec.author    = "Ethan"
-  # spec.authors            = { "Ethan" => "1778031092@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/Ethan"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  spec.platform     = :ios, "12.0"
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
   spec.source       = { :git => "https://github.com/PreSwift/ZZCommon.git", :tag => "#{spec.version}" }
+  spec.requires_arc = true
+ 
+  spec.platform     = :ios, "12.0"
+  spec.frameworks   = "Foundation", "UIKit"
+  spec.source_files = "ZZCommon/**/*.{h,m}"
+  spec.libraries    = "sqlite3", "c++"
+  non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{h,m}', 'ZZCommon/Utils/Class/GTMDefines.h'
+  spec.exclude_files = non_arc_files
+  spec.subspec 'no-arc' do |sp|
+    sp.source_files = non_arc_files
+    sp.requires_arc = false
+  end
+  spec.xcconfig = {
+    'CLANG_ENABLE_OBJC_WEAK' => 'YES'
+  }
 
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  spec.source_files  = "ZZCommon/**/*.{h,m}"
-  # spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # spec.framework  = "SomeFramework"
-  spec.frameworks = "Foundation", "UIKit"
-
-  # spec.library   = "iconv"
-  spec.libraries = "sqlite3", "c++"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "QMUIKit", "4.6.0"
   spec.dependency "PureLayout"
   spec.dependency "Masonry"
@@ -139,19 +34,5 @@ Pod::Spec.new do |spec|
   spec.dependency "IQKeyboardManager"
   spec.dependency "DateTools"
   spec.dependency "ReactiveObjC"
-
-  # ――― Build settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-  spec.xcconfig = {
-    'CLANG_ENABLE_OBJC_WEAK' => 'YES'
-  }
-
-  spec.requires_arc = true
-  non_arc_files = 'ZZCommon/Utils/Class/GTMBase64.{h,m}', 'ZZCommon/Utils/Class/GTMDefines.h'
-  spec.exclude_files = non_arc_files
-  spec.subspec 'no-arc' do |sp|
-    sp.source_files = non_arc_files
-    sp.requires_arc = false
-  end
 
 end

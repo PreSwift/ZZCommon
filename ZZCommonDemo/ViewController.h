@@ -5,9 +5,9 @@
 //  Created by mac on 2023/3/15.
 //
 
-#import <UIKit/UIKit.h>
+#import <ZZCommon/ZZCommon.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : ZZCommonViewController
 
 
 @end

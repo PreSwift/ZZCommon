@@ -1,5 +1,5 @@
 //
-//  AVAudioSession+QDAudioSession.h
+//  AVAudioSession+ZZAudioSession.h
 
 //  Created by mac on 2022/8/29.
 //
@@ -8,7 +8,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AVAudioSession (QDAudioSession)
+@interface AVAudioSession (ZZAudioSession)
 
 @end
 

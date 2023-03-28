@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-#import <ZZCommon/ZZCommon.h>
 
 @interface ViewController ()
 
@@ -14,8 +13,14 @@
 
 @implementation ViewController
 
+- (void)setupNavigationItems {
+    [super setupNavigationItems];
+    self.title = @"首页";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColorWhite;
     // Do any additional setup after loading the view.
     
     QMUIButton *view = [[QMUIButton alloc] initForAutoLayout];

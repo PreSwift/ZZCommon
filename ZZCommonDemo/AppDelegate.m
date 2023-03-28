@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import <ZZCommon/ZZCommon.h>
+#import "ViewController.h"
+#import "QMUIConfigurationTemplate.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 1. 先注册主题监听，在回调里将主题持久化存储，避免启动过程中主题发生变化时读取到错误的值
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleThemeDidChangeNotification:) name:QMUIThemeDidChangeNotification object:nil];
+    
+    // 2. 然后设置主题的生成器
+    QMUIThemeManagerCenter.defaultThemeManager.themeGenerator = ^__kindof NSObject * _Nonnull(NSString * _Nonnull identifier) {
+        if ([identifier isEqualToString:ZZThemeIdentifierDefault]) return QMUIConfigurationTemplate.new;
+        return nil;
+    };
+    
+    // ZZ自定义的全局样式渲染
+    [ZZUIHelper renderGlobalAppearances];
+    
+    // 预加载 QQ 表情，避免第一次使用时卡顿
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [ZZUIHelper qmuiEmotions];
+    });
+    
+    // 设置LOG相关
+    [QMUIConsole sharedInstance].canShow = YES;
     
     // 配置HOST
     [ZZApiHelper configForBaseHost:@"https://erp.wtjy.com/" baseWebHost:nil cdnHost:nil];
@@ -29,6 +50,9 @@
     [ZZApiHelper configForStatusCodeValidator:^BOOL(YTKRequest * _Nonnull request) {
         return [weakSelf statusCodeValidator:request];
     }];
+    
+    self.window = [[UIWindow alloc] init];
+    [self didInitWindow];
     
     return YES;
 }
@@ -76,27 +100,25 @@
 - (void)didInitWindow {
     self.window.rootViewController = [self generateWindowRootViewController];
     [self.window makeKeyAndVisible];
-    [self startLaunchingAnimation];
 }
 
 - (UIViewController *)generateWindowRootViewController {
-    return [[TabBarViewController alloc] init];
+    return [[ZZNavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
 }
 
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)handleThemeDidChangeNotification:(NSNotification *)notification {
+    QMUIThemeManager *manager = notification.object;
+    if (![manager.name isEqual:QMUIThemeManagerNameDefault]) return;
+    
+    [[NSUserDefaults standardUserDefaults] setObject:manager.currentThemeIdentifier forKey:ZZSelectedThemeIdentifier];
+    
+    [ZZThemeManager.currentTheme applyConfigurationTemplate];
+    
+    // 主题发生变化，在这里更新全局 UI 控件的 appearance
+    [ZZUIHelper renderGlobalAppearances];
+    
+    // 更新表情 icon 的颜色
+    [ZZUIHelper updateEmotionImages];
 }
 
 

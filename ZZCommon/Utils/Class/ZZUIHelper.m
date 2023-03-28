@@ -19,7 +19,7 @@
                 QMUISearchController *result = originSelectorIMP(selfObject, originCMD, firstArgv);
                 
                 result.qmui_preferredStatusBarStyleBlock = ^UIStatusBarStyle{
-                    if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:QDThemeIdentifierDark]) {
+                    if ([QMUIThemeManagerCenter.defaultThemeManager.currentThemeIdentifier isEqual:ZZThemeIdentifierDark]) {
                         return UIStatusBarStyleLightContent;
                     }
                     return QMUIStatusBarStyleDarkContent;
@@ -93,20 +93,20 @@
     // 如果需要统一修改全局的 QMUIDialogViewController 样式，在这里修改 appearance 的值即可
     QMUIDialogViewController *appearance = [QMUIDialogViewController appearance];
     appearance.backgroundColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
-        if ([identifier isEqualToString:QDThemeIdentifierDark]) {
+        if ([identifier isEqualToString:ZZThemeIdentifierDark]) {
             return UIColorMake(34, 34, 34);
         }
         return UIColorWhite;
     }];
     appearance.headerViewBackgroundColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
-        if ([identifier isEqualToString:QDThemeIdentifierDark]) {
+        if ([identifier isEqualToString:ZZThemeIdentifierDark]) {
             return UIColorMake(34, 34, 34);
         }
         return UIColorMake(244, 245, 247);
     }];
     appearance.contentViewBackgroundColor = appearance.backgroundColor;
     appearance.headerSeparatorColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, NSObject<ZZThemeProtocol> * _Nullable theme) {
-        if ([identifier isEqualToString:QDThemeIdentifierDark]) {
+        if ([identifier isEqualToString:ZZThemeIdentifierDark]) {
             return UIColorMake(51, 51, 51);
         }
         return UIColorMake(222, 224, 226);
@@ -152,7 +152,7 @@
     popup.backgroundColor = UIColor.qd_backgroundColor;
     popup.borderColor = UIColor.qd_separatorColor;
     popup.maskViewBackgroundColor = [UIColor qmui_colorWithThemeProvider:^UIColor * _Nonnull(__kindof QMUIThemeManager * _Nonnull manager, NSString * _Nullable identifier, __kindof NSObject<ZZThemeProtocol> * _Nullable theme) {
-        return [identifier isEqual:QDThemeIdentifierDark] ? UIColorMask : UIColorMaskWhite;
+        return [identifier isEqual:ZZThemeIdentifierDark] ? UIColorMask : UIColorMaskWhite;
     }];
     
     QMUIPopupMenuView *menuView = QMUIPopupMenuView.appearance;

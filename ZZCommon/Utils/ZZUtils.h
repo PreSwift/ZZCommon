@@ -8,7 +8,7 @@
 #ifndef ZZUtils_h
 #define ZZUtils_h
 
-#import "AVAudioSession+QDAudioSession.h"
+#import "AVAudioSession+ZZAudioSession.h"
 #import "ColorUtil.h"
 #import "GTMBase64.h"
 #import "GTMDefines.h"
