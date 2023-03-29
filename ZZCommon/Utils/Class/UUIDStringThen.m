@@ -43,7 +43,7 @@
     //Delete old item before add new item
     SecItemDelete((CFDictionaryRef)keychainQuery);
     //Add new object to search dictionary(Attention:the data format)
-    [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(id)kSecValueData];
+    [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data requiringSecureCoding:NO error:nil] forKey:(id)kSecValueData];
     //Add item to keychain with the search dictionary
     SecItemAdd((CFDictionaryRef)keychainQuery, NULL);
 }
@@ -59,7 +59,7 @@
     OSStatus status =  SecItemCopyMatching((CFDictionaryRef)keychainQuery, (CFTypeRef *)&keyData);
     if (status == noErr) {
         @try {
-            ret = [NSKeyedUnarchiver unarchiveObjectWithData:(__bridge NSData *)keyData];
+            ret = [NSKeyedUnarchiver unarchivedObjectOfClass:NSObject.class fromData:(__bridge NSData *)keyData error:nil];
         } @catch (NSException *e) {
             NSLog(@"Unarchive of %@ failed: %@", service, e);
             return @"解析设备错误，请返回页面重新获取";

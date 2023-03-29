@@ -5,8 +5,6 @@
 //
 
 #import "ZZImagePickerController.h"
-#import "ZZMultipleImagePickerPreviewViewController.h"
-#import "ZZSingleImagePickerPreviewViewController.h"
 #import "ZZCommonMacros.h"
 
 @interface ZZImagePickerController () <QMUIAlbumViewControllerDelegate, QMUIImagePickerViewControllerDelegate, ZZMultipleImagePickerPreviewViewControllerDelegate, ZZSingleImagePickerPreviewViewControllerDelegate>

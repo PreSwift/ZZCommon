@@ -322,6 +322,10 @@ typedef void(^ComApiFailureBlock)(__kindof YTKBaseRequest *request, ResponseMode
     BASE_HOST = baseHost;
     BASE_WEB_HOST = baseWebHost;
     CDN_HOST = cdnHost;
+    // 网络请求通用参数设置
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = BASE_HOST;
+    config.cdnUrl = CDN_HOST;
 }
 
 @end

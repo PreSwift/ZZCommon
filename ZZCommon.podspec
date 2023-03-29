@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ZZCommon"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "基于一批基础三方库整合的通用OC项目脚手架。"
   spec.description  = "本项目以QMUIKit为核心，PureLayout和Masnory两套UI布局框架配合使用，YTKNetwork做网络层支撑，MJExtension做数据解析，ReactiveObjC做信号处理方案，以及其他辅助框架。同时整合了一些常用的代码逻辑，本项目还处于完善阶段。请慎重使用。"
   
@@ -22,6 +22,10 @@ Pod::Spec.new do |spec|
   end
   spec.xcconfig = {
     'CLANG_ENABLE_OBJC_WEAK' => 'YES'
+  }
+  spec.resource_bundles = {
+    'BRPickerView' => ['ZZCommon/OtherLib/BRPickerView/Base/BRPickerView.bundle'],
+    'BRAddressPickerView' => ['ZZCommon/OtherLib/BRPickerView/AddressPickerView/BRAddressPickerView.bundle']
   }
 
   spec.dependency "QMUIKit", "4.6.0"

@@ -5,6 +5,8 @@
 //
 
 #import <QMUIKit/QMUIKit.h>
+#import "ZZMultipleImagePickerPreviewViewController.h"
+#import "ZZSingleImagePickerPreviewViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

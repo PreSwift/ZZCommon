@@ -1,5 +1,5 @@
 //
-//  CommonWebViewDelegate.h
+//  ZZWebViewDelegate.h
 
 //  Created by westMac on 2021/8/4.
 //
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CommonWebViewDelegate : NSObject<WKScriptMessageHandler>
+@interface ZZWebViewDelegate : NSObject<WKScriptMessageHandler>
 
 - (instancetype)initWithScriptDelegate: (id<WKScriptMessageHandler>)delegate;
 

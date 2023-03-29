@@ -5,6 +5,7 @@
 //
 
 #import "ZZCommonViewController.h"
+#import "ZZWelcomePageItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

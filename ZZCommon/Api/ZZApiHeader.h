@@ -14,5 +14,6 @@
 #import "NSString+AES.h"
 #import "ResponseModel.h"
 #import "PageModel.h"
+#import "PushPayloadModel.h"
 
 #endif /* ZZApiHeader_h */

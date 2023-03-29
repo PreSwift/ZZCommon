@@ -1,18 +1,18 @@
 //
-//  CommonWebViewDelegate.m
+//  ZZWebViewDelegate.m
 
 //  Created by westMac on 2021/8/4.
 //
 
-#import "CommonWebViewDelegate.h"
+#import "ZZWebViewDelegate.h"
 
-@interface CommonWebViewDelegate ()
+@interface ZZWebViewDelegate ()
 
 @property(nonatomic, weak) id<WKScriptMessageHandler> scriptDelegate;
 
 @end
 
-@implementation CommonWebViewDelegate
+@implementation ZZWebViewDelegate
 
 - (void)dealloc {
 }
