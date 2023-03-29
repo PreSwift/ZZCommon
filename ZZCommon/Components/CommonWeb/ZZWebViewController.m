@@ -11,8 +11,7 @@
 @implementation ZZWebViewController
 
 - (void)dealloc {
-    [_webView stopLoading];
-    [_webView.configuration.userContentController removeScriptMessageHandlerForName:@"commonCall"];
+    [_webView stopLoading];---------
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
@@ -33,7 +32,6 @@
     _webView.navigationDelegate = self;
     _webView.UIDelegate = self;
     _webView.allowsBackForwardNavigationGestures = YES;
-    [_webView.configuration.userContentController addScriptMessageHandler:[[ZZWebViewDelegate alloc] initWithScriptDelegate:self] name:@"commonCall"];
     [self.view addSubview:_webView];
     [_webView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
 }
