@@ -11,7 +11,7 @@
 @implementation ZZWebViewController
 
 - (void)dealloc {
-    [_webView stopLoading];---------
+    [_webView stopLoading];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 

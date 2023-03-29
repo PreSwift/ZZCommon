@@ -91,14 +91,16 @@
 - (void)toPrivacypolicy {
     [self.presentationView hideWithAnimated:YES completion:nil];
     NSString *url = [NSString stringWithFormat:@"%@?type=%@", CREAT_WEB_URL(@"#/privacyPolicy"), @"teacher"];
-    ZZWebViewController *vc = [[ZZWebViewController alloc] initWithUrl:url];
+    ZZWebViewController *vc = [[ZZWebViewController alloc] init];
+    vc.url = url;
     [self.qmui_viewController.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)toUseragreement {
     [self.presentationView hideWithAnimated:YES completion:nil];
     NSString *url = [NSString stringWithFormat:@"%@?type=%@", CREAT_WEB_URL(@"#/userAgreement"), @"teacher"];
-    ZZWebViewController *vc = [[ZZWebViewController alloc] initWithUrl:url];
+    ZZWebViewController *vc = [[ZZWebViewController alloc] init];
+    vc.url = url;
     [self.qmui_viewController.navigationController pushViewController:vc animated:YES];
 }
 
