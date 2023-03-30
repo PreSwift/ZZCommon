@@ -347,6 +347,8 @@
 		042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */; };
 		0499626E29CB09BF00CD084C /* ZZCommon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		04C99A3B29D57A1B00F06D3C /* InputSearchSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C99A3929D57A1B00F06D3C /* InputSearchSheet.m */; };
+		04C99A3C29D57A1B00F06D3C /* InputSearchSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C99A3A29D57A1B00F06D3C /* InputSearchSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9F64229C1BC780017C7FB /* ZZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64029C1BC780017C7FB /* ZZImagePicker.m */; };
 		04E9F64329C1BC780017C7FB /* ZZImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E9F64129C1BC780017C7FB /* ZZImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E9F64729C1BD7F0017C7FB /* ZZImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */; };
@@ -725,6 +727,8 @@
 		0499610829CAFBD800CD084C /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0499610A29CAFBD800CD084C /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0499610C29CAFBD800CD084C /* YTKNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YTKNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C99A3929D57A1B00F06D3C /* InputSearchSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSearchSheet.m; sourceTree = "<group>"; };
+		04C99A3A29D57A1B00F06D3C /* InputSearchSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSearchSheet.h; sourceTree = "<group>"; };
 		04E9F64029C1BC780017C7FB /* ZZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagePicker.m; sourceTree = "<group>"; };
 		04E9F64129C1BC780017C7FB /* ZZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZImagePicker.h; sourceTree = "<group>"; };
 		04E9F64529C1BD7F0017C7FB /* ZZImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZImagePreviewViewController.m; sourceTree = "<group>"; };
@@ -1283,6 +1287,7 @@
 				042DFF1729C197BF00907326 /* CommonWeb */,
 				042DFF1429C197BF00907326 /* CountdownView */,
 				042DFEDA29C197BF00907326 /* GridImageView */,
+				04C99A3829D57A1B00F06D3C /* InputSearchSheet */,
 				042DFF2829C197BF00907326 /* ListRowTitleCell */,
 				042DFEFF29C197BF00907326 /* PopupMenu */,
 				04DC0E4529C45810003AD950 /* ProtocolAndPrivacyView */,
@@ -1534,6 +1539,15 @@
 			path = MainFrame;
 			sourceTree = "<group>";
 		};
+		04C99A3829D57A1B00F06D3C /* InputSearchSheet */ = {
+			isa = PBXGroup;
+			children = (
+				04C99A3A29D57A1B00F06D3C /* InputSearchSheet.h */,
+				04C99A3929D57A1B00F06D3C /* InputSearchSheet.m */,
+			);
+			path = InputSearchSheet;
+			sourceTree = "<group>";
+		};
 		04DC0E4529C45810003AD950 /* ProtocolAndPrivacyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1733,6 +1747,7 @@
 				042D007829C197C100907326 /* ZZMultipleImagePickerPreviewViewController.h in Headers */,
 				042DFFEA29C197C100907326 /* LOTAnimationCache.h in Headers */,
 				042DFF8029C197C000907326 /* LOTPathInterpolator.h in Headers */,
+				04C99A3C29D57A1B00F06D3C /* InputSearchSheet.h in Headers */,
 				042DFF7B29C197C000907326 /* LOTNumberInterpolator.h in Headers */,
 				042DFFEE29C197C100907326 /* LOTAnimationView.h in Headers */,
 				042D005929C197C100907326 /* ZZFilterView.h in Headers */,
@@ -2100,6 +2115,7 @@
 				042DFFAD29C197C000907326 /* LOTShapeTrimPath.m in Sources */,
 				042DFFD129C197C000907326 /* LOTBlockCallback.m in Sources */,
 				042D002029C197C100907326 /* UIView+Extension.m in Sources */,
+				04C99A3B29D57A1B00F06D3C /* InputSearchSheet.m in Sources */,
 				042DFF6729C197C000907326 /* BRPickerStyle.m in Sources */,
 				042DFF8729C197C000907326 /* LOTPathAnimator.m in Sources */,
 				042D003F29C197C100907326 /* IDNameModel.m in Sources */,
