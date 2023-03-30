@@ -24,8 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-static QMUIAlbumContentType const kAlbumContentType = QMUIAlbumContentTypeAll;
-
 @interface ZZImagePickerController : QMUIAlbumViewController
 
 @property(nonatomic, assign) NSInteger imagePickingTag;

@@ -25,6 +25,7 @@
     self = [super init];
     if (self) {
         self.albumViewControllerDelegate = self;
+        self.contentType = QMUIAlbumContentTypeOnlyPhoto;
         _selectedImageAssetArray = [[NSMutableArray alloc] init];
     }
     return self;
@@ -71,7 +72,7 @@
 
 - (void)imagePickerViewController:(QMUIImagePickerViewController *)imagePickerViewController didFinishPickingImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
     // 储存最近选择了图片的相册，方便下次直接进入该相册
-    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerViewController.assetsGroup ablumContentType:self.contentType userIdentify:nil];
     
     [self sendImageWithImagesAssetArray:imagesAssetArray];
 }
@@ -138,7 +139,7 @@
 
 - (void)imagePickerPreviewViewController:(ZZMultipleImagePickerPreviewViewController *)imagePickerPreviewViewController sendImageWithImagesAssetArray:(NSMutableArray<QMUIAsset *> *)imagesAssetArray {
     // 储存最近选择了图片的相册，方便下次直接进入该相册
-    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:self.contentType userIdentify:nil];
     [self sendImageWithImagesAssetArray:imagesAssetArray];
 }
 
@@ -146,7 +147,7 @@
 
 - (void)imagePickerPreviewViewController:(ZZSingleImagePickerPreviewViewController *)imagePickerPreviewViewController didSelectImageWithImagesAsset:(QMUIAsset *)imageAsset {
     // 储存最近选择了图片的相册，方便下次直接进入该相册
-    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:kAlbumContentType userIdentify:nil];
+    [QMUIImagePickerHelper updateLastestAlbumWithAssetsGroup:imagePickerPreviewViewController.assetsGroup ablumContentType:self.contentType userIdentify:nil];
     [self sendImageWithImagesAssetArray:[NSMutableArray arrayWithObject:imageAsset]];
     
 }
