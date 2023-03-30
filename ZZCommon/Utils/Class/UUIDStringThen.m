@@ -59,7 +59,7 @@
     OSStatus status =  SecItemCopyMatching((CFDictionaryRef)keychainQuery, (CFTypeRef *)&keyData);
     if (status == noErr) {
         @try {
-            ret = [NSKeyedUnarchiver unarchivedObjectOfClass:NSObject.class fromData:(__bridge NSData *)keyData error:nil];
+            ret = [NSKeyedUnarchiver unarchivedObjectOfClass:NSData.class fromData:(__bridge NSData *)keyData error:nil];
         } @catch (NSException *e) {
             NSLog(@"Unarchive of %@ failed: %@", service, e);
             return @"解析设备错误，请返回页面重新获取";
