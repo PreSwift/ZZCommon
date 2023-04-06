@@ -1307,9 +1307,6 @@ typedef NS_ENUM(NSInteger, BRDatePickerStyle) {
 }
 
 - (void)addPickerToView:(UIView *)view {
-    if (!view) {
-        return;
-    }
     _containerView = view;
     [self setupDateFormatter:self.pickerMode];
     // 1.添加日期选择器

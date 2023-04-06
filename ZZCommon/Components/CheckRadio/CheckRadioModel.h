@@ -12,8 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) BOOL isSelected;
 @property(nonatomic, copy) NSString *name;
+@property(nonatomic, strong) UIImage *markImage;
+@property(nonatomic, strong) UIImage *unMarkImage;
 @property(nonatomic, assign) BOOL showInputView;
 @property(nonatomic, copy) NSString *showDesc;
+
++ (instancetype)instanceWithName:(NSString *)name markImage:(UIImage *)markImage unMarkImage:(UIImage *)unMarkImage;
+
++ (instancetype)instanceWithName:(NSString *)name markImage:(UIImage *)markImage unMarkImage:(UIImage *)unMarkImage showDesc:(nullable NSString *)showDesc showInputView:(BOOL)showInputView;
 
 @end
 

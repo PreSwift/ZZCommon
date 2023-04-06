@@ -76,9 +76,9 @@
 - (void)setSelected:(BOOL)selected {
     [super setSelected:selected];
     if (selected) {
-        [_markImageView setImage:[UIImage imageNamed:@"选中"]];
+        [_markImageView setImage:self.model.markImage];
     } else {
-        [_markImageView setImage:[UIImage imageNamed:@"未选中"]];
+        [_markImageView setImage:self.model.unMarkImage];
     }
 }
 
