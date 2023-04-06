@@ -76,9 +76,10 @@
     NSMutableArray *itemViewsConstraints = [NSMutableArray arrayWithCapacity:_itemViews.count];
     for (int i=0; i<_itemViews.count; i++) {
         CheckRadioItem *itemView = _itemViews[i];
+        itemView.qmui_outsideEdge = UIEdgeInsetsMake(-8, -8, -8, -8);
         NSMutableArray *itemViewConstraints = [NSMutableArray arrayWithCapacity:12];
         if (i==0) {
-            [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:SS(15)]];
+            [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeTop]];
             [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeLeft]];
             if (_axis == UILayoutConstraintAxisVertical) {
                 [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:SS(15) relation:NSLayoutRelationGreaterThanOrEqual]];
@@ -93,7 +94,7 @@
                 [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:SS(15) relation:NSLayoutRelationGreaterThanOrEqual]];
             }
             if (i==_itemViews.count-1) {
-                [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:SS(15)]];
+                [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeBottom]];
                 if (_axis == UILayoutConstraintAxisHorizontal) {
                     [NSLayoutConstraint autoSetPriority:800 forConstraints:^{
                         [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeRight]];

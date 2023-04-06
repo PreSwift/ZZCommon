@@ -23,8 +23,8 @@
     [self addSubview:_markImageView];
     [_markImageView autoSetDimensionsToSize:CGSizeMake(SS(14), SS(14))];
     [_markImageView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [_markImageView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:SS(10)];
-    [_markImageView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:SS(10)];
+    [_markImageView autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+    [_markImageView autoPinEdgeToSuperviewEdge:ALEdgeTop];
     
     _contentLabel = [[UILabel alloc] initForAutoLayout];
     _contentLabel.textColor = UIColor.qd_titleTextColor;
