@@ -130,7 +130,7 @@
         }
     }
     
-    if (total > additionalData.count) {
+    if (total > originalData.count) {
         self.currentPage = @(self.page + 1);
         [self endRefreshing:NO];
     } else {
