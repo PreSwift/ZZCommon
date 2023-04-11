@@ -40,6 +40,7 @@
         
         self.allowMutableCheck = NO;//默认不支持多选
         self.axis = UILayoutConstraintAxisHorizontal; //默认横向排列
+        self.qmui_outsideEdge = UIEdgeInsetsMake(-16, -16, -16, -16);
     }
     return self;
 }
@@ -76,7 +77,7 @@
     NSMutableArray *itemViewsConstraints = [NSMutableArray arrayWithCapacity:_itemViews.count];
     for (int i=0; i<_itemViews.count; i++) {
         CheckRadioItem *itemView = _itemViews[i];
-        itemView.qmui_outsideEdge = UIEdgeInsetsMake(-8, -8, -8, -8);
+        itemView.qmui_outsideEdge = UIEdgeInsetsMake(-16, -16, -16, -16);
         NSMutableArray *itemViewConstraints = [NSMutableArray arrayWithCapacity:12];
         if (i==0) {
             [itemViewConstraints addObject: [itemView autoPinEdgeToSuperviewEdge:ALEdgeTop]];

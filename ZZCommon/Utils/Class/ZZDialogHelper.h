@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
                 content:(NSString *)content
                 okBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController))block;
 
+///提示类对话框，按钮标题可自定义
 + (void)showAlertDialog:(NSString *)title
                 content:(NSString *)content
              okBtnTitle:(nullable NSString *)okBtnTitle
@@ -26,6 +27,15 @@ NS_ASSUME_NONNULL_BEGIN
                  content:(NSString *)content
              cancelBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController))cancelBlock
                  okBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController))okBlock;
+
+///普通对话框，提供两个可以定义标题的按钮
++ (void)showNormalDialog:(NSString *)title
+                 content:(NSString *)content
+        cancelStyleBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController, QMUIButton *actionBtn))cancelStyleBlock
+            okStyleBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController, QMUIButton *actionBtn))okStyleBlock
+             cancelBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController))cancelBlock
+                 okBlock:(nullable void (^)(__kindof QMUIModalPresentationViewController *dialogViewController))okBlock;
+
 
 + (void)showNormalDialog:(NSString *)title
              description:(NSString *)desc

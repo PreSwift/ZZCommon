@@ -68,6 +68,23 @@
 }
 
 + (void)showNormalDialog:(NSString *)title content:(NSString *)content cancelBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))cancelBlock okBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))okBlock {
+    [self showNormalDialog:title content:content cancelStyleBlock:^(__kindof QMUIModalPresentationViewController * _Nonnull dialogViewController, QMUIButton * _Nonnull actionBtn) {
+        [actionBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [actionBtn setTitleColor:UIColor.qd_titleTextColor forState:UIControlStateNormal];
+        actionBtn.titleLabel.font = CodeFontMake(SS(14));
+        actionBtn.cornerRadius = QMUIButtonCornerRadiusAdjustsBounds;
+        actionBtn.backgroundColor = UIColor.qd_backgroundColorLighten;
+    } okStyleBlock:^(__kindof QMUIModalPresentationViewController * _Nonnull dialogViewController, QMUIButton * _Nonnull actionBtn) {
+        [actionBtn setTitle:@"确定" forState:UIControlStateNormal];
+        [actionBtn setTitleColor:UIColorWhite forState:UIControlStateNormal];
+        actionBtn.titleLabel.font = CodeFontMake(SS(14));
+        actionBtn.cornerRadius = QMUIButtonCornerRadiusAdjustsBounds;
+        actionBtn.backgroundColor = UIColor.qd_tintColor;
+    } cancelBlock:cancelBlock okBlock:okBlock];
+}
+
+///普通对话框，提供两个可以定义标题的按钮
++ (void)showNormalDialog:(NSString *)title content:(NSString *)content cancelStyleBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull, QMUIButton * _Nonnull))cancelStyleBlock okStyleBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull, QMUIButton * _Nonnull))okStyleBlock cancelBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))cancelBlock okBlock:(void (^)(__kindof QMUIModalPresentationViewController * _Nonnull))okBlock {
     QMUIModalPresentationViewController *dialogViewController = [[QMUIModalPresentationViewController alloc] init];
     dialogViewController.contentViewMargins = UIEdgeInsetsMake(SS(40), SS(40), SS(40), SS(40));
     CGFloat maxWidth = MIN(DEVICE_WIDTH - SS(80), SS(300));
@@ -105,11 +122,7 @@
     [centerView autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:SS(20)];
     
     QMUIButton *cancelBtn = [[QMUIButton alloc] initForAutoLayout];
-    [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-    [cancelBtn setTitleColor:UIColor.qd_titleTextColor forState:UIControlStateNormal];
-    cancelBtn.titleLabel.font = CodeFontMake(SS(14));
-    cancelBtn.cornerRadius = QMUIButtonCornerRadiusAdjustsBounds;
-    cancelBtn.backgroundColor = UIColor.qd_backgroundColorLighten;
+    cancelStyleBlock(dialogViewController, cancelBtn);
     cancelBtn.qmui_tapBlock = ^(__kindof UIControl *sender) {
         if (cancelBlock) {
             cancelBlock(dialogViewController);
@@ -123,11 +136,7 @@
     [cancelBtn autoSetDimensionsToSize:CGSizeMake(SS(100), SS(37))];
     
     QMUIButton *okBtn = [[QMUIButton alloc] initForAutoLayout];
-    [okBtn setTitle:@"确定" forState:UIControlStateNormal];
-    [okBtn setTitleColor:UIColorWhite forState:UIControlStateNormal];
-    okBtn.titleLabel.font = CodeFontMake(SS(14));
-    okBtn.cornerRadius = QMUIButtonCornerRadiusAdjustsBounds;
-    okBtn.backgroundColor = UIColor.qd_tintColor;
+    okStyleBlock(dialogViewController, okBtn);
     okBtn.qmui_tapBlock = ^(__kindof UIControl *sender) {
         if (okBlock) {
             okBlock(dialogViewController);
