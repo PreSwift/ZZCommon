@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) NSInteger ID;
 @property(nonatomic, copy) NSString *name;
 
+@property(nonatomic, strong) NSArray<IDNameModel *> *subObjects;
+
 + (IDNameModel *)instanceWithID:(NSInteger)ID name:(NSString *)name;
 
 @end

@@ -71,7 +71,7 @@
                 _itemHeight = ceil(MAX(contentRect.size.height + _contentPadding.top + _contentPadding.bottom, _accessoryImage.size.height + _contentPadding.top + _contentPadding.bottom));
             }
         } else {
-            _itemHeight = ceil(contentRect.size.height + _contentPadding.top + _contentPadding.bottom);
+            _itemHeight = ceil(contentRect.size.height + _contentPadding.top + _contentPadding.bottom) + 2;
         }
         _itemHeight = MAX(SS(32), _itemHeight);
     }

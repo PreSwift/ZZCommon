@@ -3,7 +3,7 @@ platform :ios, '12.0'
 
 inhibit_all_warnings!
 
-install! 'cocoapods', generate_multiple_pod_projects: true
+#install! 'cocoapods', generate_multiple_pod_projects: true
 
 use_frameworks!
 

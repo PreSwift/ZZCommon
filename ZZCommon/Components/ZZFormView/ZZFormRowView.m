@@ -48,7 +48,16 @@
             button = [self createButton];
             [self.buttons addObject:button];
         }
-        
+        if (item.textAlignment == NSTextAlignmentLeft) {
+            button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        } else if (item.textAlignment == NSTextAlignmentLeft) {
+            button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+        } else {
+            button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+        }
+        button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        button.titleLabel.textAlignment = NSTextAlignmentCenter;
+        button.titleLabel.numberOfLines = item.numberOfLines;
         [button setBackgroundColor:item.backgroundColor];
         [button setTitleColor:item.textColor forState:UIControlStateNormal];
         button.contentEdgeInsets = item.contentPadding;

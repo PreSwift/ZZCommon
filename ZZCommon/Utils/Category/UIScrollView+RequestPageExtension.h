@@ -1,6 +1,7 @@
 //
 //  UIScrollView+RequestPageExtension.h
-
+//  jzjx
+//
 //  Created by westMac on 2021/10/28.
 //
 
@@ -26,11 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addRefreshViewWithOutFooter:(BOOL)refreshFirst refreshBlock:(void(^_Nonnull)(void))refreshBlock;
 
 /**
- 重置分页为1
- */
-- (void)resetPage;
-
-/**
  开始刷新
  */
 - (void)begainRefreshing;
@@ -44,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
  自动处理分页数据获取成功
  */
 - (void)handleSuccessWithSection:(NSInteger)section data:(NSMutableArray *_Nonnull)originalData addData:(NSArray * _Nullable)additionalData total:(NSInteger)total;
+- (void)handleSuccessWithSection:(NSInteger)section data:(NSMutableArray *_Nonnull)originalData currentRow:(NSInteger)currentRow addData:(NSArray *_Nullable)additionalData total:(NSInteger)total;
 
 /**
  自动处理分页数据获取失败

@@ -1,12 +1,16 @@
 //
 //  UIScrollView+RequestPageExtension.m
-
+//  jzjx
+//
 //  Created by westMac on 2021/10/28.
 //
 
 #import "UIScrollView+RequestPageExtension.h"
 #import <objc/runtime.h>
-#import "ZZCommonMacros.h"
+#import "ZZRefreshHeader.h"
+#import "ZZRefreshFooter.h"
+#import "QMUICommonViewController+EmptyView.h"
+#import "ZZUITips.h"
 
 @interface UIScrollView (RequestPageExtension)
 
@@ -72,10 +76,6 @@
     self.mj_footer = footer;
 }
 
-- (void)resetPage {
-    self.currentPage = @1;
-}
-
 - (void)begainRefreshing {
     if (self.mj_header != nil) {
         [self.mj_header beginRefreshing];
@@ -96,6 +96,10 @@
 }
 
 - (void)handleSuccessWithSection:(NSInteger)section data:(NSMutableArray *)originalData addData:(NSArray *)additionalData total:(NSInteger)total {
+    [self handleSuccessWithSection:section data:originalData currentRow:originalData.count addData:additionalData total:total];
+}
+
+- (void)handleSuccessWithSection:(NSInteger)section data:(NSMutableArray *)originalData currentRow:(NSInteger)currentRow addData:(NSArray *)additionalData total:(NSInteger)total {
     if (self.page == 1) {
         [originalData removeAllObjects];
         if (additionalData != nil && additionalData.count > 0) {
@@ -108,7 +112,6 @@
         }
     } else {
         if (additionalData != nil && additionalData.count > 0) {
-            NSInteger currentRow = originalData.count;
             [originalData addObjectsFromArray:additionalData];
             if ([self isKindOfClass:UITableView.class]) {
                 NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:additionalData.count];
@@ -117,7 +120,7 @@
                 }
                 UITableView *tableView = (UITableView *)self;
                 [tableView beginUpdates];
-                [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+                [tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
                 [tableView endUpdates];
             } else if ([self isKindOfClass:UICollectionView.class]) {
                 NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:additionalData.count];
