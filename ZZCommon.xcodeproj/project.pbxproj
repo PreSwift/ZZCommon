@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		042D000029C197C100907326 /* HtmlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7F29C197BD00907326 /* HtmlUtil.m */; };
 		042D000129C197C100907326 /* NSStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE8029C197BD00907326 /* NSStringUtil.m */; };
 		042D000229C197C100907326 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8129C197BD00907326 /* UIView+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D000329C197C100907326 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE8229C197BD00907326 /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,7 +26,6 @@
 		042D001229C197C100907326 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9129C197BD00907326 /* TimeUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001329C197C100907326 /* AVAudioSession+ZZAudioSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9229C197BD00907326 /* AVAudioSession+ZZAudioSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001429C197C100907326 /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9329C197BD00907326 /* NSString+AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042D001529C197C100907326 /* HtmlUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9429C197BD00907326 /* HtmlUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001629C197C100907326 /* ZZNavigateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE9529C197BD00907326 /* ZZNavigateHelper.m */; };
 		042D001729C197C100907326 /* NSBundle+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9629C197BD00907326 /* NSBundle+Extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042D001829C197C100907326 /* UIView+EmptyView.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE9729C197BD00907326 /* UIView+EmptyView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -566,7 +564,6 @@
 		042DFE7C29C197BD00907326 /* UIView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyView.m"; sourceTree = "<group>"; };
 		042DFE7D29C197BD00907326 /* NSBundle+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Extension.m"; sourceTree = "<group>"; };
 		042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNavigateHelper.h; sourceTree = "<group>"; };
-		042DFE7F29C197BD00907326 /* HtmlUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlUtil.m; sourceTree = "<group>"; };
 		042DFE8029C197BD00907326 /* NSStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringUtil.m; sourceTree = "<group>"; };
 		042DFE8129C197BD00907326 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		042DFE8229C197BD00907326 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -586,7 +583,6 @@
 		042DFE9129C197BD00907326 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		042DFE9229C197BD00907326 /* AVAudioSession+ZZAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAudioSession+ZZAudioSession.h"; sourceTree = "<group>"; };
 		042DFE9329C197BD00907326 /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
-		042DFE9429C197BD00907326 /* HtmlUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlUtil.h; sourceTree = "<group>"; };
 		042DFE9529C197BD00907326 /* ZZNavigateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigateHelper.m; sourceTree = "<group>"; };
 		042DFE9629C197BD00907326 /* NSBundle+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Extension.h"; sourceTree = "<group>"; };
 		042DFE9729C197BD00907326 /* UIView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyView.h"; sourceTree = "<group>"; };
@@ -819,8 +815,6 @@
 				042DFE8229C197BD00907326 /* GTMBase64.h */,
 				042DFE9D29C197BD00907326 /* GTMBase64.m */,
 				042DFE9A29C197BD00907326 /* GTMDefines.h */,
-				042DFE9429C197BD00907326 /* HtmlUtil.h */,
-				042DFE7F29C197BD00907326 /* HtmlUtil.m */,
 				042DFEA029C197BD00907326 /* MIUAES.h */,
 				042DFE8A29C197BD00907326 /* MIUAES.m */,
 				042DFE9E29C197BD00907326 /* NSStringUtil.h */,
@@ -1677,7 +1671,6 @@
 				042DFF5F29C197C000907326 /* BRDatePickerView.h in Headers */,
 				042D00AC29C197C100907326 /* QMUICommonViewController+EmptyView.h in Headers */,
 				042DFFAF29C197C000907326 /* LOTShapePath.h in Headers */,
-				042D001529C197C100907326 /* HtmlUtil.h in Headers */,
 				042DFFE829C197C100907326 /* LOTInterpolatorCallback.h in Headers */,
 				042D016E29C1AD5900907326 /* UIView+SDExtension.h in Headers */,
 				042DFFB929C197C000907326 /* LOTLayer.h in Headers */,
@@ -2106,7 +2099,6 @@
 				042D005D29C197C100907326 /* CheckRadioModel.m in Sources */,
 				042DFFD829C197C000907326 /* LOTInterpolatorCallback.m in Sources */,
 				042DFF7029C197C000907326 /* BRAddressPickerView.m in Sources */,
-				042D000029C197C100907326 /* HtmlUtil.m in Sources */,
 				042D00B329C197C100907326 /* ZZCommonTableViewController.m in Sources */,
 				042D006B29C197C100907326 /* ZZWelcomePageItem.m in Sources */,
 				042DFF7729C197C000907326 /* LOTPathInterpolator.m in Sources */,
