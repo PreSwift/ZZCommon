@@ -42,6 +42,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)updateWithRows:(NSArray<ZZFormRowModel *> *)rows;
 
+
+/**
+ 表头行
+ */
+@property(nonatomic, strong) ZZFormRowView *header;
+
+@property(non)
+
 @end
 
 NS_ASSUME_NONNULL_END

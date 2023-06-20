@@ -1,16 +1,12 @@
 //
 //  UIScrollView+RequestPageExtension.m
-//  jzjx
-//
+
 //  Created by westMac on 2021/10/28.
 //
 
 #import "UIScrollView+RequestPageExtension.h"
 #import <objc/runtime.h>
-#import "ZZRefreshHeader.h"
-#import "ZZRefreshFooter.h"
-#import "QMUICommonViewController+EmptyView.h"
-#import "ZZUITips.h"
+#import "ZZCommonMacros.h"
 
 @interface UIScrollView (RequestPageExtension)
 
@@ -76,6 +72,10 @@
     self.mj_footer = footer;
 }
 
+- (void)resetPage {
+    self.currentPage = @1;
+}
+
 - (void)begainRefreshing {
     if (self.mj_header != nil) {
         [self.mj_header beginRefreshing];
@@ -112,6 +112,7 @@
         }
     } else {
         if (additionalData != nil && additionalData.count > 0) {
+            NSInteger currentRow = originalData.count;
             [originalData addObjectsFromArray:additionalData];
             if ([self isKindOfClass:UITableView.class]) {
                 NSMutableArray *indexPaths = [NSMutableArray arrayWithCapacity:additionalData.count];

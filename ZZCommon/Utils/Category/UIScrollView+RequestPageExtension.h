@@ -1,7 +1,6 @@
 //
 //  UIScrollView+RequestPageExtension.h
-//  jzjx
-//
+
 //  Created by westMac on 2021/10/28.
 //
 
@@ -25,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
  同时添加下拉刷新
  */
 - (void)addRefreshViewWithOutFooter:(BOOL)refreshFirst refreshBlock:(void(^_Nonnull)(void))refreshBlock;
+
+/**
+ 重置分页为1
+ */
+- (void)resetPage;
 
 /**
  开始刷新

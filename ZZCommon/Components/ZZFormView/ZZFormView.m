@@ -86,7 +86,7 @@
     _floatLeftTableView.separatorColor = UIColor.qd_separatorColor;
     _floatLeftTableView.dataSource = self;
     _floatLeftTableView.delegate = self;
-    _floatTopTableView.bounces = NO;
+    _floatLeftTableView.bounces = NO;
     _floatLeftTableView.userInteractionEnabled = NO;
     _floatLeftTableView.hidden = YES;
     [_scrollView addSubview:_floatLeftTableView];

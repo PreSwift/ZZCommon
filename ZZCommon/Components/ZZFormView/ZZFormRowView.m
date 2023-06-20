@@ -66,7 +66,7 @@
         
         [button mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_top).inset(rowModel.isFirstRow ? PixelOne : 0);
-            make.bottom.equalTo(self.mas_bottom).inset(PixelOne);
+            make.bottom.equalTo(self.mas_bottom).inset(PixelOne).priorityHigh();
             make.width.equalTo(@(item.itemWidth - (i == 0 ? 2 : 1) * PixelOne));
         }];
         
@@ -82,7 +82,7 @@
         
         if (i == toItemIndex-1) {
             [button mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.right.equalTo(self.mas_right).inset(PixelOne);
+                make.right.equalTo(self.mas_right).inset(PixelOne).priorityHigh();
             }];
         }
     }
