@@ -39,6 +39,12 @@
 }
 
 - (void)updateWithRowModel:(ZZFormRowModel *)rowModel toItemIndex:(NSInteger)toItemIndex {
+    [_rowView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView.mas_left).inset(rowModel.padding.left);
+        make.right.equalTo(self.contentView.mas_right).inset(rowModel.padding.right).priorityHigh();
+        make.top.equalTo(self.contentView.mas_top);
+        make.bottom.equalTo(self.contentView.mas_bottom);
+    }];
     [_rowView updateUIWith:rowModel toItemIndex:toItemIndex];
 }
 
