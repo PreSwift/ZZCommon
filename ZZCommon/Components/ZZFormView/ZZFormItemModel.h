@@ -1,12 +1,11 @@
 //
 //  ZZFormItemModel.h
-
+//  jzjx
+//
 //  Created by Ethan on 2022/9/28.
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import <QMUIKit/QMUIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  宽度
  */
-@property(nonatomic, assign, readonly) CGFloat itemWidth;
+@property(nonatomic, assign) CGFloat itemWidth;
 
 /**
  高度，根据文本自动计算的
@@ -53,9 +52,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong) UIColor *backgroundColor;
 
 /**
+ 是否允许点击单元格
+ */
+@property(nonatomic, assign) BOOL tapCellEnabled;
+
+/**
  显示的文本
  */
 @property(nonatomic, strong) NSString *content;
+
+/**
+ 显示的文本
+ */
+@property(nonatomic, strong) NSMutableAttributedString *attributedContent;
 
 /**
  装饰图片
@@ -75,6 +84,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithContent:(nullable NSString *)content
                  accessoryImage:(nullable UIImage *)accessoryImage
                       itemWidth:(CGFloat)itemWidth;
+
+- (instancetype)initWithAttributedContent:(nullable NSMutableAttributedString *)attributedContent
+                           accessoryImage:(nullable UIImage *)accessoryImage
+                                itemWidth:(CGFloat)itemWidth;
+
 
 @end
 

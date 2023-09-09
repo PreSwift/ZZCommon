@@ -1,6 +1,7 @@
 //
 //  ZZFormRowModel.h
-
+//  jzjx
+//
 //  Created by Ethan on 2022/9/28.
 //
 
@@ -17,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) UITableViewCellSelectionStyle selectionStyle;
 
 /**
- 选中背景色，默认nil
+ 选中背景色
  */
 @property(nonatomic, strong) UIColor *selectedBackgroundColor;
 

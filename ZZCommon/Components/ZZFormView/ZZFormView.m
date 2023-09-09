@@ -1,30 +1,33 @@
 //
 //  ZZFormView.m
-
+//  jzjx
+//
 //  Created by Ethan on 2022/9/28.
 //
 
 #import "ZZFormView.h"
-#import "ZZCommonMacros.h"
+#import "ZZFormRowTableViewCell.h"
 
 @interface ZZFormView() <UITableViewDataSource, UITableViewDelegate>
 
-@property(nonatomic, strong) QMUIButton *leftTopLabel;
 @property(nonatomic, strong) UIScrollView *scrollView;
 @property(nonatomic, strong) UITableView *mainTableView;
 @property(nonatomic, strong) UITableView *floatLeftTableView;
 @property(nonatomic, strong) UITableView *floatTopTableView;
+@property(nonatomic, strong) UITableView *leftTopTableView;
 @property(nonatomic, strong) NSLayoutConstraint *mainTableViewWidthConstraint;
 @property(nonatomic, strong) NSLayoutConstraint *mainTableViewHeightConstraint;
 @property(nonatomic, strong) NSLayoutConstraint *floatTopTableViewHeightConstraint;
 @property(nonatomic, strong) NSLayoutConstraint *floatLeftTableViewWidthConstraint;
-@property(nonatomic, strong) NSLayoutConstraint *leftTopLabelWidthConstraint;
-@property(nonatomic, strong) NSLayoutConstraint *leftTopLabelHidthConstraint;
+@property(nonatomic, strong) NSLayoutConstraint *leftTopTableViewWidthConstraint;
+@property(nonatomic, strong) NSLayoutConstraint *leftTopTableViewHidthConstraint;
 
 @property(nonatomic, strong) UIView *vSepLine1;
 @property(nonatomic, strong) UIView *vSepLine2;
 @property(nonatomic, strong) UIView *hSepLine1;
 @property(nonatomic, strong) UIView *hSepLine2;
+
+@property(nonatomic, assign) BOOL isBottom;
 
 @end
 
@@ -73,11 +76,12 @@
     _floatTopTableView.separatorColor = UIColor.qd_separatorColor;
     _floatTopTableView.dataSource = self;
     _floatTopTableView.delegate = self;
+    _floatTopTableView.userInteractionEnabled = NO;
     _floatTopTableView.hidden = YES;
     [_scrollView addSubview:_floatTopTableView];
     [_floatTopTableView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [_floatTopTableView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:_mainTableView];
     [_floatTopTableView autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self];
+    [_floatTopTableView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:_mainTableView];
     _floatTopTableViewHeightConstraint = [_floatTopTableView autoSetDimension:ALDimensionHeight toSize:0];
     
     _floatLeftTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -95,15 +99,23 @@
     [_floatLeftTableView autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:_mainTableView];
     _floatLeftTableViewWidthConstraint = [_floatLeftTableView autoSetDimension:ALDimensionWidth toSize:0];
     
-    _leftTopLabel = [[QMUIButton alloc] initForAutoLayout];
-    _leftTopLabel.hidden = YES;
-    _leftTopLabel.layer.borderWidth = PixelOne;
-    _leftTopLabel.layer.borderColor = UIColor.qd_separatorColor.CGColor;
-    [_scrollView addSubview:_leftTopLabel];
-    [_leftTopLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:self];
-    [_leftTopLabel autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self];
-    _leftTopLabelWidthConstraint = [_leftTopLabel autoSetDimension:ALDimensionWidth toSize:0];
-    _leftTopLabelHidthConstraint = [_leftTopLabel autoSetDimension:ALDimensionHeight toSize:0];
+    _leftTopTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    _leftTopTableView.tableFooterView = UIView.new;
+    _leftTopTableView.separatorInset = UIEdgeInsetsZero;
+    _leftTopTableView.separatorColor = UIColor.qd_separatorColor;
+    _leftTopTableView.dataSource = self;
+    _leftTopTableView.delegate = self;
+    _leftTopTableView.bounces = NO;
+    _leftTopTableView.userInteractionEnabled = NO;
+    _leftTopTableView.hidden = YES;
+    _leftTopTableView.layer.borderWidth = PixelOne;
+    _leftTopTableView.layer.borderColor = UIColor.qd_separatorColor.CGColor;
+    _leftTopTableView.backgroundColor = UIColor.redColor;
+    [_scrollView addSubview:_leftTopTableView];
+    [_leftTopTableView autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:self];
+    [_leftTopTableView autoPinEdge:ALEdgeTop toEdge:ALEdgeTop ofView:self];
+    _leftTopTableViewWidthConstraint = [_leftTopTableView autoSetDimension:ALDimensionWidth toSize:0];
+    _leftTopTableViewHidthConstraint = [_leftTopTableView autoSetDimension:ALDimensionHeight toSize:0];
     
     _vSepLine1 = [[UIView alloc] initForAutoLayout];
     _vSepLine1.backgroundColor = UIColor.qd_separatorColor;
@@ -143,47 +155,41 @@
 - (void)setScrollEnabled:(BOOL)scrollEnabled {
     [_scrollView setScrollEnabled:scrollEnabled];
     [_mainTableView setScrollEnabled:scrollEnabled];
-    [_floatLeftTableView setScrollEnabled:scrollEnabled];
-    [_floatTopTableView setScrollEnabled:scrollEnabled];
 }
 
 - (void)updateWithRows:(NSArray<ZZFormRowModel *> *)rows {
     _rows = rows;
     
-    ZZFormRowModel *firstRow = _rows.firstObject;
+    __block CGFloat floatLeftWidth = 0, floatTopHeight = 0, tableWidth = 0, tableHeight = 0;
+    [_rows.firstObject.items enumerateObjectsUsingBlock:^(ZZFormItemModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        tableWidth += obj.itemWidth;
+        if (idx < self.floatLeftColumnNumber) {
+            floatLeftWidth += obj.itemWidth;
+        }
+    }];
+    [rows enumerateObjectsUsingBlock:^(ZZFormRowModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        tableHeight += obj.rowHeight;
+        if (idx < self.floatTopRowNumber) {
+            floatTopHeight += obj.rowHeight;
+        }
+    }];
     // 如果支持左浮动
     if (_floatLeftColumnNumber > 0) {
-        ZZFormItemModel *topLeftItem = rows.firstObject.items.firstObject;
-        [_leftTopLabel setBackgroundColor:topLeftItem.backgroundColor];
-        [_leftTopLabel setTitleColor:topLeftItem.textColor forState:UIControlStateNormal];
-        _leftTopLabel.contentEdgeInsets = topLeftItem.contentPadding;
-        _leftTopLabel.titleLabel.textAlignment = topLeftItem.textAlignment;
-        _leftTopLabel.titleLabel.font = topLeftItem.textFont;
-        _leftTopLabel.titleLabel.numberOfLines = topLeftItem.numberOfLines;
-        [_leftTopLabel setTitle:topLeftItem.content forState:UIControlStateNormal];
-        [_leftTopLabel setImagePosition:topLeftItem.accessoryImagePosition];
-        _leftTopLabel.spacingBetweenImageAndTitle = topLeftItem.spacingBetweenAccessoryImageAndContent;
-        [_leftTopLabel setImage:topLeftItem.accessoryImage forState:UIControlStateNormal];
-                
-        _floatLeftTableViewWidthConstraint.constant = topLeftItem.itemWidth;
-        _leftTopLabelHidthConstraint.constant = firstRow.rowHeight;
-        _leftTopLabelWidthConstraint.constant = topLeftItem.itemWidth;
+        _floatLeftTableViewWidthConstraint.constant = floatLeftWidth;
         [self.floatLeftTableView reloadData];
     }
     // 如果支持上浮动
     if (_floatTopRowNumber > 0) {
-        _floatTopTableViewHeightConstraint.constant = firstRow.rowHeight;
+        _floatTopTableViewHeightConstraint.constant = floatTopHeight;
         [self.floatTopTableView reloadData];
     }
-    // 刷新主图标
-    __block CGFloat tableWidth = 0;
-    [firstRow.items enumerateObjectsUsingBlock:^(ZZFormItemModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        tableWidth += obj.itemWidth;
-    }];
-    __block CGFloat tableHeight = 0;
-    [rows enumerateObjectsUsingBlock:^(ZZFormRowModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        tableHeight += obj.rowHeight;
-    }];
+    // 如果同时支持
+    if (_floatLeftColumnNumber > 0 && _floatTopRowNumber > 0) {
+        _leftTopTableViewWidthConstraint.constant = floatLeftWidth;
+        _leftTopTableViewHidthConstraint.constant = floatTopHeight;
+        [self.leftTopTableView reloadData];
+    }
+    // 刷新主图
     _mainTableViewWidthConstraint.constant = tableWidth;
     _mainTableViewHeightConstraint.constant = tableHeight;
     [self.mainTableView reloadData];
@@ -194,10 +200,18 @@
     _hSepLine2.hidden = rows.count == 0;
 }
 
+- (void)scrollToRow:(ZZFormRowModel *)row animated:(BOOL)animated {
+    NSInteger index = [self.rows indexOfObject:row];
+    if (index != NSNotFound) {
+        [self.mainTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:animated];
+        [self.floatLeftTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:animated];
+    }
+}
+
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (tableView == _floatTopTableView) {
+    if (tableView == _floatTopTableView || tableView == _leftTopTableView) {
         return _rows.count > 0 ? _floatTopRowNumber : 0;
     }
     if (tableView == _floatLeftTableView) {
@@ -215,11 +229,18 @@
     ZZFormRowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[ZZFormRowTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        __weak __typeof(self)weakSelf = self;
+        cell.tapCellBlock = ^(ZZFormRowModel * _Nonnull rowModel, NSInteger column, QMUIButton *sender) {
+            NSInteger row = [weakSelf.rows indexOfObject:rowModel];
+            if (weakSelf.tapCellBlock) {
+                weakSelf.tapCellBlock(row, column, sender);
+            }
+        };
     }
     ZZFormRowModel *row = _rows[indexPath.row];
-    cell.selectionStyle = row.selectionStyle;
-    cell.selectedBackgroundView.backgroundColor = row.selectedBackgroundColor;
-    if (tableView == _floatLeftTableView) {
+    cell.selectedMaskView.backgroundColor = row.selectedBackgroundColor;
+    cell.selectedMaskView.hidden = YES;
+    if (tableView == _floatLeftTableView || tableView == _leftTopTableView) {
         [cell updateWithRowModel:row toItemIndex:_floatLeftColumnNumber];
     } else {
         [cell updateWithRowModel:row];
@@ -230,14 +251,27 @@
 - (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath {
     ZZFormRowModel *row = _rows[indexPath.row];
     if (row.selectionStyle != UITableViewCellSelectionStyleNone) {
-        [_floatLeftTableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
+        ZZFormRowTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        cell.selectedMaskView.alpha = 1;
+        cell.selectedMaskView.hidden = NO;
+    }
+    if (tableView == self.mainTableView && row.selectionStyle != UITableViewCellSelectionStyleNone) {
+        [self tableView:self.floatLeftTableView didHighlightRowAtIndexPath:indexPath];
     }
 }
 
 - (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath {
     ZZFormRowModel *row = _rows[indexPath.row];
     if (row.selectionStyle != UITableViewCellSelectionStyleNone) {
-        [_floatLeftTableView deselectRowAtIndexPath:indexPath animated:NO];
+        ZZFormRowTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        [UIView qmui_animateWithAnimated:YES duration:0.2 animations:^{
+            cell.selectedMaskView.alpha = 0;
+        } completion:^(BOOL finished) {
+            cell.selectedMaskView.hidden = YES;
+        }];
+    }
+    if (tableView == self.mainTableView && row.selectionStyle != UITableViewCellSelectionStyleNone) {
+        [self tableView:self.floatLeftTableView didUnhighlightRowAtIndexPath:indexPath];
     }
 }
 
@@ -262,11 +296,35 @@
         } else if (scrollView.contentOffset.y <= 0 && _floatTopTableView.isHidden == NO) {
             _floatTopTableView.hidden = YES;
         }
+        
+        CGPoint offset = scrollView.contentOffset;
+        CGRect bounds = scrollView.bounds;
+        CGSize size = scrollView.contentSize;
+        UIEdgeInsets inset = scrollView.contentInset;
+        float y = offset.y + bounds.size.height - inset.bottom;
+        float h = size.height;
+        if(y == h && _isBottom == NO) {
+            _isBottom = true;
+            if(self.scrollViewDidScrollToBottomBlock)
+                self.scrollViewDidScrollToBottomBlock(scrollView);
+        } else {
+            _isBottom = false;
+        }
     }
-    if (_scrollView.contentOffset.x == 0 && _mainTableView.contentOffset.y == 0) {
-        _leftTopLabel.hidden = YES;
-    } else {
-        _leftTopLabel.hidden = NO;
+    if (scrollView == _scrollView || scrollView == _mainTableView) {
+        if (_floatTopRowNumber > 0 && _floatLeftColumnNumber > 0) {
+            if (_scrollView.contentOffset.x == 0 && _mainTableView.contentOffset.y == 0) {
+                _leftTopTableView.hidden = YES;
+            } else {
+                _leftTopTableView.hidden = NO;
+            }
+        }
+    }
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
+    if (self.scrollViewWillEndDraggingBlock) {
+        self.scrollViewWillEndDraggingBlock(scrollView, velocity);
     }
 }
 

@@ -1,6 +1,7 @@
 //
 //  ZZFormRowView.h
-
+//  teacher
+//
 //  Created by mac on 2023/2/13.
 //
 
@@ -15,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateUIWith:(ZZFormRowModel *)rowModel toItemIndex:(NSInteger)toItemIndex;
 
 - (void)updateUIWithItem:(ZZFormItemModel *)itemModel atIndex:(NSInteger)index;
+
+@property(nonatomic, copy) void(^tapCellBlock)(NSInteger column, QMUIButton *sender);
 
 @end
 

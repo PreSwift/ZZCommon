@@ -1,6 +1,7 @@
 //
 //  ZZFormRowModel.m
-
+//  jzjx
+//
 //  Created by Ethan on 2022/9/28.
 //
 
@@ -22,6 +23,7 @@
     if (self) {
         _items = items;
         _selectionStyle = UITableViewCellSelectionStyleNone;
+        _selectedBackgroundColor = [UIColor.qd_backgroundColorHighlighted colorWithAlphaComponent:0.5];
         __block CGFloat maxHeight = 0;
         [items enumerateObjectsUsingBlock:^(ZZFormItemModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if (obj.itemHeight > maxHeight) {
