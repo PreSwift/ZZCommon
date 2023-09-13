@@ -6,6 +6,7 @@
 //
 
 #import "ZZFormItemModel.h"
+#import "ZZCommonMacros.h"
 
 @implementation ZZFormItemModel
 

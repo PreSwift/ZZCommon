@@ -343,6 +343,7 @@
 		042DFFFD29C197C100907326 /* UIView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7C29C197BD00907326 /* UIView+EmptyView.m */; };
 		042DFFFE29C197C100907326 /* NSBundle+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 042DFE7D29C197BD00907326 /* NSBundle+Extension.m */; };
 		042DFFFF29C197C100907326 /* ZZNavigateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 042DFE7E29C197BD00907326 /* ZZNavigateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		044888812AB0371600B381F3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 044888802AB0371600B381F3 /* ViewController2.m */; };
 		049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */; };
 		0499626E29CB09BF00CD084C /* ZZCommon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 042DFA9C29C1972900907326 /* ZZCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04C99A3B29D57A1B00F06D3C /* InputSearchSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C99A3929D57A1B00F06D3C /* InputSearchSheet.m */; };
@@ -710,6 +711,8 @@
 		042DFF4F29C197C000907326 /* ZZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigationController.m; sourceTree = "<group>"; };
 		042DFF5029C197C000907326 /* ZZCommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCommonTableViewController.m; sourceTree = "<group>"; };
 		042DFF5129C197C000907326 /* QMUICommonViewController+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QMUICommonViewController+EmptyView.m"; sourceTree = "<group>"; };
+		0448887F2AB0371600B381F3 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		044888802AB0371600B381F3 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		049960D829CAF68F00CD084C /* QMUIConfigurationTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMUIConfigurationTemplate.h; sourceTree = "<group>"; };
 		049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMUIConfigurationTemplate.m; sourceTree = "<group>"; };
 		049960F829CAFBD800CD084C /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -889,6 +892,8 @@
 				049960D929CAF68F00CD084C /* QMUIConfigurationTemplate.m */,
 				042DFAB229C1975F00907326 /* ViewController.h */,
 				042DFAB329C1975F00907326 /* ViewController.m */,
+				0448887F2AB0371600B381F3 /* ViewController2.h */,
+				044888802AB0371600B381F3 /* ViewController2.m */,
 				042DFAB529C1975F00907326 /* Main.storyboard */,
 				042DFAB829C1976000907326 /* Assets.xcassets */,
 				042DFABA29C1976000907326 /* LaunchScreen.storyboard */,
@@ -2131,6 +2136,7 @@
 			files = (
 				042DFAB429C1975F00907326 /* ViewController.m in Sources */,
 				042DFAAE29C1975F00907326 /* AppDelegate.m in Sources */,
+				044888812AB0371600B381F3 /* ViewController2.m in Sources */,
 				049960DA29CAF68F00CD084C /* QMUIConfigurationTemplate.m in Sources */,
 				042DFABF29C1976000907326 /* main.m in Sources */,
 			);

@@ -6,6 +6,7 @@
 //
 
 #import "ZZFormRowModel.h"
+#import "ZZCommonMacros.h"
 
 @implementation ZZFormRowModel
 

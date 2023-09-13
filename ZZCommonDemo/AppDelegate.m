@@ -52,6 +52,7 @@
     }];
     
     self.window = [[UIWindow alloc] init];
+    self.window.backgroundColor = UIColorWhite;
     [self didInitWindow];
     
     return YES;

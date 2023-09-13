@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ZZFormRowModel.h"
+#import "ZZFormRowTableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
